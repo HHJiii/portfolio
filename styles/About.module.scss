@@ -1,0 +1,112 @@
+.aboutContainer {
+  margin-top: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .aboutWapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    max-width: 1400px;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 350;
+    }
+
+    .aboutImgContainer {
+      position: relative;
+      max-width: 1300px;
+      width: 100%;
+      height: 70vh;
+
+      .aboutImg {
+        width: 100%;
+        background-position: center center;
+        background-image: url("../public/images/aboutMe.webp");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        border-radius: 20px;
+        height: 100%;
+      }
+    }
+
+    .intro {
+      font-size: 45px;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .content {
+      color: rgb(186, 186, 186);
+      font-size: 25px;
+      max-width: 750px;
+      width: 100%;
+      font-weight: 300;
+    }
+
+    .resome {
+      padding: 15px 20px;
+      font-size: 28px;
+      font-weight: bold;
+      background-color: black;
+      border-radius: 10px;
+      color: white;
+      width: max-content;
+      margin-bottom: 50px;
+    }
+
+    .awards {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px 0;
+
+      .title {
+        font-size: 35px;
+      }
+
+      .awardsContent {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        max-width: 750px;
+        width: 100%;
+        gap: 10px;
+
+        .row {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          font-weight: 300;
+
+          span:last-child {
+            color: rgb(186, 186, 186);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    .aboutWapper {
+      .aboutImgContainer {
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutContainer {
+    .aboutWapper {
+      .aboutImgContainer {
+        height: 223px;
+      }
+    }
+  }
+}
