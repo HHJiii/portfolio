@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { isMobile } from "react-device-detect";
+
 import style from "./layout.module.scss";
 import Nav from "components/nav/Nav";
 import Footer from "components/footer/Footer";
+import { useResize } from "hooks/useResize";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
   });
+
+  const { nowWidth } = useResize();
 
   useEffect(() => {
     const mouseMove = (e: any) => {
@@ -35,12 +40,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Nav />
-      <motion.div
-        className={style.cursor}
-        variants={variants}
-        animate="default"
-      />
-
+      {!isMobile && (
+        <motion.div
+          className={style.cursor}
+          variants={variants}
+          animate="default"
+        />
+      )}
       <>{children}</>
       <Footer />
     </>
