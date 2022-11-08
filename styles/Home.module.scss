@@ -113,17 +113,27 @@
     .section {
       .section1 {
         .section1Wapper {
+          padding: 20px;
+
           flex-direction: column;
           gap: 30px;
 
           .intro {
-            min-width: 375px;
-            font-size: 36px;
+            min-width: 0;
+            width: 100%;
+            font-size: 30px;
           }
 
           .description {
-            min-width: 300px;
-            gap: 30px;
+            min-width: 0;
+            gap: 20px;
+            width: 100%;
+            gap: 10px;
+            position: relative;
+
+            button {
+              font-size: 12px;
+            }
           }
         }
       }
