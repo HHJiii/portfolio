@@ -362,6 +362,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    h2 {
+      font-size: 40px;
+    }
   }
 
   .contents {
@@ -399,6 +403,9 @@
   flex-direction: column;
   align-items: center;
   padding: 0 40px;
+  h2 {
+    font-size: 40px;
+  }
 
   .images {
     display: flex;
@@ -561,6 +568,9 @@
 
   .projects {
     padding: 0 30px;
+    h2 {
+      font-size: 30px;
+    }
 
     .images {
       flex-direction: column;
