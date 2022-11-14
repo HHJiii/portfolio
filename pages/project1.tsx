@@ -33,6 +33,12 @@ export default function ProjectOne() {
 
   const more = ["/images/more1.png", "/images/more1.png", "/images/more1.png"];
 
+  const projects = [
+    "/images/more-projects1.png",
+    "/images/more-projects2.png",
+    "/images/more-projects3.png",
+  ];
+
   useEffect(() => {
     window.addEventListener("scroll", event =>
       setDivHeight(window.pageYOffset)
@@ -88,36 +94,77 @@ export default function ProjectOne() {
           enviornmental impact.
         </p>
       </div>
-      <table className={style.table}>
-        <thead>
-          <tr>
-            <th>Team</th>
-            <th>Duration</th>
-            <th>Tool</th>
-            <th>Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Independent proejct</td>
-            <td>12 weeks</td>
-            <td>Figma</td>
-            <td>User research</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td>Framer</td>
-            <td>End to end Design</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td>Miro</td>
-            <td>Usability Test</td>
-          </tr>
-        </tbody>
-      </table>
+      {nowWidth > 800 ? (
+        <table className={style.table}>
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>Duration</th>
+              <th>Tool</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Independent proejct</td>
+              <td>12 weeks</td>
+              <td>Figma</td>
+              <td>User research</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Framer</td>
+              <td>End to end Design</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Miro</td>
+              <td>Usability Test</td>
+            </tr>
+          </tbody>
+        </table>
+      ) : (
+        <>
+          <table className={style.table}>
+            <thead>
+              <tr>
+                <th>Team</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Independent proejct</td>
+                <td>12 weeks</td>
+              </tr>
+            </tbody>
+          </table>
+          <table className={style.table}>
+            <thead>
+              <tr>
+                <th>Tool</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Figma</td>
+                <td>User research</td>
+              </tr>
+              <tr>
+                <td>Framer</td>
+                <td>End to end Design</td>
+              </tr>
+              <tr>
+                <td>Miro</td>
+                <td>Usability Test</td>
+              </tr>
+            </tbody>
+          </table>
+        </>
+      )}
       <div style={{ width: "100%" }}>
         <Sub
           name={"PROBLEM"}
@@ -453,6 +500,26 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               <p>{`The most important thing I learned from the project was to explore what services were needed to change users' behavior. In the whold process, I tried to put 'nudge' strategies everywhere to induce good behavior. Rather than directly telling users not to throw away trash, I learned to indirectly say how much your small steps are saving the planet, through design.`}</p>
             </div>
           </div>
+        </div>
+      </div>
+      <span
+        style={{
+          borderTop: "1px solid black",
+          width: "80%",
+          maxWidth: "1200px",
+        }}
+      />
+      <div className={style.projects}>
+        <h2>More Projects</h2>
+        <div className={style.images}>
+          {projects.map((e, i) => (
+            <img
+              key={`projects: ${i}`}
+              src={e}
+              alt=""
+              className={style.image}
+            />
+          ))}
         </div>
       </div>
     </div>
