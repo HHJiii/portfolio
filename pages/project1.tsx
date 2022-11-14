@@ -56,6 +56,7 @@ export default function ProjectOne() {
                 transform: `translateY(${
                   -divHeight + 100 < -180 ? -180 : -divHeight + 100
                 }px) translateZ(0px)`,
+                zIndex: "-1",
               }}
               src={Text}
               alt="back"
@@ -126,13 +127,15 @@ export default function ProjectOne() {
             {`Solis helps you manage your calendar throughout the day. From events
             to tasks and meetings, it's all taken care of.`}
           </span>
-          <div className={style.processes}>
-            {process.map((e, i) => (
-              <div key={`process: ${i}`} className={style.process}>
-                <div>{e.name}</div>
-                <div>{e.text}</div>
-              </div>
-            ))}
+          <div className={style.processesCon}>
+            <div className={style.processes}>
+              {process.map((e, i) => (
+                <div key={`process: ${i}`} className={style.process}>
+                  <div>{e.name}</div>
+                  <div>{e.text}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className={style.chepter}>

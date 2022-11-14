@@ -47,7 +47,7 @@ export default function About() {
           business strategies at UX. I am good at making data-based decisions
           about the most efficient and productive methods.
         </p>
-        <div className={style.resome}>Resome</div>
+        <div className={style.resome}>Resume</div>
 
         <div className={style.awards}>
           <div {...animatedItem1} className={style.title}>

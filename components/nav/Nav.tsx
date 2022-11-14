@@ -64,14 +64,6 @@ export default function Nav() {
             <button
               onClick={() => {
                 setClick(false);
-                router.push("/playground");
-              }}
-            >
-              Playground
-            </button>
-            <button
-              onClick={() => {
-                setClick(false);
                 router.push("/about");
               }}
             >
