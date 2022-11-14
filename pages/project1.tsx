@@ -5,14 +5,22 @@ import Test from "@image/testPerson.webp";
 import More from "@image/more.svg";
 import Text from "@image/Rows-1.png";
 import bottom from "@image/Columns-1.png";
-import one from "@image/ArticleImageHandler.png";
+import map from "@image/map-trifold.svg";
+import record from "@image/record.svg";
+import sm from "@image/smiley.svg";
+import house from "@image/house.svg";
+import one from "@image/one.svg";
+import two from "@image/two.svg";
 
 import style from "../styles/Project1.module.scss";
 import { useEffect, useRef, useState } from "react";
+import { useResize } from "hooks/useResize";
 
 export default function ProjectOne() {
   const ref = useRef<any>(null);
   const [divHeight, setDivHeight] = useState(0);
+  const [moreIndex, setMoreIndex] = useState(0);
+  const { nowWidth } = useResize();
 
   const process = [
     { name: "Research", text: "Solis works seamlessly" },
@@ -22,6 +30,8 @@ export default function ProjectOne() {
     { name: "Test", text: "Solis works seamlessly" },
     { name: "Iteration", text: "Solis works seamlessly" },
   ];
+
+  const more = ["/images/more1.png", "/images/more1.png", "/images/more1.png"];
 
   useEffect(() => {
     window.addEventListener("scroll", event =>
@@ -320,6 +330,128 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               recycling center or checking the vendor’s schedules.
             </p>
             <img className={style.image} src="/images/usability.png" alt="01" />
+          </div>
+        </div>
+      </div>
+      <div className={style.feature}>
+        <div className={style.title}>
+          <h2>Main Features</h2>
+          <span>
+            The service has three main features revolving around Record
+            Tracking, Identifying The Waste, and Rewarding.
+          </span>
+        </div>
+        <div className={style.item}>
+          <img
+            className={style.itemImg}
+            src={"/images/feature1.png"}
+            alt="사진"
+          />
+          <div className={style.desc}>
+            <Image src={sm} alt="icon" width={30} height={30} />
+            <h3>Record Tracking</h3>
+            <p>{`Eco-log provides a record tracking function so that users can check all the trash they've thrown away.`}</p>
+            <p>{`Dive deep into data with advanced analysis. Users can get key statistics like CO2 tracking and analysis of your whole discarding progress.`}</p>
+          </div>
+        </div>
+        <div className={style.item}>
+          <div className={style.desc}>
+            <Image src={record} alt="icon" width={30} height={30} />
+            <h3>Identify The Waste</h3>
+            <p>{`We identify your waste quickly and accurately by using AI technology. Users’ uploaded data will be a great nourishment asset for promoting community and state-specific garbage policies.`}</p>
+          </div>
+          <img
+            className={style.itemImg}
+            src={"/images/feature2.png"}
+            alt="사진"
+          />
+        </div>
+        <div className={style.item}>
+          <img
+            className={style.itemImg}
+            src={"/images/feature3.png"}
+            alt="사진"
+          />
+          <div className={style.desc}>
+            <Image src={map} alt="icon" width={30} height={30} />
+            <h3>Rewarding</h3>
+            <p>{`After recording, users can claim rewards. The waste disposal validation process allows users to gather digital rewards, which can be traded in the app for discount codes to purchase environmental products.`}</p>
+          </div>
+        </div>
+      </div>
+      <div className={style.more}>
+        <div className={style.title}>
+          <h2>One more step!</h2>
+          <span>
+            Eco-Log offers another type of the application which can be utilized
+            on a large screen.
+          </span>
+        </div>
+        <div className={style.content}>
+          <img className={style.moreImage} src={more[moreIndex]} alt="more" />
+          <div className={style.btns}>
+            {["Onboarding", "Proactive support", "Announcements"].map(
+              (e, i) => (
+                <button
+                  style={{
+                    backgroundColor:
+                      i === moreIndex ? "#99CD66" : "transparent",
+                  }}
+                  key={`btn: ${i}`}
+                  onClick={() => setMoreIndex(i)}
+                >
+                  <Image
+                    style={{
+                      filter:
+                        i !== moreIndex
+                          ? "invert(100%) sepia(2%) saturate(348%) hue-rotate(258deg) brightness(118%) contrast(100%)"
+                          : "invert(0%) sepia(1%) saturate(7475%) hue-rotate(300deg) brightness(97%) contrast(99%)",
+                    }}
+                    src={house}
+                    alt=""
+                    width={25}
+                    height={25}
+                  />
+                  <span>{e}</span>
+                </button>
+              )
+            )}
+          </div>
+        </div>
+      </div>
+      <div className={style.learn}>
+        <div className={style.title}>
+          <h2>What I learned...</h2>
+          <span>These are lessons I learned from this project</span>
+        </div>
+        <div className={style.contents}>
+          <div className={style.content}>
+            {nowWidth > 800 && (
+              <img
+                className={style.image}
+                src="/images/learned1.png"
+                alt="learned"
+              />
+            )}
+            <div className={style.desc}>
+              <Image src={one} alt="icon" width={20} height={20} />
+              <h3>the core of Choice architecture</h3>
+              <p>{`The most important thing I learned from the project was to explore what services were needed to change users' behavior. In the whold process, I tried to put 'nudge' strategies everywhere to induce good behavior. Rather than directly telling users not to throw away trash, I learned to indirectly say how much your small steps are saving the planet, through design.`}</p>
+            </div>
+          </div>
+          <div className={style.content}>
+            {nowWidth > 800 && (
+              <img
+                className={style.image}
+                src="/images/learned2.png"
+                alt="learned"
+              />
+            )}
+            <div className={style.desc}>
+              <Image src={two} alt="icon" width={20} height={20} />
+              <h3>the core of Choice architecture</h3>
+              <p>{`The most important thing I learned from the project was to explore what services were needed to change users' behavior. In the whold process, I tried to put 'nudge' strategies everywhere to induce good behavior. Rather than directly telling users not to throw away trash, I learned to indirectly say how much your small steps are saving the planet, through design.`}</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,29 +1,39 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import style from "./card.module.scss";
 import Back from "@image/back.svg";
 import Test from "@image/testPerson.webp";
 import More from "@image/more.svg";
+import { useRouter } from "next/router";
 
 export default function Card({
   animation,
   title,
   sub,
   image,
+  path,
 }: {
   animation: any;
   title: string;
   sub: string;
+  path: string;
   image?: any;
 }) {
+  const router = useRouter();
+
   return (
-    <div {...animation} className={style.cardContainer}>
+    <button
+      onClick={() => router.push(path)}
+      {...animation}
+      className={style.cardContainer}
+    >
       <div>
         <div className={style.title}>{title}</div>
         <div className={style.sub}>{sub}</div>
       </div>
       {!image ? (
         <Phone>
-          <div>hello</div>
+          <img src={"/images/Rows-1.png"} alt="" />
         </Phone>
       ) : (
         <div className={style.main}>
@@ -32,7 +42,7 @@ export default function Card({
           </div>
         </div>
       )}
-    </div>
+    </button>
   );
 }
 

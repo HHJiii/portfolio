@@ -1,4 +1,5 @@
 .cardContainer {
+  border: none;
   height: 550px;
   padding: 60px 60px 0;
   background-color: var(--token-1d11e7c9-c5f2-405f-a513-4875194544c6, #faf9fb);
@@ -12,6 +13,7 @@
   margin: 1%;
   margin-bottom: 30px;
   overflow: hidden;
+  cursor: pointer;
 
   .title {
     width: 100%;

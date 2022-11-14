@@ -9,8 +9,6 @@ export default function Home() {
   const animatedItem3 = useScrollFadeIn("0.1", "50");
   const animatedItem4 = useScrollFadeIn("0.1", "20");
   const animatedItem5 = useScrollFadeIn("0.2", "20");
-  const animatedItem6 = useScrollFadeIn("0.1", "20");
-  const animatedItem7 = useScrollFadeIn("0.2", "20");
 
   const contacts = [
     { label: "LinkedIn", value: "" },
@@ -47,22 +45,13 @@ export default function Home() {
             animation={animatedItem4}
             title="Trashbeing"
             sub="Send text, voice message, video, emojis or annotations."
+            path="project1"
           />
           <Card
             animation={animatedItem5}
             title="End Poverty In California"
             sub="Easily create fun, entertaining videos to share with friends."
-          />
-          <Card
-            animation={animatedItem6}
-            title="Trashbeing"
-            sub="Send text, voice message, video, emojis or annotations."
-            image={Test}
-          />
-          <Card
-            animation={animatedItem7}
-            title="Trashbeing"
-            sub="Send text, voice message, video, emojis or annotations."
+            path="project1"
           />
         </div>
       </div>

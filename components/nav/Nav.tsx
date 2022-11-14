@@ -31,7 +31,6 @@ export default function Nav() {
       {nowWidth > 800 ? (
         <div className={style.items}>
           <button onClick={() => router.push("/")}>Works</button>
-          <button onClick={() => router.push("/playground")}>Playground</button>
           <button onClick={() => router.push("/about")}>About</button>
         </div>
       ) : (

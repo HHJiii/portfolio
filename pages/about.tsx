@@ -10,6 +10,7 @@ export default function About() {
   const animatedItem6 = useScrollFadeIn("0.3", "70");
   const animatedItem7 = useScrollFadeIn("0.3", "70");
   const animatedItem8 = useScrollFadeIn("0.3", "70");
+  const animatedItem9 = useScrollFadeIn("0.5", "70");
   const animatedItem3 = useScaleFadeIn("0", "50");
 
   return (
@@ -47,7 +48,9 @@ export default function About() {
           business strategies at UX. I am good at making data-based decisions
           about the most efficient and productive methods.
         </p>
-        <div className={style.resome}>Resume</div>
+        <div {...animatedItem9} className={style.resome}>
+          Resume
+        </div>
 
         <div className={style.awards}>
           <div {...animatedItem1} className={style.title}>
