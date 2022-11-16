@@ -3,7 +3,7 @@ import Image from "next/image";
 import Back from "@image/back.svg";
 import Test from "@image/testPerson.webp";
 import More from "@image/more.svg";
-import Text from "@image/Rows-1.png";
+import Text from "@image/chat.png";
 import bottom from "@image/Columns-1.png";
 import map from "@image/mainfeature3.png";
 import record from "@image/record.svg";
@@ -15,15 +15,25 @@ import two from "@image/two.svg";
 import style from "../styles/Project1.module.scss";
 import { useEffect, useRef, useState } from "react";
 import { useResize } from "hooks/useResize";
-import Card from "components/card/Card";
 import json from "../data.json";
 import { useRouter } from "next/router";
+import useMoveScrool from "hooks/useProgess";
 
 export default function ProjectOne() {
   const ref = useRef<any>(null);
   const [divHeight, setDivHeight] = useState(0);
   const [moreIndex, setMoreIndex] = useState(0);
-  const { nowWidth } = useResize();
+  const { nowWidth, nowHeight } = useResize();
+
+  const goodsTabs = {
+    0: useMoveScrool(),
+    1: useMoveScrool(),
+    2: useMoveScrool(),
+    3: useMoveScrool(),
+    4: useMoveScrool(),
+    5: useMoveScrool(),
+    6: useMoveScrool(),
+  };
 
   const router = useRouter();
 
@@ -50,6 +60,29 @@ export default function ProjectOne() {
 
   return (
     <div ref={ref} className={style.project1Container}>
+      {nowWidth > 1200 && (
+        <div
+          className={style.progress}
+          style={{ opacity: divHeight > 300 ? "1" : "0" }}
+        >
+          <button onClick={() => goodsTabs[0].onMoveToElement()}>
+            Overview
+          </button>
+          <button onClick={() => goodsTabs[1].onMoveToElement()}>
+            Research
+          </button>
+          <button onClick={() => goodsTabs[2].onMoveToElement()}>
+            Final Design
+          </button>
+          <button onClick={() => goodsTabs[3].onMoveToElement()}>Test</button>
+          <button onClick={() => goodsTabs[4].onMoveToElement()}>
+            Main Features{" "}
+          </button>
+          <button onClick={() => goodsTabs[5].onMoveToElement()}>
+            Takeaways
+          </button>
+        </div>
+      )}
       <div className={style.intro}>
         <span>Service Design</span>
         <h1>Eco-Log</h1>
@@ -75,7 +108,8 @@ export default function ProjectOne() {
                 transform: `translateY(${
                   -divHeight + 100 < -180 ? -180 : -divHeight + 100
                 }px) translateZ(0px)`,
-                zIndex: "-1",
+                zIndex: "1",
+                width: "90%",
               }}
               src={Text}
               alt="back"
@@ -85,9 +119,40 @@ export default function ProjectOne() {
               <Image src={bottom} alt="채팅" fill />
             </div>
           </div>
+          {nowWidth > 800 && (
+            <>
+              <img
+                style={{
+                  transform: `translateY(${
+                    -divHeight + 100 < -180 ? -180 : -divHeight + 100
+                  }px) translateZ(0px)`,
+                  position: "absolute",
+                  top: "200px",
+                  width: "150px",
+                  left: "230px",
+                  zIndex: "100",
+                }}
+                src={"/images/modal.png"}
+                alt=""
+              />
+              <img
+                style={{
+                  transform: `translateY(${
+                    -divHeight + 100 < -180 ? -180 : -divHeight + 100
+                  }px) translateZ(0px)`,
+                  position: "absolute",
+                  top: "40px",
+                  right: "230px",
+                  width: "150px",
+                }}
+                src={"/images/mention@2x.png"}
+                alt=""
+              />
+            </>
+          )}
         </div>
       </div>
-      <div className={style.overview}>
+      <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
           Eco-Log is the service featuring of recording waste disposal and
@@ -198,7 +263,7 @@ export default function ProjectOne() {
             </div>
           </div>
         </div>
-        <div className={style.chepter}>
+        <div ref={goodsTabs[1].element} className={style.chepter}>
           <h2>01</h2>
           <h2>RESEARCH</h2>
           <div className={style.main}>
@@ -339,16 +404,26 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             />
             <h3 style={{ marginTop: "50px" }}>{`Wireframe`}</h3>
             <img className={style.image} src="/images/lowfi.jpg" alt="01" />
+            <div ref={goodsTabs[2].element}></div>
             <h3 style={{ marginTop: "50px" }}>{`Final Design`}</h3>
             <p className={style.p}>
               For the Final Design, I revised the design and created digital
               high-fidelity wireframes.Refer to figma file for more detailed
               design.
             </p>
-            <img className={style.image} src="/images/box.jpg" alt="01" />
+            <div
+              style={{
+                width: "100%",
+                overflow: "hidden",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img style={{ width: "1200px" }} src="/images/box.jpg" alt="01" />
+            </div>
           </div>
         </div>
-        <div className={style.chepter}>
+        <div ref={goodsTabs[3].element} className={style.chepter}>
           <h2>05</h2>
           <h2>TEST</h2>
           <div className={style.main}>
@@ -390,7 +465,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           </div>
         </div>
       </div>
-      <div className={style.feature}>
+      <div ref={goodsTabs[4].element} className={style.feature}>
         <div className={style.title}>
           <h2>Main Features</h2>
           <span>
@@ -480,8 +555,8 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
         </div>
       </div>
       <div className={style.learn}>
-        <div className={style.title}>
-          <h2>What I learned...</h2>
+        <div ref={goodsTabs[5].element} className={style.title}>
+          <h2>Takeaways</h2>
           <span>These are lessons I learned from this project</span>
         </div>
         <div className={style.contents}>
