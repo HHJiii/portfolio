@@ -14,6 +14,12 @@
   margin-bottom: 30px;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+  }
 
   .title {
     width: 100%;
@@ -30,11 +36,16 @@
     flex: 1;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 
     .mainImg {
-      width: 244px;
-      height: 244px;
+      width: 300px;
+
       position: relative;
+
+      img {
+        width: 300px;
+      }
     }
   }
 
@@ -91,6 +102,30 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardContainer {
+    .title {
+      font-size: 36px;
+    }
+
+    .sub {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .cardContainer {
+    .title {
+      font-size: 28px;
+    }
+
+    .sub {
+      font-size: 15px;
     }
   }
 }

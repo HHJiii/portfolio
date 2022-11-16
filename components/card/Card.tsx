@@ -7,24 +7,24 @@ import More from "@image/more.svg";
 import { useRouter } from "next/router";
 
 export default function Card({
-  animation,
   title,
   sub,
   image,
   path,
+  s,
 }: {
-  animation: any;
   title: string;
   sub: string;
   path: string;
   image?: any;
+  s?: any;
 }) {
   const router = useRouter();
 
   return (
     <button
       onClick={() => router.push(path)}
-      {...animation}
+      style={s}
       className={style.cardContainer}
     >
       <div>
@@ -38,7 +38,7 @@ export default function Card({
       ) : (
         <div className={style.main}>
           <div className={style.mainImg}>
-            <Image src={image} alt="main-image" fill />
+            <img src={image} alt="main-image" />
           </div>
         </div>
       )}

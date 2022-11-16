@@ -5,7 +5,7 @@ import Test from "@image/testPerson.webp";
 import More from "@image/more.svg";
 import Text from "@image/Rows-1.png";
 import bottom from "@image/Columns-1.png";
-import map from "@image/map-trifold.svg";
+import map from "@image/mainfeature3.png";
 import record from "@image/record.svg";
 import sm from "@image/smiley.svg";
 import house from "@image/house.svg";
@@ -15,12 +15,17 @@ import two from "@image/two.svg";
 import style from "../styles/Project1.module.scss";
 import { useEffect, useRef, useState } from "react";
 import { useResize } from "hooks/useResize";
+import Card from "components/card/Card";
+import json from "../data.json";
+import { useRouter } from "next/router";
 
 export default function ProjectOne() {
   const ref = useRef<any>(null);
   const [divHeight, setDivHeight] = useState(0);
   const [moreIndex, setMoreIndex] = useState(0);
   const { nowWidth } = useResize();
+
+  const router = useRouter();
 
   const process = [
     { name: "Research", text: "Solis works seamlessly" },
@@ -31,12 +36,10 @@ export default function ProjectOne() {
     { name: "Iteration", text: "Solis works seamlessly" },
   ];
 
-  const more = ["/images/more1.png", "/images/more1.png", "/images/more1.png"];
-
-  const projects = [
-    "/images/more-projects1.png",
-    "/images/more-projects2.png",
-    "/images/more-projects3.png",
+  const more = [
+    "/images/tablet1.jpg",
+    "/images/tablet2.jpg",
+    "/images/tablet3.jpg",
   ];
 
   useEffect(() => {
@@ -211,11 +214,10 @@ export default function ProjectOne() {
               largest contributors to the waste problem. The US represents 4% of
               the global population but generates 12% of global municipal waste.
             </p>
-            <img
-              className={style.image}
-              src="/images/ArticleImageHandler.png"
-              alt="01"
-            />
+            <div className={style.image2}>
+              <img src="/images/one1.png" alt="01" />
+              <img src="/images/one2.png" alt="01" />
+            </div>
           </div>
         </div>
         <div className={style.chepter}>
@@ -324,7 +326,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               Based on the card sorting, I created Information Architecture for
               the holistic sketch.
             </p>
-            <img className={style.image} src="/images/ia.png" alt="01" />
+            <img className={style.image} src="/images/info.jpg" alt="01" />
             <h3 style={{ marginTop: "50px" }}>{`Low Fidelity Sketch`}</h3>
             <p className={style.p}>
               To provide intuitive flow, I sketched based on user flow for the
@@ -336,11 +338,14 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               alt="01"
             />
             <h3 style={{ marginTop: "50px" }}>{`Wireframe`}</h3>
-            <img
-              className={style.image}
-              src="/images/wire-frames.png"
-              alt="01"
-            />
+            <img className={style.image} src="/images/lowfi.jpg" alt="01" />
+            <h3 style={{ marginTop: "50px" }}>{`Final Design`}</h3>
+            <p className={style.p}>
+              For the Final Design, I revised the design and created digital
+              high-fidelity wireframes.Refer to figma file for more detailed
+              design.
+            </p>
+            <img className={style.image} src="/images/box.jpg" alt="01" />
           </div>
         </div>
         <div className={style.chepter}>
@@ -349,11 +354,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <div className={style.main}>
             <span>05 Test</span>
             <h3>{`Usability Testing`}</h3>
-            <div className={style.row}>
-              <img src="/images/r-1.png" alt="01" />
-              <img src="/images/r-3.png" alt="01" />
-              <img src="/images/r-2.png" alt="01" />
-            </div>
+            <img className={style.image} src="/images/c1.gif" alt="01" />
             <p className={style.p}>
               To test my final prototype’s usability, I asked my interviewees if
               they would be willing to test out the app. Thankfully, most of
@@ -364,7 +365,13 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               Eco-Log received a relatively high score of 80 points in Usability
               testing.
             </p>
+            <div className={style.row}>
+              <img src="/images/r-1.png" alt="01" />
+              <img src="/images/r-3.png" alt="01" />
+              <img src="/images/r-2.png" alt="01" />
+            </div>
             <h3 style={{ marginTop: "50px" }}>{`After Usability Test`}</h3>
+            <img className={style.image} src="/images/img.jpg" alt="01" />
             <p className={style.p}>
               Users gave positive feedback on recording information and claiming
               rewards. Due to ‘compensation,’ user said that they felt being
@@ -376,7 +383,10 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               necessary to improve another functions such as finding the nearest
               recycling center or checking the vendor’s schedules.
             </p>
-            <img className={style.image} src="/images/usability.png" alt="01" />
+            <div className={style.image2}>
+              <img src="/images/test1.png" alt="01" />
+              <img src="/images/test2.png" alt="01" />
+            </div>
           </div>
         </div>
       </div>
@@ -391,7 +401,8 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
         <div className={style.item}>
           <img
             className={style.itemImg}
-            src={"/images/feature1.png"}
+            style={{ borderRadius: "30px" }}
+            src={"/images/c2.gif"}
             alt="사진"
           />
           <div className={style.desc}>
@@ -409,14 +420,15 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           </div>
           <img
             className={style.itemImg}
-            src={"/images/feature2.png"}
+            style={{ borderRadius: "30px" }}
+            src={"/images/c3.gif"}
             alt="사진"
           />
         </div>
         <div className={style.item}>
           <img
             className={style.itemImg}
-            src={"/images/feature3.png"}
+            src={"/images/rewarding.png"}
             alt="사진"
           />
           <div className={style.desc}>
@@ -437,32 +449,33 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
         <div className={style.content}>
           <img className={style.moreImage} src={more[moreIndex]} alt="more" />
           <div className={style.btns}>
-            {["Onboarding", "Proactive support", "Announcements"].map(
-              (e, i) => (
-                <button
+            {[
+              "Enjoy Large Screen",
+              "Real-time information",
+              "With your neighnors",
+            ].map((e, i) => (
+              <button
+                style={{
+                  backgroundColor: i === moreIndex ? "#99CD66" : "transparent",
+                }}
+                key={`btn: ${i}`}
+                onClick={() => setMoreIndex(i)}
+              >
+                <Image
                   style={{
-                    backgroundColor:
-                      i === moreIndex ? "#99CD66" : "transparent",
+                    filter:
+                      i !== moreIndex
+                        ? "invert(100%) sepia(2%) saturate(348%) hue-rotate(258deg) brightness(118%) contrast(100%)"
+                        : "invert(0%) sepia(1%) saturate(7475%) hue-rotate(300deg) brightness(97%) contrast(99%)",
                   }}
-                  key={`btn: ${i}`}
-                  onClick={() => setMoreIndex(i)}
-                >
-                  <Image
-                    style={{
-                      filter:
-                        i !== moreIndex
-                          ? "invert(100%) sepia(2%) saturate(348%) hue-rotate(258deg) brightness(118%) contrast(100%)"
-                          : "invert(0%) sepia(1%) saturate(7475%) hue-rotate(300deg) brightness(97%) contrast(99%)",
-                    }}
-                    src={house}
-                    alt=""
-                    width={25}
-                    height={25}
-                  />
-                  <span>{e}</span>
-                </button>
-              )
-            )}
+                  src={house}
+                  alt=""
+                  width={25}
+                  height={25}
+                />
+                <span>{e}</span>
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -512,14 +525,25 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
       <div className={style.projects}>
         <h2>More Projects</h2>
         <div className={style.images}>
-          {projects.map((e, i) => (
-            <img
-              key={`projects: ${i}`}
-              src={e}
-              alt=""
-              className={style.image}
-            />
-          ))}
+          {json.card.map(({ title, sub, image, path }, i) => {
+            if (i !== 0) {
+              return (
+                <button
+                  className={style.card}
+                  onClick={() => router.push(path)}
+                  key={i}
+                >
+                  <div className={style.row}>
+                    <span>{title}</span>
+                    <span>{sub}</span>
+                  </div>
+                  <div className={style.container}>
+                    <img src={image} alt="" />
+                  </div>
+                </button>
+              );
+            }
+          })}
         </div>
       </div>
     </div>

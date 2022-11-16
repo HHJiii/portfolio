@@ -409,11 +409,37 @@
 
   .images {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     gap: 30px;
-    .image {
-      width: 250px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      border: none;
+      background-color: #faf9fb;
+      border-radius: 22px;
+      padding: 30px 30px 0;
+      gap: 30px;
+      height: 300px;
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:first-child {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -444,6 +470,14 @@
           h3 {
             font-size: 20px;
           }
+
+          .image2 {
+            flex-direction: column;
+
+            img {
+              width: 100%;
+            }
+          }
         }
       }
       .designIntro {
@@ -456,6 +490,12 @@
           }
         }
       }
+    }
+  }
+
+  .projects {
+    .images {
+      flex-direction: column;
     }
   }
 }
@@ -567,7 +607,9 @@
   }
 
   .projects {
-    padding: 0 30px;
+    padding: 0;
+    width: 100%;
+
     h2 {
       font-size: 30px;
     }
@@ -575,10 +617,7 @@
     .images {
       flex-direction: column;
       width: 100%;
-
-      .image {
-        width: 100%;
-      }
+      align-items: center;
     }
   }
 }

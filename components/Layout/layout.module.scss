@@ -1,6 +1,6 @@
 .cursor {
   border: 1.5px solid gray;
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 50%;
   height: 32px;
   width: 32px;
@@ -8,7 +8,8 @@
   left: 0;
   top: 0;
   transition: all 10ms;
-  backdrop-filter: blur(1px);
+
   pointer-events: none;
   z-index: 100;
+  mix-blend-mode: exclusion;
 }
