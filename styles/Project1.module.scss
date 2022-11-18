@@ -126,7 +126,6 @@
 
   .table {
     margin-top: 88px;
-    padding: 0 40px;
     max-width: 900px;
     width: 100%;
     margin-bottom: 128px;
@@ -585,6 +584,7 @@
 @media (max-width: 800px) {
   .project1Container {
     .intro {
+      padding: 0 40px;
       h1 {
         font-size: 34px;
       }
@@ -595,16 +595,19 @@
     }
 
     .table {
-      padding: 0 30px;
-
+      padding: 0 40px;
       th,
       td {
         padding: 10px 0;
         font-size: 15px;
       }
     }
+    .overview {
+      padding: 0 40px;
+    }
 
     .designProcess {
+      padding: 0 40px;
       .chepter {
         h2 {
           font-size: 28px;
@@ -661,6 +664,7 @@
   }
 
   .feature {
+    padding: 0 40px;
     h2 {
       margin: 0;
       font-size: 28px;
@@ -684,6 +688,7 @@
   }
 
   .more {
+    padding: 0 40px;
     .content {
       flex-direction: column;
       .moreImage {
@@ -702,6 +707,7 @@
   }
 
   .learn {
+    padding: 0 40px;
     .contents {
       .content {
         width: 100%;
@@ -714,7 +720,8 @@
   }
 
   .projects {
-    padding: 0;
+    padding: 0 40px;
+
     width: 100%;
 
     h2 {
