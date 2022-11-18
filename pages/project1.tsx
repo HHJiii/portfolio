@@ -23,9 +23,10 @@ export default function ProjectOne() {
   const ref = useRef<any>(null);
   const [divHeight, setDivHeight] = useState(0);
   const [moreIndex, setMoreIndex] = useState(0);
-  const { nowWidth, nowHeight } = useResize();
+  const { nowWidth } = useResize();
+  const [nowProgress, setNowProgress] = useState(0);
 
-  const goodsTabs = {
+  const goodsTabs: { [x in number]: any } = {
     0: useMoveScrool(),
     1: useMoveScrool(),
     2: useMoveScrool(),
@@ -51,6 +52,25 @@ export default function ProjectOne() {
     "/images/tablet2.jpg",
     "/images/tablet3.jpg",
   ];
+  useEffect(() => {
+    function refHeight(index: number) {
+      return goodsTabs[index].element.current?.offsetTop ?? 0;
+    }
+
+    if (refHeight(0) <= divHeight && refHeight(1) > divHeight) {
+      setNowProgress(0);
+    } else if (refHeight(1) <= divHeight && refHeight(2) > divHeight) {
+      setNowProgress(1);
+    } else if (refHeight(2) <= divHeight && refHeight(3) > divHeight) {
+      setNowProgress(2);
+    } else if (refHeight(3) <= divHeight && refHeight(4) > divHeight) {
+      setNowProgress(3);
+    } else if (refHeight(4) <= divHeight && refHeight(5) > divHeight) {
+      setNowProgress(4);
+    } else if (refHeight(5) <= divHeight) {
+      setNowProgress(5);
+    }
+  }, [divHeight]);
 
   useEffect(() => {
     window.addEventListener("scroll", event =>
@@ -65,20 +85,58 @@ export default function ProjectOne() {
           className={style.progress}
           style={{ opacity: divHeight > 300 ? "1" : "0" }}
         >
-          <button onClick={() => goodsTabs[0].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 0 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[0].onMoveToElement();
+              setNowProgress(0);
+            }}
+          >
             Overview
           </button>
-          <button onClick={() => goodsTabs[1].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 1 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[1].onMoveToElement();
+              setNowProgress(1);
+            }}
+          >
             Research
           </button>
-          <button onClick={() => goodsTabs[2].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 2 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[2].onMoveToElement();
+              setNowProgress(2);
+            }}
+          >
             Final Design
           </button>
-          <button onClick={() => goodsTabs[3].onMoveToElement()}>Test</button>
-          <button onClick={() => goodsTabs[4].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 3 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[3].onMoveToElement();
+              setNowProgress(3);
+            }}
+          >
+            Test
+          </button>
+          <button
+            style={{ color: nowProgress === 4 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[4].onMoveToElement();
+              setNowProgress(4);
+            }}
+          >
             Main Features{" "}
           </button>
-          <button onClick={() => goodsTabs[5].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 5 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[5].onMoveToElement();
+              setNowProgress(5);
+            }}
+          >
             Takeaways
           </button>
         </div>
@@ -402,7 +460,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               src="/images/low-fidelity.png"
               alt="01"
             />
-            <h3 style={{ marginTop: "50px" }}>{`Wireframe`}</h3>
+            <h3 style={{ margin: "50px 0" }}>{`Wireframe`}</h3>
             <img className={style.image} src="/images/lowfi.jpg" alt="01" />
             <div ref={goodsTabs[2].element}></div>
             <h3 style={{ marginTop: "50px" }}>{`Final Design`}</h3>
@@ -419,7 +477,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <h2>TEST</h2>
           <div className={style.main}>
             <span>05 Test</span>
-            <h3>{`Usability Testing`}</h3>
+            <h3 style={{ margin: "30px 0" }}>{`Usability Testing`}</h3>
             <img className={style.image} src="/images/c1.gif" alt="01" />
             <p className={style.p}>
               To test my final prototype’s usability, I asked my interviewees if
@@ -436,7 +494,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               <img src="/images/r-3.png" alt="01" />
               <img src="/images/r-2.png" alt="01" />
             </div>
-            <h3 style={{ marginTop: "50px" }}>{`After Usability Test`}</h3>
+            <h3 style={{ margin: "50px 0" }}>{`After Usability Test`}</h3>
             <img className={style.image} src="/images/img.jpg" alt="01" />
             <p className={style.p}>
               Users gave positive feedback on recording information and claiming

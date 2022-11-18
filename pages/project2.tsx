@@ -17,10 +17,10 @@ import useMoveScrool from "hooks/useProgess";
 export default function ProjectOne() {
   const ref = useRef<any>(null);
   const [divHeight, setDivHeight] = useState(0);
-  const [moreIndex, setMoreIndex] = useState(0);
   const { nowWidth, nowHeight } = useResize();
+  const [nowProgress, setNowProgress] = useState(0);
 
-  const goodsTabs = {
+  const goodsTabs: { [x in number]: any } = {
     0: useMoveScrool(),
     1: useMoveScrool(),
     2: useMoveScrool(),
@@ -29,6 +29,25 @@ export default function ProjectOne() {
     5: useMoveScrool(),
     6: useMoveScrool(),
   };
+
+  useEffect(() => {
+    function refHeight(index: number) {
+      return goodsTabs[index].element.current?.offsetTop ?? 0;
+    }
+    if (refHeight(0) <= divHeight && refHeight(1) > divHeight) {
+      setNowProgress(0);
+    } else if (refHeight(1) <= divHeight && refHeight(2) > divHeight) {
+      setNowProgress(1);
+    } else if (refHeight(2) <= divHeight && refHeight(3) > divHeight) {
+      setNowProgress(2);
+    } else if (refHeight(3) <= divHeight && refHeight(4) > divHeight) {
+      setNowProgress(3);
+    } else if (refHeight(4) <= divHeight && refHeight(5) > divHeight) {
+      setNowProgress(4);
+    } else if (refHeight(5) <= divHeight) {
+      setNowProgress(5);
+    }
+  }, [divHeight]);
 
   const router = useRouter();
 
@@ -39,12 +58,6 @@ export default function ProjectOne() {
     { name: "4. Ideate", text: "Start developing solutions" },
     { name: "5. Prototype", text: "Hold Inspirational  Design Sprints" },
     { name: "6. Test", text: "Get Fast, Productive Feedback" },
-  ];
-
-  const more = [
-    "/images/tablet1.jpg",
-    "/images/tablet2.jpg",
-    "/images/tablet3.jpg",
   ];
 
   useEffect(() => {
@@ -60,20 +73,53 @@ export default function ProjectOne() {
           className={style.progress}
           style={{ opacity: divHeight > 300 ? "1" : "0" }}
         >
-          <button onClick={() => goodsTabs[0].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 0 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[0].onMoveToElement();
+            }}
+          >
             Overview
           </button>
-          <button onClick={() => goodsTabs[1].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 1 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[1].onMoveToElement();
+            }}
+          >
             Research
           </button>
-          <button onClick={() => goodsTabs[2].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 2 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[2].onMoveToElement();
+            }}
+          >
             Final Design
           </button>
-          <button onClick={() => goodsTabs[3].onMoveToElement()}>Test</button>
-          <button onClick={() => goodsTabs[4].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 3 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[3].onMoveToElement();
+            }}
+          >
+            Test
+          </button>
+          <button
+            style={{ color: nowProgress === 4 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[4].onMoveToElement();
+            }}
+          >
             Main Features{" "}
           </button>
-          <button onClick={() => goodsTabs[5].onMoveToElement()}>
+          <button
+            style={{ color: nowProgress === 5 ? "black" : "#565656" }}
+            onClick={() => {
+              goodsTabs[5].onMoveToElement();
+              setNowProgress(5);
+            }}
+          >
             Takeaways
           </button>
         </div>
@@ -371,6 +417,7 @@ export default function ProjectOne() {
             </div>
           </div>
         </div>
+        <div ref={goodsTabs[2].element} />
         <div className={style.chepter}>
           <h2>05</h2>
           <h2>PROTOTYPE</h2>
@@ -383,7 +430,7 @@ export default function ProjectOne() {
               experience for the user, no matter what device they are using.
             </p>
             <img className={style.image} src="/images/whole.png" alt="01" />
-            <div ref={goodsTabs[2].element}></div>
+
             <h3 style={{ marginTop: "50px" }}>{`Final Design`}</h3>
             <p className={style.p}>
               For the Final Design, I revised the design and created digital
