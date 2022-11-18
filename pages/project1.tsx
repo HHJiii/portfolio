@@ -6,8 +6,8 @@ import More from "@image/more.svg";
 import Text from "@image/chat.png";
 import bottom from "@image/Columns-1.png";
 import map from "@image/mainfeature3.png";
-import record from "@image/record.svg";
-import sm from "@image/smiley.svg";
+import record from "@image/mainfeature2.png";
+import sm from "@image/mainfeature1.png";
 import house from "@image/house.svg";
 import one from "@image/one.svg";
 import two from "@image/two.svg";
@@ -39,12 +39,12 @@ export default function ProjectOne() {
   const router = useRouter();
 
   const process = [
-    { name: "Research", text: "Solis works seamlessly" },
-    { name: "Emphasize", text: "Solis works seamlessly" },
-    { name: "Define", text: "Solis works seamlessly" },
-    { name: "Ideate", text: "Solis works seamlessly" },
-    { name: "Test", text: "Solis works seamlessly" },
-    { name: "Iteration", text: "Solis works seamlessly" },
+    { name: "1. Research", text: "Understand the background" },
+    { name: "2. Emphasize", text: "Gather High-Quality User Understanding" },
+    { name: "3. Define", text: "Create a Brilliant Design Brief" },
+    { name: "4. Ideate", text: "Start developing solutions" },
+    { name: "5. Test", text: "Hold Inspirational  Design Sprints" },
+    { name: "6. Iteration", text: "Get Fast, Productive Feedback" },
   ];
 
   const more = [
@@ -86,7 +86,9 @@ export default function ProjectOne() {
           style={{ opacity: divHeight > 300 ? "1" : "0" }}
         >
           <button
-            style={{ color: nowProgress === 0 ? "black" : "#565656" }}
+            style={{
+              color: nowProgress === 0 ? "black" : "#565656",
+            }}
             onClick={() => {
               goodsTabs[0].onMoveToElement();
               setNowProgress(0);
@@ -128,7 +130,7 @@ export default function ProjectOne() {
               setNowProgress(4);
             }}
           >
-            Main Features{" "}
+            Main Features
           </button>
           <button
             style={{ color: nowProgress === 5 ? "black" : "#565656" }}
@@ -186,7 +188,7 @@ export default function ProjectOne() {
                   }px) translateZ(0px)`,
                   position: "absolute",
                   top: "200px",
-                  width: "150px",
+                  width: "225px",
                   left: "230px",
                   zIndex: "100",
                 }}
@@ -201,9 +203,32 @@ export default function ProjectOne() {
                   position: "absolute",
                   top: "40px",
                   right: "230px",
-                  width: "150px",
+                  width: "200px",
+                  zIndex: "100",
                 }}
                 src={"/images/mention@2x.png"}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  right: "-100px",
+                  width: "30px",
+                  zIndex: "100",
+                }}
+                src={"/images/exclaimation.svg"}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  bottom: "-30px",
+                  left: "-100px",
+                  width: "30px",
+                  zIndex: "100",
+                }}
+                src={"/images/swirl.svg"}
                 alt=""
               />
             </>
@@ -232,7 +257,7 @@ export default function ProjectOne() {
           </thead>
           <tbody>
             <tr>
-              <td>Independent proejct</td>
+              <td>{`Independent\n proejct`}</td>
               <td>12 weeks</td>
               <td>Figma</td>
               <td>User research</td>
@@ -300,15 +325,14 @@ export default function ProjectOne() {
         <Sub
           name={"SOLUTION"}
           content={`Eco-Log starts with the user's lower-effort user actions. It encourages people discard their waste in an appropriate way and reduce the amount. It also motivated users achieve their goals by allowing them to gather digital rewards, which can be traded in the app for discount codes.`}
-          background={"#71B458"}
+          background={"#85c66e"}
         />
       </div>
       <div className={style.designProcess}>
         <div className={style.designIntro}>
-          <h2>Design Process</h2>
+          <h2>DESIGN PROCESS</h2>
           <span>
-            {`Solis helps you manage your calendar throughout the day. From events
-            to tasks and meetings, it's all taken care of.`}
+            {`I follow the design process which ranges from identifying the problem that the design or product will solve, all the way to research, planning, prototyping, test and iteration.`}
           </span>
           <div className={style.processesCon}>
             <div className={style.processes}>
@@ -326,7 +350,7 @@ export default function ProjectOne() {
           <h2>RESEARCH</h2>
           <div className={style.main}>
             <span>01 Research</span>
-            <h3>{`Background & Primary Research`}</h3>
+            <h3 className={style.first}>{`Background & Primary Research`}</h3>
             <p className={style.p}>
               Waste is a significant global issue. The environmental impact is
               monumental, with massive amounts of waste generated annually with
@@ -347,8 +371,8 @@ export default function ProjectOne() {
           <h2>02</h2>
           <h2>EMPATHIZE</h2>
           <div className={style.main}>
-            <span>01 Empathize</span>
-            <h3>{`Survey`}</h3>
+            <span>02 Empathize</span>
+            <h3 className={style.first}>{`Survey`}</h3>
             <p className={style.p}>
               I create the questionnaire including 13 types of questions, and
               got 30 replies from the all over the United States.
@@ -365,10 +389,10 @@ export default function ProjectOne() {
               to their lifestyle.
             </p>
             <img className={style.image} src="/images/main2.png" alt="01" />
-            <h3 style={{ marginTop: "50px" }}>{`Interview`}</h3>
+            <h3>{`Interview`}</h3>
             <p className={style.p}>
-              To correlate the above two factors, I conducted interviews with 5
-              people living in the U.S. All interviewees have concernd that
+              To correlate the above two factors, I conducted interviews with
+              six people living in the U.S. All interviewees are concerned that
               there will be side effects if we start to regulate the garbage
               problem.
             </p>
@@ -378,8 +402,20 @@ export default function ProjectOne() {
               encourage people to engage the system from a long-term
               perspective.`}
             </p>
-            <img className={style.image} src="/images/Rows.png" alt="01" />
-            <h3 style={{ marginTop: "50px" }}>{`User Persona`}</h3>
+            {nowWidth > 800 ? (
+              <img
+                className={style.image}
+                src="/images/interview1.jpg"
+                alt="01"
+              />
+            ) : (
+              <img
+                className={style.image}
+                src="/images/interview3.jpg"
+                alt="01"
+              />
+            )}
+            <h3>{`User Persona`}</h3>
             <p className={style.p}>
               {`I created two types of personas. One is in her 30s and another is in her 20s, and both are living in the United States.`}
             </p>
@@ -398,7 +434,7 @@ export default function ProjectOne() {
                 alt="01"
               />
             </div>
-            <h3 style={{ marginTop: "50px" }}>{`User Journey Map`}</h3>
+            <h3>{`User Journey Map`}</h3>
             <p className={style.p}>
               {`I created User Journey Map by five Journey Steps.
 
@@ -415,7 +451,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <h2>DEFINE</h2>
           <div className={style.main}>
             <span>03 Define</span>
-            <h3>{`Affinity Map`}</h3>
+            <h3 className={style.first}>{`Affinity Map`}</h3>
             <p className={style.p}>
               For organizing the ideas from research, I created an affinity map.
               All interviewers were aware of the seriousness of garbage issues.
@@ -423,7 +459,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               solutions were different. I classified into four
               categories-Awareness, Incentives, Behaviors, and Improvements.
             </p>
-            <img className={style.image} src="/images/image8.png" alt="01" />
+            <img className={style.image} src="/images/affinity.jpg" alt="01" />
             <h3>{`Pain Points`}</h3>
             <p className={style.p}>
               I found 10 major pain points that all were unique in their
@@ -431,6 +467,11 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               decided that there were FOUR insights that we wanted to
               concentrate on moving forward.
             </p>
+            <img
+              className={style.image}
+              src="/images/pain-points.jpg"
+              alt="01"
+            />
           </div>
         </div>
         <div className={style.chepter}>
@@ -438,52 +479,63 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <h2>IDEATE</h2>
           <div className={style.main}>
             <span>04 Ideate</span>
-            <h3>{`Card Sorting`}</h3>
+            <h3 className={style.first}>{`Card Sorting`}</h3>
             <p className={style.p}>
-              To come up with a wide range of ideas, we engaged in an informed
-              brainstorming session and creativity/feasibility chart keeping our
-              pain points in mind. Below are card sorting.
+              To come up with a wide range of ideas, I engaged in an informed
+              brainstorming session and creativity/feasibility chart keeping our
+              pain points in mind. Below is a card sorting.
             </p>
+            <img
+              className={style.image}
+              src="/images/cardsorting.jpg"
+              alt="01"
+            />
             <h3>{`Information Architecture`}</h3>
             <p className={style.p}>
               Based on the card sorting, I created Information Architecture for
               the holistic sketch.
             </p>
             <img className={style.image} src="/images/info.jpg" alt="01" />
-            <h3 style={{ marginTop: "50px" }}>{`Low Fidelity Sketch`}</h3>
+            <div className={style.main}></div>
+          </div>
+        </div>
+        <div className={style.chepter}>
+          <h2>05</h2>
+          <h2>PROTOTYPE</h2>
+          <div className={style.main}>
+            <h3 className={style.first}>{`Low Fidelity Sketch`}</h3>
             <p className={style.p}>
               To provide intuitive flow, I sketched based on user flow for the
               tasks.
             </p>
-            <img
-              className={style.image}
-              src="/images/low-fidelity.png"
-              alt="01"
-            />
+            <img className={style.image} src="/images/sketch.jpg" alt="01" />
             <h3 style={{ margin: "50px 0" }}>{`Wireframe`}</h3>
             <img className={style.image} src="/images/lowfi.jpg" alt="01" />
             <div ref={goodsTabs[2].element}></div>
-            <h3 style={{ marginTop: "50px" }}>{`Final Design`}</h3>
+            <h3>{`Final Design`}</h3>
             <p className={style.p}>
               For the Final Design, I revised the design and created digital
               high-fidelity wireframes.Refer to figma file for more detailed
               design.
             </p>
             <img className={style.image} src="/images/box.jpg" alt="01" />
+            <div className={style.moreDetail}>
+              <button>More Detailed Design</button>
+            </div>
           </div>
         </div>
         <div ref={goodsTabs[3].element} className={style.chepter}>
-          <h2>05</h2>
+          <h2>06</h2>
           <h2>TEST</h2>
           <div className={style.main}>
-            <span>05 Test</span>
-            <h3 style={{ margin: "30px 0" }}>{`Usability Testing`}</h3>
+            <span>06 Test</span>
+            <h3 className={style.first}>{`Usability Testing`}</h3>
             <img className={style.image} src="/images/c1.gif" alt="01" />
             <p className={style.p}>
               To test my final prototype’s usability, I asked my interviewees if
               they would be willing to test out the app. Thankfully, most of
               them were interested in trying it out and provided useful feedback
-              that would’ve been challenging to identify otherwise
+              that would otherwise have been difficult to improve on their own.
             </p>
             <p className={style.p}>
               Eco-Log received a relatively high score of 80 points in Usability
@@ -494,18 +546,19 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               <img src="/images/r-3.png" alt="01" />
               <img src="/images/r-2.png" alt="01" />
             </div>
-            <h3 style={{ margin: "50px 0" }}>{`After Usability Test`}</h3>
+            <h3>{`After Usability Test`}</h3>
             <img className={style.image} src="/images/img.jpg" alt="01" />
             <p className={style.p}>
-              Users gave positive feedback on recording information and claiming
-              rewards. Due to ‘compensation,’ user said that they felt being
-              motivated.
+              {`Users gave positive feedback on recording information and claiming
+              rewards. Due to 'rewards,’ users gave some positive feedback that
+              they felt motivated. Also, they said they enjoyed the interaction
+              between littering and getting rewards from Eco-Log. (Task 4)`}
             </p>
             <p className={style.p}>
               On the other hand, I found some features that were most
               uncomfortable and even unlikely to use them well. It seems
-              necessary to improve another functions such as finding the nearest
-              recycling center or checking the vendor’s schedules.
+              necessary to improve other functions such as finding the nearest
+              recycling center or checking the vendor’s schedules. (Task 2)
             </p>
             <div className={style.image2}>
               <img src="/images/test1.png" alt="01" />
@@ -536,11 +589,14 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             <p>{`Dive deep into data with advanced analysis. Users can get key statistics like CO2 tracking and analysis of your whole discarding progress.`}</p>
           </div>
         </div>
-        <div className={style.item}>
+        <div style={{ marginTop: "80px" }} className={style.item}>
           <div className={style.desc}>
             <Image src={record} alt="icon" width={30} height={30} />
             <h3>Identify The Waste</h3>
             <p>{`We identify your waste quickly and accurately by using AI technology. Users’ uploaded data will be a great nourishment asset for promoting community and state-specific garbage policies.`}</p>
+            <span style={{ color: "#777777", fontSize: "16px" }}>
+              *Check out my Machine Learning Model for this function here.
+            </span>
           </div>
           <img
             className={style.itemImg}
@@ -549,7 +605,10 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             alt="사진"
           />
         </div>
-        <div className={style.item}>
+        <div
+          style={{ marginTop: "80px", marginBottom: "88px" }}
+          className={style.item}
+        >
           <img
             className={style.itemImg}
             src={"/images/rewarding.png"}
@@ -574,38 +633,23 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <img className={style.moreImage} src={more[moreIndex]} alt="more" />
           <div className={style.btns}>
             {[
-              "Enjoy Large Screen",
-              "Real-time information",
-              "With your neighnors",
+              ["/images/f4.png", "/images/f1.png"],
+              ["/images/f2.png", "/images/f3.png"],
+              ["/images/f5.png", "/images/f6.png"],
             ].map((e, i) => (
-              <button
-                style={{
-                  backgroundColor: i === moreIndex ? "#99CD66" : "transparent",
-                }}
+              <img
                 key={`btn: ${i}`}
                 onClick={() => setMoreIndex(i)}
-              >
-                <Image
-                  style={{
-                    filter:
-                      i !== moreIndex
-                        ? "invert(100%) sepia(2%) saturate(348%) hue-rotate(258deg) brightness(118%) contrast(100%)"
-                        : "invert(0%) sepia(1%) saturate(7475%) hue-rotate(300deg) brightness(97%) contrast(99%)",
-                  }}
-                  src={house}
-                  alt=""
-                  width={25}
-                  height={25}
-                />
-                <span>{e}</span>
-              </button>
+                src={moreIndex === i ? e[1] : e[0]}
+                alt=""
+              />
             ))}
           </div>
         </div>
       </div>
       <div className={style.learn}>
         <div ref={goodsTabs[5].element} className={style.title}>
-          <h2>Takeaways</h2>
+          <h2>TAKEAWAYS</h2>
           <span>These are lessons I learned from this project</span>
         </div>
         <div className={style.contents}>
@@ -618,9 +662,8 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               />
             )}
             <div className={style.desc}>
-              <Image src={one} alt="icon" width={20} height={20} />
-              <h3>the core of Choice architecture</h3>
-              <p>{`The most important thing I learned from the project was to explore what services were needed to change users' behavior. In the whold process, I tried to put 'nudge' strategies everywhere to induce good behavior. Rather than directly telling users not to throw away trash, I learned to indirectly say how much your small steps are saving the planet, through design.`}</p>
+              <h3>Nudge Design</h3>
+              <p>{`The most important thing I learned from the project was to explore what services were needed to change users' behavior. In the whole process, I tried to put 'nudge' strategies everywhere to induce good behavior. Rather than directly telling users not to throw away trash, I learned to indirectly say how much your small steps are saving the planet, through design.`}</p>
             </div>
           </div>
           <div className={style.content}>
@@ -632,9 +675,8 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               />
             )}
             <div className={style.desc}>
-              <Image src={two} alt="icon" width={20} height={20} />
-              <h3>the core of Choice architecture</h3>
-              <p>{`The most important thing I learned from the project was to explore what services were needed to change users' behavior. In the whold process, I tried to put 'nudge' strategies everywhere to induce good behavior. Rather than directly telling users not to throw away trash, I learned to indirectly say how much your small steps are saving the planet, through design.`}</p>
+              <h3>The Power of Usability Testing</h3>
+              <p>{`Understanding the gap between my assumptions based on qualitative research and how users actually think through the usability testing was very interesting. I received a lot of important feedback from the users which helped me to empathize with them more and getting one step closer to the users pain points.`}</p>
             </div>
           </div>
         </div>
@@ -692,7 +734,7 @@ function Sub({
     >
       <div className={style.subWapper}>
         <h3>{name}</h3>
-        <div>{content}</div>
+        <p>{content}</p>
       </div>
     </div>
   );

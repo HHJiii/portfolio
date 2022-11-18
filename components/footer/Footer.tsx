@@ -5,9 +5,25 @@ import footerImg1 from "@image/linkedIn.svg";
 import footerImg2 from "@image/mail.svg";
 import footerImg3 from "@image/footer3.svg";
 import footerImg4 from "@image/footer4.svg";
+import { useRouter } from "next/router";
 
 export default function Footer() {
-  const images = [footerImg1, footerImg2, footerImg3, footerImg4];
+  const images = [
+    {
+      label: footerImg1,
+      value: "https://www.linkedin.com/in/hyeji-han",
+    },
+    {
+      label: footerImg3,
+      value: "https://github.com/Hyeji-Han",
+    },
+    {
+      label: footerImg4,
+      value: "https://medium.com/@hyejihan",
+    },
+  ];
+
+  const router = useRouter();
 
   return (
     <footer className={style.footerContainer}>
@@ -19,9 +35,10 @@ export default function Footer() {
         <div>
           {images.map((item, i) => (
             <Image
+              onClick={() => router.push(item.value)}
               className={style.item}
               key={`footer image: ${i}`}
-              src={item}
+              src={item.label}
               width={20}
               height={20}
               alt="footer link image"

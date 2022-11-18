@@ -24,10 +24,18 @@ export default function Nav() {
 
   return (
     <nav className={style.navContainer}>
-      <div>
+      <button
+        onClick={() => router.push("/")}
+        style={{
+          border: "none",
+          backgroundColor: "transparent",
+          padding: "0",
+          cursor: "pointer",
+        }}
+      >
         <strong>HYEJI</strong>
         HAN
-      </div>
+      </button>
       {nowWidth > 800 ? (
         <div className={style.items}>
           <button onClick={() => router.push("/")}>Works</button>

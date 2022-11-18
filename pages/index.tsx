@@ -1,24 +1,21 @@
 import style from "../styles/Home.module.scss";
 import { useScrollFadeIn } from "../hooks/usescroll";
 import Card from "components/card/Card";
-import Test from "@image/test2.webp";
 import LinkBox from "components/link-box/LinkBox";
 import json from "../data.json";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const animatedItem1 = useScrollFadeIn("0", "50");
   const animatedItem2 = useScrollFadeIn("0.05", "50");
   const animatedItem3 = useScrollFadeIn("0.1", "50");
-  const animatedItem4 = useScrollFadeIn("0.1", "20");
-  const animatedItem5 = useScrollFadeIn("0.2", "20");
-  const animatedItem6 = useScrollFadeIn("0.1", "20");
-  const animatedItem7 = useScrollFadeIn("0.2", "20");
+
+  const router = useRouter();
 
   const contacts = [
-    { label: "LinkedIn", value: "" },
-    { label: "E-Mail", value: "" },
-    { label: "Gitub", value: "" },
-    { label: "Medium", value: "" },
+    { label: "LinkedIn", value: " https://www.linkedin.com/in/hyeji-han" },
+    { label: "Gitub", value: "https://github.com/Hyeji-Han" },
+    { label: "Medium", value: "https://medium.com/@hyejihan" },
   ];
 
   return (
@@ -33,12 +30,17 @@ export default function Home() {
             </h1>
             <div className={style.description}>
               <span {...animatedItem2}>
-                I help users to create memorable experiences through inclusive
-                design.
+                Designer who values many multi-faceted factors of design —
+                technology, entrepreneurship, and social good.
               </span>
               <div {...animatedItem3} className={style.contacts}>
                 {contacts.map((cotact, i) => (
-                  <button key={`contact: ${i}`}>{cotact.label}</button>
+                  <button
+                    key={`contact: ${i}`}
+                    onClick={() => router.push(cotact.value)}
+                  >
+                    {cotact.label}
+                  </button>
                 ))}
               </div>
             </div>

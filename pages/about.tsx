@@ -21,8 +21,8 @@ export default function About() {
           <div className={style.aboutImg} />
         </div>
         <p {...animatedItem4} className={style.intro}>
-          My name is Hyeji Han, I’m a digital artist working and living in
-          Amsterdam.
+          My name is Hyeji Han, I’m a product designer & media artist from
+          Seoul.
         </p>
         <p {...animatedItem5} className={style.content}>
           I am a product designer with almost 5 years experience in public
