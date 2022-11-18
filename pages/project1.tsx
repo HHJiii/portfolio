@@ -411,16 +411,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               high-fidelity wireframes.Refer to figma file for more detailed
               design.
             </p>
-            <div
-              style={{
-                width: "100%",
-                overflow: "hidden",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img style={{ width: "1200px" }} src="/images/box.jpg" alt="01" />
-            </div>
+            <img className={style.image} src="/images/box.jpg" alt="01" />
           </div>
         </div>
         <div ref={goodsTabs[3].element} className={style.chepter}>

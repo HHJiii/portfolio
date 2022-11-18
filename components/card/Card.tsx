@@ -33,7 +33,7 @@ export default function Card({
       </div>
       {!image ? (
         <Phone>
-          <img src={"/images/Rows-1.png"} alt="" />
+          <img style={{ width: "90%" }} src={"/images/chat.png"} alt="" />
         </Phone>
       ) : (
         <div className={style.main}>
