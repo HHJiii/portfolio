@@ -641,6 +641,11 @@
       .designIntro {
         display: flex;
 
+        h2 {
+          font-size: 28px;
+          text-align: center;
+        }
+
         .processesCon {
           .processes {
             flex-wrap: wrap;
