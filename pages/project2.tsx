@@ -163,7 +163,7 @@ export default function ProjectOne() {
           </thead>
           <tbody>
             <tr>
-              <td>Independent proejct</td>
+              <td>{`Independent\n proejct`}</td>
               <td>4 weeks</td>
               <td>Figma</td>
               <td>User research</td>
@@ -236,10 +236,9 @@ export default function ProjectOne() {
       </div>
       <div className={style.designProcess}>
         <div className={style.designIntro}>
-          <h2>Design Process</h2>
+          <h2>DESIGN PROCESS</h2>
           <span>
-            {`Solis helps you manage your calendar throughout the day. From events
-            to tasks and meetings, it's all taken care of.`}
+            {`I follow the design process which ranges from identifying the problem that the design or product will solve, all the way to research, planning, prototyping, test and iteration.`}
           </span>
           <div className={style.processesCon}>
             <div className={style.processes}>
@@ -257,19 +256,35 @@ export default function ProjectOne() {
           <h2>RESEARCH</h2>
           <div className={style.main}>
             <span>01 Research</span>
-            <h3>{`Poverty Issue in California`}</h3>
+            <h3 className={style.first}>{`Poverty Issue in California`}</h3>
             <p className={style.p}>
               California’s poverty rate remains the highest in the United
               States. Roughly 5 million Californians live below the poverty
-              level, which represents 13.15 percent of the state’s total
-              population. However, more than a quarter of Californians are still
-              living in or near poverty. According to the California Poverty
-              Measure (CPM), 28.7% of residents were poor or near poor as of the
-              fall of 2021.
+              level, which represents 13.15% of the state’s total population.
+              However, more than a quarter of Californians are still living in
+              or near poverty. According to the California Poverty Measure
+              (CPM), 28.7% of residents were poor or near poor as of the fall of
+              2021.
             </p>
             <div className={style.image2}>
               <img src="/images/page-header.jpeg" alt="01" />
               <img src="/images/research2.png" alt="01" />
+            </div>
+            <div
+              style={{
+                width: "100%",
+                fontSize: "36px",
+                fontWeight: "bold",
+                display: "flex",
+                justifyContent: "center",
+                color: "white",
+                backgroundColor: "black",
+                marginTop: "88px",
+                padding: "30px 40px",
+                textAlign: "center",
+              }}
+            >
+              HOW MIGHT WE MAKE A VISITOR DONATE TO A CHARITY WEBSITE?
             </div>
           </div>
         </div>
@@ -277,8 +292,8 @@ export default function ProjectOne() {
           <h2>02</h2>
           <h2>EMPATHIZE</h2>
           <div className={style.main}>
-            <span>01 Empathize</span>
-            <h3>{`Problem Statement`}</h3>
+            <span>02 Empathize</span>
+            <h3 className={style.first}>{`Problem Statement`}</h3>
             <p className={style.p}>
               I found the EPIC website while researching the poverty issue in
               California. The current website design is creative, but it lacks
@@ -336,7 +351,7 @@ export default function ProjectOne() {
           <h2>DEFINE</h2>
           <div className={style.main}>
             <span>03 Define</span>
-            <h3>{`Font and Color`}</h3>
+            <h3 className={style.first}>{`Font and Color`}</h3>
             <p className={style.p}>
               To take advantage of the above-mentioned problems, I set the
               following style guide. I chose low-saturation colors as their main
@@ -365,7 +380,7 @@ export default function ProjectOne() {
           <h2>IDEATE</h2>
           <div className={style.main}>
             <span>04 Ideate</span>
-            <h3>{`Persuasive Design Factors`}</h3>
+            <h3 className={style.first}>{`Persuasive Design Factors`}</h3>
             <p className={style.p}>
               I focused on unpacking the few recognized factors for high
               fundraising performance that depend on effective, evocative, and
@@ -422,7 +437,8 @@ export default function ProjectOne() {
           <h2>05</h2>
           <h2>PROTOTYPE</h2>
           <div className={style.main}>
-            <h3>Overall Views</h3>
+            <span>05 Prototype</span>
+            <h3 className={style.first}>Overall Views</h3>
             <p className={style.p}>
               I set up four breakpoints for the responsive web and completed the
               design. At a given breakpoint range, the layout adjusts to suit
@@ -452,7 +468,7 @@ export default function ProjectOne() {
           <h2>TEST</h2>
           <div className={style.main}>
             <span>06 Test</span>
-            <h3 style={{ margin: "10px 0" }}>{`Usability Testing`}</h3>
+            <h3 className={style.first}>{`Usability Testing`}</h3>
             <img
               className={style.image}
               src="/images/usability-testing.gif"
@@ -474,7 +490,11 @@ export default function ProjectOne() {
               <img src="/images/circle3.png" alt="01" />
             </div>
             <h3 style={{ marginTop: "50px" }}>{`After Usability Test`}</h3>
-            <img className={style.image} src="/images/fakeimg1.png" alt="01" />
+            <img
+              className={style.image}
+              src="/images/Usability-testing.png"
+              alt="01"
+            />
             <p className={style.p}>
               Users got high scores in efficiency, learnability, and
               memorability.
@@ -487,8 +507,8 @@ export default function ProjectOne() {
               </p>
             </p>
             <div className={style.image2}>
-              <img src="/images/fakeimg2.png" alt="01" />
-              <img src="/images/fakeimg3.png" alt="01" />
+              <img src="/images/ut1.png" alt="01" />
+              <img src="/images/ut2.png" alt="01" />
             </div>
           </div>
         </div>
@@ -501,7 +521,11 @@ export default function ProjectOne() {
           </span>
         </div>
         <div className={style.item}>
-          <img className={style.itemImg} src={"/images/f8.png"} alt="사진" />
+          <img
+            className={style.itemImg}
+            src={"/images/redesign1.png"}
+            alt="사진"
+          />
           <div className={style.desc}>
             <h3>MAIN VISUAL (LANDING PAGE)</h3>
             <p>{`The main page is in the most powerful zone, determining the identity of the website. According to statistics, almost 80% of website visitors leave without even reading the first page. I would modify the layout of the first page on EPIC's website to be more engaging and effective in order to keep visitors on the site.`}</p>
@@ -517,20 +541,16 @@ export default function ProjectOne() {
           <img className={style.itemImg} src={"/images/sol2.png"} alt="사진" />
         </div>
         <div className={style.item}>
-          <img
-            className={style.itemImg}
-            src={"/images/redesign1.png"}
-            alt="사진"
-          />
+          <img className={style.itemImg} src={"/images/f8.png"} alt="사진" />
           <div className={style.desc}>
-            <h3>Rewarding</h3>
-            <p>{`After recording, users can claim rewards. The waste disposal validation process allows users to gather digital rewards, which can be traded in the app for discount codes to purchase environmental products.`}</p>
+            <h3>DONATION PAGE(SUB PAGE)</h3>
+            <p>{`I built these donation-related pages for online connection between charities and donors. Securing funds is a great help both in terms of UX and business strategy. Charity box would be helpful for a stronger bond and motivation for those who support EPIC. In preparation for this, I propose the following design related to donate-support.`}</p>
           </div>
         </div>
       </div>
       <div className={style.learn}>
         <div ref={goodsTabs[5].element} className={style.title}>
-          <h2>Takeaways</h2>
+          <h2>TAKEAWAYS</h2>
           <span>These are lessons I learned from this project</span>
         </div>
         <div className={style.contents}>
@@ -580,7 +600,13 @@ export default function ProjectOne() {
                   onClick={() => router.push(path)}
                   key={i}
                 >
-                  <img src={`/images/project${i + 1}.png`} alt="none" />
+                  <div className={style.row}>
+                    <span>{title}</span>
+                    <span>{sub}</span>
+                  </div>
+                  <div className={style.container}>
+                    <img src={image} alt="" />
+                  </div>
                 </button>
               );
             }
@@ -609,7 +635,7 @@ function Sub({
     >
       <div className={style.subWapper}>
         <h3>{name}</h3>
-        <div>{content}</div>
+        <p>{content}</p>
       </div>
     </div>
   );

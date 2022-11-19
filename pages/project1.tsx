@@ -635,8 +635,8 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
                   style={{
                     position: "absolute",
                     width: "25px",
-                    top: "170px",
-                    left: "-50px",
+                    top: "280px",
+                    left: "-10px",
                   }}
                   src={"/images/ff.png"}
                   alt=""
@@ -645,8 +645,8 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
                   style={{
                     position: "absolute",
                     width: "125px",
-                    top: "170px",
-                    left: "-20px",
+                    top: "280px",
+                    left: "20px",
                   }}
                   src={"/images/ff2.png"}
                   alt=""
@@ -673,14 +673,15 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <img className={style.moreImage} src={more[moreIndex]} alt="more" />
           <div className={style.btns}>
             {[
-              ["/images/f4.png", "/images/f1.png"],
-              ["/images/f2.png", "/images/f3.png"],
-              ["/images/f5.png", "/images/f6.png"],
+              ["/images/b1.png", "/images/white1.png"],
+              ["/images/b2.png", "/images/white2.png"],
+              ["/images/b3.png", "/images/white3.png"],
             ].map((e, i) => (
               <img
                 key={`btn: ${i}`}
+                style={{ width: "300px" }}
                 onClick={() => setMoreIndex(i)}
-                src={moreIndex === i ? e[1] : e[0]}
+                src={moreIndex !== i ? e[1] : e[0]}
                 alt=""
               />
             ))}

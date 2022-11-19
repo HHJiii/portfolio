@@ -21,7 +21,7 @@
     button {
       border: none;
       background-color: transparent;
-      font-size: 30px;
+      font-size: 28px;
       cursor: pointer;
       color: #aaaaaa;
       text-align: start;
@@ -41,7 +41,6 @@
     }
 
     h1 {
-      padding: 0 40px;
       font-size: 100px;
       margin: 20px;
       text-align: center;
@@ -62,35 +61,46 @@
     max-width: 900px;
     width: 100%;
     padding: 0 40px;
+    margin-top: 44px;
 
     span {
       font-size: 36px;
+      color: rgb(187, 187, 187);
+    }
+    p {
+      font-size: 24px;
     }
   }
 
   .table {
+    margin-top: 88px;
     padding: 0 40px;
     max-width: 900px;
     width: 100%;
-
-    th {
-      text-align: start;
-      color: rgb(187, 187, 187);
-      font-weight: 500;
-      width: 25%;
-    }
+    margin-bottom: 128px;
 
     th,
     td {
       padding: 10px 0;
       font-size: 22px;
+      white-space: pre-line;
+      vertical-align: top;
+    }
+    th {
+      text-align: start;
+      color: rgb(187, 187, 187);
+      font-weight: 500;
+      width: 25%;
+      font-size: 36px;
     }
   }
 
   .designProcess {
+    padding: 0 40px;
+    margin-top: 160px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 160px;
     max-width: 1200px;
     width: 100%;
 
@@ -102,6 +112,7 @@
 
       h2 {
         font-size: 60px;
+        margin: 0;
       }
 
       span {
@@ -111,6 +122,7 @@
       }
 
       .processesCon {
+        margin-top: 14px;
         .processes {
           display: flex;
           gap: 25px;
@@ -118,7 +130,7 @@
           .process {
             background-color: black;
             color: white;
-            padding: 30px;
+            padding: 30px 20px;
             border-radius: 17px;
 
             width: 180px;
@@ -128,7 +140,7 @@
             justify-content: space-between;
 
             div:first-child {
-              font-size: 20px;
+              font-size: 22px;
               font-weight: 500;
             }
             div:last-child {
@@ -140,15 +152,19 @@
     }
 
     .chepter {
-      margin: 0 40px;
+      margin-bottom: 96px;
       display: flex;
       flex-direction: column;
       align-items: center;
       position: relative;
+
       .moreDetail {
         height: 100px;
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+
         button {
           background-color: black;
           border: none;
@@ -157,6 +173,15 @@
           color: white;
           font-size: 24px;
         }
+      }
+
+      .first {
+        margin: 0;
+      }
+      h3 {
+        font-size: 36px;
+        margin: 0;
+        margin-top: 88px;
       }
 
       h2 {
@@ -168,10 +193,12 @@
       .main {
         display: flex;
         flex-direction: column;
+        margin-top: 88px;
 
         span {
           color: #b5b5b5;
           font-size: 24px;
+          margin-bottom: 24px;
         }
 
         .ideate {
@@ -201,6 +228,7 @@
 
               p {
                 color: #b5b5b5;
+                font-size: 24px;
               }
 
               img {
@@ -215,9 +243,11 @@
           display: flex;
           justify-content: space-around;
           height: auto;
+          margin-top: 160px;
 
           img {
-            width: 40%;
+            width: 400px;
+            height: 1300px;
           }
 
           .content {
@@ -240,6 +270,7 @@
 
             img {
               width: 100%;
+              height: auto;
             }
           }
         }
@@ -272,11 +303,6 @@
         .p {
           font-size: 24px;
         }
-
-        h3 {
-          font-size: 36px;
-          margin: 0;
-        }
       }
     }
   }
@@ -301,10 +327,15 @@
       font-weight: bold;
       font-size: 36px;
     }
+
+    p {
+      line-height: 200%;
+    }
   }
 }
 
 .feature {
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,13 +370,17 @@
 
     .itemImg {
       width: 40%;
+
+      &:nth-child(2) {
+        width: 50%;
+      }
     }
 
     .desc {
       width: 280px;
 
       h3 {
-        font-size: 36px;
+        font-size: 16px;
         color: #31dde3;
       }
 
@@ -416,7 +451,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 160px;
+  margin-top: 200px;
 
   .title {
     gap: 10px;
@@ -426,34 +462,45 @@
     text-align: center;
 
     h2 {
-      font-size: 40px;
+      font-size: 60px;
+      margin: 0;
+    }
+
+    span {
+      font-size: 24px;
     }
   }
 
   .contents {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 160px;
 
     .content {
       display: flex;
       align-items: center;
-      gap: 30px;
+
+      max-width: 1000px;
+      width: 100%;
+      justify-content: space-around;
 
       .image {
-        width: 200px;
+        width: 40%;
       }
 
       .desc {
-        width: 280px;
+        width: 40%;
         gap: 30px;
 
         h3 {
           margin: 0;
-          font-size: 15px;
+          font-size: 36px;
         }
         p {
           color: rgb(165, 165, 165);
-          font-size: 15px;
+          font-size: 24px;
         }
       }
     }
@@ -466,20 +513,41 @@
   align-items: center;
   padding: 0 40px;
   h2 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .images {
     display: flex;
     gap: 30px;
     .card {
-      border: none;
-      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 300px;
-      cursor: pointer;
+      border: none;
+      background-color: #faf9fb;
+      border-radius: 22px;
+      padding: 30px 30px 0;
+      gap: 30px;
+      height: 300px;
 
-      img {
-        width: 100%;
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:first-child {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -549,6 +617,7 @@
 
     .table {
       padding: 0 30px;
+      margin: 40px 0;
 
       th,
       td {
@@ -623,6 +692,7 @@
 
             img {
               width: 100%;
+              height: auto;
             }
           }
           span {
@@ -681,6 +751,10 @@
 
       .itemImg {
         width: 100%;
+
+        &:nth-child(2) {
+          width: 100%;
+        }
       }
 
       .desc {
@@ -690,6 +764,37 @@
 
         p {
           font-size: 18px;
+        }
+      }
+    }
+  }
+  .learn {
+    padding: 30px 40px;
+
+    .title {
+      h2 {
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .contents {
+      .content {
+        width: 100%;
+
+        .desc {
+          width: 90%;
+
+          h3 {
+            font-size: 22px;
+          }
+
+          p {
+            font-size: 18px;
+          }
         }
       }
     }
