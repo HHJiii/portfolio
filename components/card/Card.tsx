@@ -33,7 +33,11 @@ export default function Card({
       </div>
       {!image ? (
         <Phone>
-          <img style={{ width: "90%" }} src={"/images/chat.png"} alt="" />
+          <img
+            style={{ width: "90%", position: "relative", top: "120px" }}
+            src={"/images/chat.png"}
+            alt=""
+          />
         </Phone>
       ) : (
         <div className={style.main}>

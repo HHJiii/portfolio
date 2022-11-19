@@ -202,11 +202,25 @@ export default function ProjectOne() {
                   }px) translateZ(0px)`,
                   position: "absolute",
                   top: "40px",
-                  right: "230px",
+                  right: "360px",
+                  width: "40px",
+                  zIndex: "100",
+                }}
+                src={"/images/m2.png"}
+                alt=""
+              />
+              <img
+                style={{
+                  transform: `translateY(${
+                    -divHeight + 100 < -180 ? -180 : -divHeight + 100
+                  }px) translateZ(0px)`,
+                  position: "absolute",
+                  top: "40px",
+                  right: "150px",
                   width: "200px",
                   zIndex: "100",
                 }}
-                src={"/images/mention@2x.png"}
+                src={"/images/c2.png"}
                 alt=""
               />
               <img
@@ -515,7 +529,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             <h3>{`Final Design`}</h3>
             <p className={style.p}>
               For the Final Design, I revised the design and created digital
-              high-fidelity wireframes.Refer to figma file for more detailed
+              high-fidelity wireframes. Refer to figma file for more detailed
               design.
             </p>
             <img className={style.image} src="/images/box.jpg" alt="01" />
@@ -609,11 +623,37 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           style={{ marginTop: "80px", marginBottom: "88px" }}
           className={style.item}
         >
-          <img
-            className={style.itemImg}
-            src={"/images/rewarding.png"}
-            alt="사진"
-          />
+          <div style={{ position: "relative" }}>
+            <img
+              className={style.itemImg}
+              src={"/images/rewarding.png"}
+              alt="사진"
+            />
+            {nowWidth > 800 && (
+              <>
+                <img
+                  style={{
+                    position: "absolute",
+                    width: "25px",
+                    top: "170px",
+                    left: "-50px",
+                  }}
+                  src={"/images/ff.png"}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    width: "125px",
+                    top: "170px",
+                    left: "-20px",
+                  }}
+                  src={"/images/ff2.png"}
+                  alt=""
+                />
+              </>
+            )}
+          </div>
           <div className={style.desc}>
             <Image src={map} alt="icon" width={30} height={30} />
             <h3>Rewarding</h3>

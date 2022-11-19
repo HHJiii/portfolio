@@ -62,6 +62,7 @@
         background-color: white;
 
         .nav {
+          border-radius: 30px 30px 0 0;
           position: absolute;
           padding: 20px;
           background-color: white;
@@ -431,7 +432,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 160px;
 
   .title {
     gap: 10px;
@@ -537,18 +538,15 @@
     .designProcess {
       .chepter {
         h2 {
-          font-size: 30px;
         }
 
         .main {
           margin-top: 88px;
           span {
-            font-size: 20px;
             margin-bottom: 24px;
           }
 
           h3 {
-            font-size: 20px;
             margin-bottom: 24px;
           }
 
@@ -595,6 +593,7 @@
     }
 
     .table {
+      margin: 40px;
       padding: 0 40px;
       th,
       td {
@@ -688,7 +687,7 @@
   }
 
   .more {
-    padding: 0 40px;
+    padding: 30px 40px;
     .content {
       flex-direction: column;
       .moreImage {
@@ -707,13 +706,32 @@
   }
 
   .learn {
-    padding: 0 40px;
+    padding: 30px 40px;
+
+    .title {
+      h2 {
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
     .contents {
       .content {
         width: 100%;
 
         .desc {
           width: 90%;
+
+          h3 {
+            font-size: 22px;
+          }
+
+          p {
+            font-size: 18px;
+          }
         }
       }
     }
