@@ -595,7 +595,7 @@ export default function ProjectOne() {
             {nowWidth > 800 && (
               <img
                 className={style.image}
-                src="/images/takeaways2.png"
+                src="/images/graph.png"
                 alt="learned"
               />
             )}
@@ -608,7 +608,7 @@ export default function ProjectOne() {
             {nowWidth > 800 && (
               <img
                 className={style.image}
-                src="/images/graph.png"
+                src="/images/takeaways2.png"
                 alt="learned"
               />
             )}

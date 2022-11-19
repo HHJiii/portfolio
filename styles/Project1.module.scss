@@ -173,7 +173,7 @@
       span {
         max-width: 500px;
         width: 100%;
-        color: rgb(65, 65, 65);
+        font-size: 24px;
       }
 
       .processesCon {
@@ -353,7 +353,7 @@
     width: 100%;
     max-width: 500px;
     text-align: center;
-    color: rgb(103, 103, 103);
+    font-size: 24px;
   }
 
   .item {
@@ -437,7 +437,6 @@
   }
 
   span {
-    color: rgb(103, 103, 103);
     width: 100%;
     max-width: 500px;
     text-align: center;
@@ -657,6 +656,7 @@
 
         span {
           text-align: center;
+          font-size: 18px;
         }
 
         .processesCon {
@@ -689,6 +689,10 @@
     h2 {
       margin: 0;
       font-size: 28px;
+    }
+
+    span {
+      font-size: 18px;
     }
     .item {
       flex-direction: column-reverse;
