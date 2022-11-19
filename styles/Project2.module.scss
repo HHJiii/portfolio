@@ -16,7 +16,7 @@
     z-index: 50;
     flex-direction: column;
     display: flex;
-    gap: 10px;
+    gap: 30px;
 
     button {
       border: none;
@@ -116,9 +116,9 @@
       }
 
       span {
-        max-width: 500px;
+        max-width: 600px;
         width: 100%;
-        color: rgb(65, 65, 65);
+        font-size: 24px;
       }
 
       .processesCon {
@@ -220,6 +220,10 @@
               flex-direction: column;
               gap: 10px;
 
+              h3 {
+                margin: 0;
+              }
+
               span {
                 color: #31dde3;
                 font-size: 15px;
@@ -243,11 +247,10 @@
           display: flex;
           justify-content: space-around;
           height: auto;
-          margin-top: 160px;
+          margin-top: 88px;
 
           img {
             width: 400px;
-            height: 1300px;
           }
 
           .content {
@@ -347,7 +350,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
   }
 
   h2 {
@@ -359,7 +362,7 @@
     width: 100%;
     max-width: 500px;
     text-align: center;
-    color: rgb(103, 103, 103);
+    font-size: 24px;
   }
 
   .item {
@@ -402,7 +405,7 @@
   padding: 50px 0;
 
   .title {
-    gap: 10px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -455,7 +458,7 @@
   margin-top: 200px;
 
   .title {
-    gap: 10px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -569,10 +572,6 @@
         gap: 10px;
 
         .main {
-          span {
-            font-size: 20px;
-          }
-
           .image2 {
             flex-direction: column;
             gap: 30px;
@@ -616,13 +615,17 @@
     }
 
     .table {
-      padding: 0 30px;
+      padding: 0 40px;
       margin: 40px 0;
 
       th,
       td {
         padding: 10px 0;
         font-size: 18px;
+      }
+
+      th {
+        font-size: 22px;
       }
     }
 
@@ -716,6 +719,10 @@
           text-align: center;
         }
 
+        span {
+          font-size: 18px;
+        }
+
         .processesCon {
           .processes {
             flex-wrap: wrap;
@@ -741,6 +748,10 @@
     h2 {
       margin: 0;
       font-size: 28px;
+    }
+
+    span {
+      font-size: 18px;
     }
     .item {
       width: 100%;

@@ -517,6 +517,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <h2>05</h2>
           <h2>PROTOTYPE</h2>
           <div className={style.main}>
+            <span>05 Prototype</span>
             <h3 className={style.first}>{`Low Fidelity Sketch`}</h3>
             <p className={style.p}>
               To provide intuitive flow, I sketched based on user flow for the
@@ -534,7 +535,16 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             </p>
             <img className={style.image} src="/images/box.jpg" alt="01" />
             <div className={style.moreDetail}>
-              <button>More Detailed Design</button>
+              <button
+                style={{ cursor: "pointer" }}
+                onClick={() =>
+                  router.push(
+                    "https://www.figma.com/file/Fv6DhhcTstCceqV0oHVMRl/Untitled?node-id=0%3A1&t=PcMlCxRhER1ahxzj-1"
+                  )
+                }
+              >
+                More Detailed Design
+              </button>
             </div>
           </div>
         </div>
@@ -549,7 +559,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               To test my final prototype’s usability, I asked my interviewees if
               they would be willing to test out the app. Thankfully, most of
               them were interested in trying it out and provided useful feedback
-              that would otherwise have been difficult to improve on their own.
+              that would otherwise have been difficult to improve on my own.
             </p>
             <p className={style.p}>
               Eco-Log received a relatively high score of 80 points in Usability
@@ -583,7 +593,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
       </div>
       <div ref={goodsTabs[4].element} className={style.feature}>
         <div className={style.title}>
-          <h2>Main Features</h2>
+          <h2>MAIN FEATURES</h2>
           <span>
             The service has three main features revolving around Record
             Tracking, Identifying The Waste, and Rewarding.

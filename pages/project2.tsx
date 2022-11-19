@@ -127,13 +127,31 @@ export default function ProjectOne() {
       <div className={style.intro}>
         <span>Service Design</span>
         <h1>End Poverty in California</h1>
-        <div className={style.mainImage}>
-          <img
-            src={"/images/MainBackground.png"}
-            alt="project2-main"
-            className={style.introImage}
-          />
-        </div>
+        {nowWidth > 1200 ? (
+          <div className={style.mainImage}>
+            <img
+              src={"/images/MainBackground.png"}
+              alt="project2-main"
+              className={style.introImage}
+            />
+          </div>
+        ) : (
+          <>
+            {nowWidth > 800 ? (
+              <img
+                src={"/images/1200.png"}
+                alt="project2-main"
+                className={style.introImage}
+              />
+            ) : (
+              <img
+                src={"/images/800.png"}
+                alt="project2-main"
+                className={style.introImage}
+              />
+            )}
+          </>
+        )}
       </div>
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
@@ -460,7 +478,16 @@ export default function ProjectOne() {
             />
           </div>
           <div className={style.moreDetail}>
-            <button>More Detailed Design</button>
+            <button
+              style={{ cursor: "pointer" }}
+              onClick={() =>
+                router.push(
+                  "https://www.figma.com/file/7MctMRFAuTpGvk5zgjJGXH/Untitled?node-id=0%3A1&t=SBlZv966k1o1DlTr-1"
+                )
+              }
+            >
+              More Detailed Design
+            </button>
           </div>
         </div>
         <div ref={goodsTabs[3].element} className={style.chepter}>
@@ -475,10 +502,11 @@ export default function ProjectOne() {
               alt="01"
             />
             <p className={style.p}>
-              I asked my interviewees if they would be willing to test out the
-              website. Most of them were interested in trying it out and
-              provided useful feedback that would otherwise have been difficult
-              to improve on their own.
+              With the first prototype in place, I wanted to get it in front of
+              a group of target users in order to weed out the biggest usability
+              issues before moving forward. I conducted moderated usability
+              tests with five participants and they proved really successful in
+              flagging critical usability issues.
             </p>
             <p className={style.p}>
               My redesigned website received a high score of 92 points in
@@ -496,15 +524,16 @@ export default function ProjectOne() {
               alt="01"
             />
             <p className={style.p}>
-              Users got high scores in efficiency, learnability, and
-              memorability.
-              <p className={style.p}>
-                The results of the user testing showed that users found the new
-                version of the website to be more efficient, more learnable, and
-                more memorable than the previous version of the site. Users were
-                able to access the information they wanted more easily and they
-                spent more time on the site.
-              </p>
+              I organized the testing results in a rainbow spreadsheet and rated
+              the errors in order to prioritize the changes that needed to be
+              made.
+            </p>
+            <p className={style.p}>
+              The results of the user testing showed that users found the new
+              version of the website to be more efficient, more learnable, and
+              more memorable than the previous version of the site. Users were
+              able to access the information they wanted more easily and they
+              spent more time on the site.
             </p>
             <div className={style.image2}>
               <img src="/images/ut1.png" alt="01" />
@@ -515,7 +544,7 @@ export default function ProjectOne() {
       </div>
       <div ref={goodsTabs[4].element} className={style.feature}>
         <div className={style.title}>
-          <h2>Main Features</h2>
+          <h2>MAIN FEATURES</h2>
           <span>
             {`The website's three main features revolve around the main page, condensed information, and the subsequent donation page.`}
           </span>
@@ -538,7 +567,15 @@ export default function ProjectOne() {
             <h3>Epic’s focus areas</h3>
             <p>{`Beyond the realm of just statistics, I found that the scattered information was another arduous feature. So, I collected and categorized the facts to increase user convenience and readability by allowing users to see EPIC’s main focus areas at a glance.`}</p>
           </div>
-          <img className={style.itemImg} src={"/images/sol2.png"} alt="사진" />
+          {nowWidth > 800 ? (
+            <img
+              className={style.itemImg}
+              src={"/images/sol2.png"}
+              alt="사진"
+            />
+          ) : (
+            <img className={style.itemImg} src={"/images/m1.png"} alt="사진" />
+          )}
         </div>
         <div className={style.item}>
           <img className={style.itemImg} src={"/images/f8.png"} alt="사진" />
