@@ -618,8 +618,8 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             <Image src={record} alt="icon" width={30} height={30} />
             <h3>Identify The Waste</h3>
             <p>{`We identify your waste quickly and accurately by using AI technology. Users’ uploaded data will be a great nourishment asset for promoting community and state-specific garbage policies.`}</p>
-            <span onClick={() => router.push('https://www.hanhyeji.com')} style={{ cursor: "pointer", color: "#777777", fontSize: "16px" }}>
-              *Check out my Machine Learning Model for this function here."
+            <span onClick={() => router.push('https://github.com/Hyeji-Han/Waste-Classification/blob/main/waste_Classification.ipynb')} style={{ cursor: "pointer", color: "#777777", fontSize: "16px" }}>
+              *Check out my Machine Learning Model for this function here.
               <link rel="stylesheet" href="https://github.com/Hyeji-Han/Waste-Classification/blob/main/waste_Classification.ipynb" /> 
             </span>
           </div>

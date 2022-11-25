@@ -78,9 +78,9 @@ export default function Home() {
           />
           <LinkBox
             icon="/images/Article@2x.png"
-            title="Explainable AI (XAI)"
+            title="Explainable AI(XAI)"
             text="Published article on Medium"
-            link=""
+            link="https://medium.com/@hyejihan/explainable-human-can-the-ego-be-explained-f4ee3308bf89"
           />
           <LinkBox
             icon="/images/Phosphor@2x.png"
@@ -90,7 +90,7 @@ export default function Home() {
           />
           <LinkBox
             icon="/images/Phosphor@2x.png"
-            title="eXplainable Human"
+            title="Machinima Game Design"
             text="Game Art Workshop"
             link="https://www.isabellearvers.com/2019/05/games-as-lights-and-colors-on-canvas-workshop-acc-gwangju-isea-2019/"
           />
@@ -104,7 +104,7 @@ export default function Home() {
             icon="/images/capstone@2x.png"
             title="Capstone Design Project"
             text={`Data Mining  & Visualization`}
-            link=""
+            link="https://github.com/Hyeji-Han/Capstone-Design-Project"
           />
         </div>
       </div>

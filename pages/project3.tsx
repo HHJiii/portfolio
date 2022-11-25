@@ -7,7 +7,7 @@ import house from "@image/house.svg";
 import one from "@image/one.svg";
 import two from "@image/two.svg";
 
-import style from "../styles/Project2.module.scss";
+import style from "../styles/Project3.module.scss";
 import { useEffect, useRef, useState } from "react";
 import { useResize } from "hooks/useResize";
 import json from "../data.json";

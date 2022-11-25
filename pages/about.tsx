@@ -46,7 +46,7 @@ export default function About() {
           barriers.
         </p>
         <p {...animatedItem8} className={style.content}>
-          Since I majored in business, I always think about and design important
+          Since I majored in business, I always think about design and important
           business strategies at UX. I am good at making data-based decisions
           about the most efficient and productive methods.
         </p>
@@ -72,7 +72,7 @@ export default function About() {
               <span>2020</span>
             </div>
             <div className={style.row}>
-              <span>DEAN'S LIST</span>
+              <span>{`DEAN's LIST`}</span>
               <span>2013</span>
             </div>
           </div>

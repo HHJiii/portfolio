@@ -1,0 +1,846 @@
+.project2Container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  transition: all 0.1s;
+  background-color: #f3f4f7;
+
+  .progress {
+    position: fixed;
+    top: 40%;
+    left: 50px;
+    transition: all 0.5s;
+    z-index: 50;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+
+    button {
+      border: none;
+      background-color: transparent;
+      font-size: 28px;
+      cursor: pointer;
+      color: #aaaaaa;
+      text-align: start;
+    }
+  }
+
+  .intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    span {
+      color: rgb(187, 187, 187);
+      font-size: 28px;
+    }
+
+    h1 {
+      font-size: 100px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .mainImage {
+      height: 60vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .introImage {
+      width: 100%;
+    }
+  }
+  .overview {
+    max-width: 900px;
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 44px;
+
+    span {
+      font-size: 36px;
+      color: rgb(187, 187, 187);
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .table {
+    margin-top: 88px;
+    padding: 0 40px;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 128px;
+
+    th,
+    td {
+      padding: 10px 0;
+      font-size: 22px;
+      white-space: pre-line;
+      vertical-align: top;
+    }
+    th {
+      text-align: start;
+      color: rgb(187, 187, 187);
+      font-weight: 500;
+      width: 25%;
+      font-size: 36px;
+    }
+  }
+
+  .designProcess {
+    padding: 0 40px;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    max-width: 1200px;
+    width: 100%;
+
+    .designIntro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      h2 {
+        font-size: 60px;
+        margin: 0;
+      }
+
+      span {
+        max-width: 600px;
+        width: 100%;
+        font-size: 24px;
+      }
+
+      .processesCon {
+        margin-top: 14px;
+        .processes {
+          display: flex;
+          gap: 25px;
+
+          .process {
+            background-color: black;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 17px;
+
+            width: 180px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            div:first-child {
+              font-size: 22px;
+              font-weight: 500;
+            }
+            div:last-child {
+              color: rgb(165, 165, 165);
+            }
+          }
+        }
+      }
+    }
+
+    .chepter {
+      margin-bottom: 96px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      .moreDetail {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        button {
+          background-color: black;
+          border: none;
+          border-radius: 12px;
+          padding: 10px 20px;
+          color: white;
+          font-size: 24px;
+        }
+      }
+
+      .first {
+        margin: 0;
+      }
+      h3 {
+        font-size: 36px;
+        margin: 0;
+        margin-top: 88px;
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 60px;
+        margin: 0;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 88px;
+
+        span {
+          color: #b5b5b5;
+          font-size: 24px;
+          margin-bottom: 24px;
+        }
+
+        .ideate {
+          display: flex;
+          flex-direction: column;
+
+          .row {
+            display: flex;
+            height: 500px;
+            align-items: center;
+            justify-content: space-around;
+            img {
+              width: 40%;
+            }
+
+            .desc {
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+
+              h3 {
+                margin: 0;
+              }
+
+              span {
+                color: #31dde3;
+                font-size: 15px;
+                font-weight: bold;
+              }
+
+              p {
+                color: #b5b5b5;
+                font-size: 24px;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .longContainer {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          height: auto;
+          margin-top: 88px;
+
+          img {
+            width: 400px;
+          }
+
+          .content {
+            height: auto;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .desc {
+              h3 {
+                font-size: 36px;
+              }
+
+              p {
+                font-size: 22px;
+                color: #575757;
+              }
+            }
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+
+        .image {
+          width: 100%;
+          height: auto;
+        }
+
+        .image2 {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          img {
+            width: 49%;
+          }
+        }
+
+        .row {
+          margin: 30px 0;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          img {
+            width: 24%;
+          }
+        }
+        .p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.subContainer {
+  width: 100%;
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  .subWapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    gap: 30px;
+    align-items: center;
+
+    h3 {
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    p {
+      line-height: 200%;
+    }
+  }
+}
+
+.feature {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding: 0 40px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 60px;
+  }
+
+  span {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+
+    .itemImg {
+      width: 40%;
+
+      &:nth-child(2) {
+        width: 50%;
+      }
+    }
+
+    .desc {
+      width: 280px;
+
+      h3 {
+        font-size: 16px;
+        color: #31dde3;
+      }
+
+      p {
+        font-size: 20px;
+        color: rgb(165, 165, 165);
+      }
+    }
+  }
+}
+
+.more {
+  background-color: #e8fde1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+
+  .title {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    .moreImage {
+      width: 500px;
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  span {
+    color: rgb(103, 103, 103);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+.learn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 160px;
+  margin-top: 200px;
+
+  .title {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    span {
+      font-size: 24px;
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 160px;
+
+    .content {
+      display: flex;
+      align-items: center;
+
+      max-width: 1000px;
+      width: 100%;
+      justify-content: space-around;
+
+      .image {
+        width: 40%;
+      }
+
+      .desc {
+        width: 40%;
+        gap: 30px;
+
+        h3 {
+          margin: 0;
+          font-size: 36px;
+        }
+        p {
+          color: rgb(165, 165, 165);
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  h2 {
+    font-size: 40px;
+  }
+
+  .images {
+    display: flex;
+    gap: 30px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      border: none;
+      background-color: #faf9fb;
+      border-radius: 22px;
+      padding: 30px 30px 0;
+      gap: 30px;
+      height: 300px;
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span:first-child {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .project2Container {
+    .intro {
+      padding: 0;
+
+      .introImage {
+        .border {
+          width: 100%;
+        }
+      }
+    }
+    .designProcess {
+      .chepter {
+        gap: 10px;
+
+        .main {
+          .image2 {
+            flex-direction: column;
+            gap: 30px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .designIntro {
+        .processesCon {
+          display: flex;
+          justify-content: center;
+          .processes {
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+
+  .projects {
+    .images {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .project2Container {
+    .intro {
+      h1 {
+        font-size: 34px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .table {
+      padding: 0 40px;
+      margin: 40px 0;
+
+      th,
+      td {
+        padding: 10px 0;
+        font-size: 18px;
+      }
+
+      th {
+        font-size: 22px;
+      }
+    }
+
+    .designProcess {
+      .chepter {
+        h2 {
+          font-size: 28px;
+        }
+
+        .main {
+          .ideate {
+            gap: 20px;
+            .row {
+              flex-direction: column;
+              height: auto;
+              gap: 10px;
+
+              &:nth-child(2) {
+                flex-direction: column-reverse;
+              }
+
+              img {
+                width: 100%;
+              }
+
+              .desc {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                span {
+                  color: #31dde3;
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+
+                p {
+                  color: #b5b5b5;
+                }
+
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          .longContainer {
+            flex-direction: column;
+            gap: 30px;
+
+            .content {
+              width: 100%;
+              gap: 30px;
+
+              .desc {
+                h3 {
+                  font-size: 22px;
+                }
+
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          span {
+            font-size: 20px;
+          }
+
+          h3 {
+            font-size: 22px;
+          }
+
+          .p {
+            font-size: 18px;
+          }
+        }
+      }
+      .designIntro {
+        display: flex;
+
+        h2 {
+          font-size: 28px;
+          text-align: center;
+        }
+
+        span {
+          font-size: 18px;
+        }
+
+        .processesCon {
+          .processes {
+            flex-wrap: wrap;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  .subContainer {
+    .subWapper {
+      flex-direction: column;
+      gap: 10px;
+      h3 {
+        font-size: 22px;
+        margin: 10px;
+      }
+    }
+  }
+
+  .feature {
+    h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+    .item {
+      width: 100%;
+      flex-direction: column-reverse;
+      &:nth-child(odd) {
+        flex-direction: column;
+      }
+
+      .itemImg {
+        width: 100%;
+
+        &:nth-child(2) {
+          width: 100%;
+        }
+      }
+
+      .desc {
+        h3 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .learn {
+    padding: 30px 40px;
+
+    .title {
+      h2 {
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .contents {
+      .content {
+        width: 100%;
+
+        .desc {
+          width: 90%;
+
+          h3 {
+            font-size: 22px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .more {
+    .content {
+      flex-direction: column;
+      .moreImage {
+        width: 80%;
+      }
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .projects {
+    padding: 0;
+    width: 100%;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .images {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+}
