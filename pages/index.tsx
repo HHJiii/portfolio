@@ -14,7 +14,7 @@ export default function Home() {
 
   const contacts = [
     { label: "LinkedIn", value: " https://www.linkedin.com/in/hyeji-han" },
-    { label: "Gitub", value: "https://github.com/Hyeji-Han" },
+    { label: "Github", value: "https://github.com/Hyeji-Han" },
     { label: "Medium", value: "https://medium.com/@hyejihan" },
   ];
 

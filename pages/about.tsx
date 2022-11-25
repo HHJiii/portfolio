@@ -1,6 +1,7 @@
 import style from "../styles/About.module.scss";
 import { useScrollFadeIn } from "../hooks/usescroll";
 import { useScaleFadeIn } from "../hooks/usescale";
+import { useRouter } from "next/router";
 
 export default function About() {
   const animatedItem1 = useScrollFadeIn("0", "50");
@@ -12,6 +13,7 @@ export default function About() {
   const animatedItem8 = useScrollFadeIn("0.3", "70");
   const animatedItem9 = useScrollFadeIn("0.5", "70");
   const animatedItem3 = useScaleFadeIn("0", "50");
+  const router = useRouter();
 
   return (
     <div className={style.aboutContainer}>
@@ -48,7 +50,7 @@ export default function About() {
           business strategies at UX. I am good at making data-based decisions
           about the most efficient and productive methods.
         </p>
-        <div {...animatedItem9} className={style.resome}>
+        <div onClick={() => router.push('https://drive.google.com/drive/u/0/folders/1AEYOvmQWW5mglt4pcEj81_WU3nIAfNWy')} {...animatedItem9} className={style.resome}>
           Resume
         </div>
 
@@ -58,7 +60,7 @@ export default function About() {
           </div>
           <div {...animatedItem2} className={style.awardsContent}>
             <div className={style.row}>
-              <span>Adidas</span>
+              <span>KOPIS BIG DATA ANALYSIS</span>
               <span>2022</span>
             </div>
             <div className={style.row}>
@@ -66,12 +68,12 @@ export default function About() {
               <span>2021</span>
             </div>
             <div className={style.row}>
-              <span>Club Mate</span>
+              <span>E</span>
               <span>2020</span>
             </div>
             <div className={style.row}>
-              <span>Deciem</span>
-              <span>2019</span>
+              <span>DEAN'S LIST</span>
+              <span>2013</span>
             </div>
           </div>
         </div>
