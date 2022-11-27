@@ -11,7 +11,7 @@
   .progress {
     position: fixed;
     top: 40%;
-    left: 50px;
+    left: 20px;
     transition: all 0.5s;
     z-index: 50;
     flex-direction: column;
@@ -21,12 +21,12 @@
     button {
       border: none;
       background-color: transparent;
-      font-size: 28px;
+      font-size: 20px;
       cursor: pointer;
       color: #aaaaaa;
       text-align: start;
-    }
   }
+}
 
   .intro {
     position: relative;
