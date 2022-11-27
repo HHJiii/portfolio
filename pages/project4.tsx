@@ -37,11 +37,11 @@ export default function ProjectOne() {
   const router = useRouter();
 
   const process = [
-    { name: "1. Research", text: "Understand the background" },
-    { name: "2. Emphasize", text: "Gather High-Quality User Understanding" },
-    { name: "3. Define", text: "Create a Brilliant Design Brief" },
-    { name: "4. Ideate", text: "Start developing solutions" },
-    { name: "5. Test", text: "Hold Inspirational  Design Sprints" },
+    { name: "1. Method", text: "Understand the method for Analysis" },
+    { name: "2. Objective", text: "Explore the objectives of Analysis" },
+    { name: "3. Analysis", text: "Data Cleaning to Data visualization" },
+    { name: "4. Benefit", text: "Benefits of the project" },
+    { name: "5. Reflection", text: "Drawbacks of the project" },
   ];
 
   const more = [
@@ -433,7 +433,7 @@ export default function ProjectOne() {
       </div>
       <div className={style.learn}>
         <div ref={goodsTabs[5].element} className={style.title}>
-          <h2>Reflection</h2>
+          <h2>REFLECTION</h2>
           <span>These are lessons I learned from this project</span>
         </div>
         <div className={style.contents}>
@@ -460,7 +460,7 @@ export default function ProjectOne() {
             )}
             <div className={style.desc}>
               <h3>Exclusion of online performances</h3>
-              <p>{`urrently, the original data is limited to physical performances held in actual performances. However, after the pandemic, the proportion of virtual performances increased, and it was not analyzed that the cast and production crew gathered to produce non-face-to-face performances such as live broadcasting and recording performances. If the data are analyzed in consideration of non-face-to-face performances, there is a strong possibility that another type of result will come out.`}</p>
+              <p>{`Currently, the original data is limited to physical performances held in actual performances. However, after the pandemic, the proportion of virtual performances increased, and it was not analyzed that the cast and production crew gathered to produce non-face-to-face performances such as live broadcasting and recording performances. If the data are analyzed in consideration of non-face-to-face performances, there is a strong possibility that another type of result will come out.`}</p>
             </div>
           </div>
         </div>

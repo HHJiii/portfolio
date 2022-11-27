@@ -45,7 +45,7 @@ export default function About() {
           barriers.
         </p>
         <br></br>
-        <div onClick={() => router.push('https://drive.google.com/drive/u/0/folders/1AEYOvmQWW5mglt4pcEj81_WU3nIAfNWy')} {...animatedItem9} className={style.resome}>
+        <div onClick={() => router.push('https://drive.google.com/file/d/1Nb3iaRs3FrqIf7BJS6sPDbAFjkDslgxa/view?usp=sharing')} {...animatedItem9} className={style.resome}>
           Resume
         </div>
 

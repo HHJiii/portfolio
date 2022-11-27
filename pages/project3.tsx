@@ -156,10 +156,12 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-         {`Can the Ego be Explained?<br></br>It seems impossible to describe "the self" in one sentence. Unexplained uncertainty has also affected the field of AI, and the concept of eXplainable AI has emerged to solve this problem. This shows the human will to pursue more reliability by explaining the reasons and processes that AI uses to produce results.`}
+         {`Can the Ego be Explained?`}<br></br>
+         {`It seems impossible to describe "the self" in one sentence. Unexplained uncertainty has also affected the field of AI, and the concept of eXplainable AI has emerged to solve this problem. This shows the human will to pursue more reliability by explaining the reasons and processes that AI uses to produce results.`}
         </p>
         <p>
-        {`Then, is everything that can be explained reliable?<br></br>met. chose a most difficult topic of the 'self' as our object explanation and tried to see if it could be better understood through dialogue with AI. e also want to experience the coincidence and conflict that occurs between the 'self' described by AI and the 'self' described by members of audience.`}
+        {`Then, is everything that can be explained reliable?`}<br></br>
+        {` met. chose a most difficult topic of the 'self' as our object explanation and tried to see if it could be better understood through dialogue with AI. e also want to experience the coincidence and conflict that occurs between the 'self' described by AI and the 'self' described by members of audience.`}
         </p>
       </div>
       {nowWidth > 800 ? (
@@ -309,13 +311,13 @@ export default function ProjectOne() {
             />
             <h3>{`HOW DOES XAI WORK?`}</h3>
             <p className={style.p}>
-            {`It can be useful to subdivide XAI into these three categories:<br>
+             It can be useful to subdivide XAI into these three categories:<br>
               </br>
               a. Explainable data<br></br>
               b. Explainable predictions<br></br>
               c. Explainable algorithms<br></br>
             
-              These principles help define the output expected from XAI. Explainable AI (XAI) is operated as follows:`}
+              These principles help define the output expected from XAI. Explainable AI (XAI) is operated as follows:
             </p>
             <img
               className={style.image}
@@ -332,11 +334,11 @@ export default function ProjectOne() {
             <span>03 Data Modeling</span>
             <h3 className={style.first}>{`Build blocks of natural language; Intent and entities`}</h3>
             <p className={style.p}>
-            {`The AI implemented in this exhibition asks questions for the audience to introduce themselves, collects the audience's answers, and extracts and interprets keywords. After that, the AI infers the audience's collective ego by reconstructing sentences based on the interpreted content. <br></br>
+            {`The AI implemented in this exhibition asks questions for the audience to introduce themselves, collects the audience's answers, and extracts and interprets keywords. After that, the AI infers the audience's collective ego by reconstructing sentences based on the interpreted content.`}<br></br>
             <br></br>
             To build this AI, as a data architect and IxD designer, I was the first runner in this marathon of a project.<br></br>
             <br></br>
-            I constructed three-stage system of questions that our AI could use to understand people. The first stage is demographic questions such as “gender,” and “age.” The second is sociological questions about friendship and hatred in this world. It is more radical than the first stage. The third stage involves more confidential questions. Our AI asks audience what secrets they cherish and they trust AI. The answers to these questions are incorporated into our own rule-based matrix, and a line of sentences expressing each person’s self-image is derived.`}
+            {`I constructed three-stage system of questions that our AI could use to understand people. The first stage is demographic questions such as “gender,” and “age.” The second is sociological questions about friendship and hatred in this world. It is more radical than the first stage. The third stage involves more confidential questions. Our AI asks audience what secrets they cherish and they trust AI. The answers to these questions are incorporated into our own rule-based matrix, and a line of sentences expressing each person’s self-image is derived.`}
             </p>
             <img
               className={style.image}
@@ -350,9 +352,9 @@ export default function ProjectOne() {
               alt="01"
             />
             <p className={style.p}>
-            {`At the heart of this project, we use the “GPT-3” language model to extend this simple line of extracted sentences. Generative Pre-trained Transformer 3 (GPT-3; stylized GPT·3) is an autoregressive language model that uses deep learning to produce human-like text. Given an initial text as a prompt, it will produce text that continues the prompt. We aimed to give our audience members “reasonable” answers by using 172.5 billion parameters. <br></br> 
-              <br>
-              </br>To minimize  the toxicity of this GPT-3, our team trained a lot of versions of source sentences in the open API playground, our team was able to get the best answers and create explainable data.`}
+            {`At the heart of this project, we use the “GPT-3” language model to extend this simple line of extracted sentences. Generative Pre-trained Transformer 3 (GPT-3; stylized GPT·3) is an autoregressive language model that uses deep learning to produce human-like text. Given an initial text as a prompt, it will produce text that continues the prompt. We aimed to give our audience members “reasonable” answers by using 172.5 billion parameters.`}
+<br></br>
+            {`To minimize  the toxicity of this GPT-3, our team trained a lot of versions of source sentences in the open API playground, our team was able to get the best answers and create explainable data.`}
             </p>
             <img
               className={style.image}
