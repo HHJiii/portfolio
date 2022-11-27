@@ -156,12 +156,10 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-         {`Can the Ego be Explained?`}<br></br>
-         {`It seems impossible to describe "the self" in one sentence. Unexplained uncertainty has also affected the field of AI, and the concept of eXplainable AI has emerged to solve this problem. This shows the human will to pursue more reliability by explaining the reasons and processes that AI uses to produce results.`}
+         {`Can the Ego be Explained? It seems impossible to describe "the self" in one sentence. Unexplained uncertainty has also affected the field of AI, and the concept of eXplainable AI has emerged to solve this problem. This shows the human will to pursue more reliability by explaining the reasons and processes that AI uses to produce results.`}
         </p>
         <p>
-        {`Then, is everything that can be explained reliable?`}<br></br>
-        {` met. chose a most difficult topic of the 'self' as our object explanation and tried to see if it could be better understood through dialogue with AI. e also want to experience the coincidence and conflict that occurs between the 'self' described by AI and the 'self' described by members of audience.`}
+        {`Then, is everything that can be explained reliable? met. chose a most difficult topic of the 'self' as our object explanation and tried to see if it could be better understood through dialogue with AI. e also want to experience the coincidence and conflict that occurs between the 'self' described by AI and the 'self' described by members of audience.`}
         </p>
       </div>
       {nowWidth > 800 ? (
