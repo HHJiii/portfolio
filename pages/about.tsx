@@ -32,49 +32,46 @@ export default function About() {
           within the social impact sector that has not been actively questioned.{" "}
         </p>
         <p {...animatedItem6} className={style.content}>
-          Over the past years, I have worked at a South Korean non-profit
-          organization. I supported artists in all sorts of ways in leading
-          creative fundraising campaigns as a project manager. Also I planned
-          and operated a web service for struggling artists and local
-          communities as a product manager.
+          I was born and spent my childhood on the beautiful island of Borneo, it is an entrancing place filled with beautiful dense rainforest. I grew up as a nature lover surrounded by such beautiful nature. I am very bubbly, funny, and full of laughter. 
         </p>
         <p {...animatedItem7} className={style.content}>
+          After graduating from university with a degree in business administration, I began to delve into the complex social issues affecting local communities. Throughout the past 5 years, I have worked for a National Agency, Arts Council Korea, with a focus in communications, social advocacy, and fundraising/donor research. I consulted on many projects related to culture and arts and helped struggling artists.
+        </p>
+        <p {...animatedItem8} className={style.content}>
           The field I am interested in is solving social problems including
           unfairness, poverty, and discrimination. I would like to design the
           world so that, regardless of their disability or difficulty, people
           can fully enjoy their life and arts without any discrimination or
           barriers.
         </p>
-        <p {...animatedItem8} className={style.content}>
-          Since I majored in business, I always think about design and important
-          business strategies at UX. I am good at making data-based decisions
-          about the most efficient and productive methods.
-        </p>
+        <br></br>
         <div onClick={() => router.push('https://drive.google.com/drive/u/0/folders/1AEYOvmQWW5mglt4pcEj81_WU3nIAfNWy')} {...animatedItem9} className={style.resome}>
           Resume
         </div>
 
         <div className={style.awards}>
           <div {...animatedItem1} className={style.title}>
-            Awards
+            Contact
           </div>
           <div {...animatedItem2} className={style.awardsContent}>
             <div className={style.row}>
-              <span>KOPIS BIG DATA ANALYSIS</span>
-              <span>2022</span>
+              <span>hyejihan92@gmail.com</span>
+              <span>E-Mail</span>
             </div>
             <div className={style.row}>
-              <span>Google</span>
-              <span>2021</span>
+              <span>{`@8gust11th`}</span>
+              <span>Instagram</span>
             </div>
             <div className={style.row}>
-              <span>E</span>
-              <span>2020</span>
+              <span>{`+82 1049130207`}</span>
+              <span>Mobile</span>
             </div>
             <div className={style.row}>
-              <span>{`DEAN's LIST`}</span>
-              <span>2013</span>
+              <span>{`PaigeHan`}</span>
+              <span>Oculus</span>
             </div>
+            <br></br>
+            <br></br>
           </div>
         </div>
       </div>

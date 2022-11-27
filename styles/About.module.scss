@@ -35,13 +35,14 @@
 
     .intro {
       font-size: 45px;
-      max-width: 700px;
+      font-weight: 400;
+      max-width: 500px;
       width: 100%;
     }
 
     .content {
-      color: rgb(186, 186, 186);
-      font-size: 25px;
+      color: rgb(156, 146, 146);
+      font-size: 24px;
       max-width: 750px;
       width: 100%;
       font-weight: 300;
@@ -49,13 +50,13 @@
 
     .resome {
       padding: 15px 20px;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: bold;
       background-color: black;
       border-radius: 10px;
-      color: white;
+      color: rgb(255, 255, 255);
       width: max-content;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
     }
 
     .awards {
@@ -69,10 +70,10 @@
       }
 
       .awardsContent {
-        font-size: 25px;
+        font-size: 24px;
         display: flex;
         flex-direction: column;
-        max-width: 750px;
+        max-width: 450px;
         width: 100%;
         gap: 10px;
 

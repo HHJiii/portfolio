@@ -331,12 +331,12 @@ export default function ProjectOne() {
             <span>03 Data Cleaning & Mining </span>
             <h3 className={style.first}>{`Data Cleaning`}</h3>
             <p className={style.p}>
-             {`Data mining is the process of extracting and discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.`}
+             {`Data Cleaning is the process of fixing incorrect, incomplete, duplicate or otherwise erroneous data in a data set. I used a VBA Macro in excel and Power Query.`}
             </p>
             <img className={style.image} src="/images/data1.png" alt="01" />
             <h3>{`Data Mining`}</h3>
             <p className={style.p}>
-              I use Excel VBA and Power Queory. 
+             {`Data mining is the process of extracting and discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems. I processed this process with Python's pyspark, and extracted the dataset by year with unnecessary items removed.`} 
             </p>
             <img
               className={style.image}
@@ -352,7 +352,7 @@ export default function ProjectOne() {
             <span>04 Data Modeling</span>
             <h3 className={style.first}>{`Exploratory data analysis(EDA)`}</h3>
             <p className={style.p}>
-              To come up with a wide range of ideas, I engaged in 
+             {`To discover a frequent set of items, I explored the dataset. It was sorted based on 'Instance frequency,', and rules for 'confidence' and 'lift' were also generated.`}
             </p>
             <img
               className={style.image}
@@ -361,8 +361,7 @@ export default function ProjectOne() {
             />
             <h3>{`Parameter Tuning`}</h3>
             <p className={style.p}>
-              Based on the card sorting, I created Information Architecture for
-              the holistic sketch.
+             {`Based on the results of the association analysis, the frequently appearing item set is analyzed according to the association rule. Then, I used Python's networkx library.`}
             </p>
             <img className={style.image} src="/images/data4.png" alt="01" />
             <div className={style.main}></div>
@@ -373,18 +372,23 @@ export default function ProjectOne() {
           <h2>DATA VISUALIZATION</h2>
           <div className={style.main}>
             <span>05 Data Visualization</span>
-            <h3 className={style.first}>
-            {`The Strength of Weak Ties`}</h3>
-            <br></br>
+            <h3 className={style.first}>The Strength of Weak Ties</h3>
             <p className={style.p}>
              {`Contrary to general common sense, social network theory argues that loose relationships are alternatives to organizational and market innovation. From 2019 to 2022, significant network results were derived by defining the "simultaneous performance" of the cast and crew as a weak connection in big data in the performing arts industry for about four years. In general, it can be seen that there are people with higher degrees of neutrality, whose nodes are larger than other characters, every year.`}
             </p>
-            <h3 className={style.first}>{`Pandemic`}</h3>
-            <br></br>
+            <div className={style.image2}>
+              <img src="/images/datacontest3.png" alt="01" />
+              <img src="/images/datagraph.png" alt="01" />
+            </div>
+            <h3 style={{ marginTop: "50px" }}>{`Pandemic`}</h3>
             <p className={style.p}>
              {`Our relationship is affected by the pandemic. 2020 is a year to look very carefully. Although the performance was difficult due to the pandemic, it can be seen that the relationship between performing artists also decreased by more than 50% compared to the previous year. Most of the connections were hit almost directly in proportion to the actual performance, and there was also the aftermath of Omicron in 2021, but the network is gradually recovering.`}
             </p>
-              <img src="/images/data5.png" alt="01" />
+            <img
+              className={style.image}
+              src="/images/data5.png"
+              alt="01"
+            />
             <div className={style.moreDetail}>
               <button
                 style={{ cursor: "pointer" }}
@@ -394,7 +398,7 @@ export default function ProjectOne() {
                   )
                 }
               >
-                Check the result out!
+                Check the result out
               </button>
             </div>
           </div>
@@ -404,7 +408,7 @@ export default function ProjectOne() {
           <h2>BENEFIT</h2>
           <div className={style.main}>
             <span>06 Benefits of Analysis</span>
-            <h3 className={style.first}>{`Usability Testing`}</h3>
+            <h3 className={style.first}>{`Promote Information Accessibility`}</h3>
             <img className={style.image} src="/images/contest.jpg" alt="01" />
             <p className={style.p}>
              {`First, access to information increases due to the advantage of a network that is easy for anyone to comprehend. Much data makes the mistake of using kargon without considering the 'viewer.' However, my project has the advantage of maximizing information accessibility in terms of visualizing human-to-human relationships as clear elements.`}
@@ -412,7 +416,7 @@ export default function ProjectOne() {
             <p className={style.p}>
              {`Second, my project can provide a research basis for potential viewing factors further research on various purchasing factors. In the meantime, if cost utility has been the main factor in analyzing the industry, this is likely the first time to proceed with human-to-human relationships.`}
             </p>
-            <h3>{`And more...`}</h3>
+            <h3>{`Promote convenience for various stakeholders`}</h3>
             <p className={style.p}>
               {`Third, when producing a work, the producer/planner considers many factors when making casting decisions. At this time, personal relationship networks contain basic information for/on/about each person and relationship information with her or his connections. Thus, for a more experimental work, it is possible to cast two actors whose scope of activity does not overlap at all, or cast actors with significant joint work experience by emphasizing  the. harmony between characters.`}
             </p>
