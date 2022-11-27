@@ -52,12 +52,12 @@ export default function ProjectOne() {
   const router = useRouter();
 
   const process = [
-    { name: "1. Research", text: "Understand the background" },
-    { name: "2. Emphasize", text: "Gather High-Quality User Understanding" },
-    { name: "3 .Define", text: "Create a Brilliant Design Brief" },
-    { name: "4. Ideate", text: "Start developing solutions" },
+    { name: "1. Research", text: "Learn about the topic and ourselves" },
+    { name: "2. Exploration", text: "Gather High-Quality  Understanding" },
+    { name: "3. Modeling", text: "Create a Brilliant Data & AI Model" },
+    { name: "4. Design", text: "Start design works - visual, sound, space" },
     { name: "5. Prototype", text: "Hold Inspirational  Design Sprints" },
-    { name: "6. Test", text: "Get Fast, Productive Feedback" },
+    { name: "6. Reflection", text: "Get Fast, Productive Feedback" },
   ];
 
   useEffect(() => {
@@ -95,7 +95,7 @@ export default function ProjectOne() {
               goodsTabs[2].onMoveToElement();
             }}
           >
-            Final Design
+            Data Modeling
           </button>
           <button
             style={{ color: nowProgress === 3 ? "black" : "#565656" }}
@@ -103,7 +103,7 @@ export default function ProjectOne() {
               goodsTabs[3].onMoveToElement();
             }}
           >
-            Test
+            Design
           </button>
           <button
             style={{ color: nowProgress === 4 ? "black" : "#565656" }}
@@ -111,7 +111,7 @@ export default function ProjectOne() {
               goodsTabs[4].onMoveToElement();
             }}
           >
-            Main Features{" "}
+            Prototype
           </button>
           <button
             style={{ color: nowProgress === 5 ? "black" : "#565656" }}
@@ -120,18 +120,18 @@ export default function ProjectOne() {
               setNowProgress(5);
             }}
           >
-            Takeaways
+            Reflection
           </button>
         </div>
       )}
       <div className={style.intro}>
-        <span>Responsive Web & Redesign</span>
-        <h1>End Poverty in California</h1>
+        <span>Interactive Media Art</span>
+        <h1>eXplainable Human</h1>
         {nowWidth > 1200 ? (
           <div className={style.mainImage}>
             <img
-              src={"/images/MainBackground.png"}
-              alt="project2-main"
+              src={"/images/met5.jpeg"}
+              alt="project3-main"
               className={style.introImage}
             />
           </div>
@@ -139,14 +139,14 @@ export default function ProjectOne() {
           <>
             {nowWidth > 800 ? (
               <img
-                src={"/images/1200.png"}
-                alt="project2-main"
+                src={"/images/met5.jpeg"}
+                alt="project3-main"
                 className={style.introImage}
               />
             ) : (
               <img
-                src={"/images/800.png"}
-                alt="project2-main"
+                src={"/images/met5800.jpeg"}
+                alt="project3-main"
                 className={style.introImage}
               />
             )}
@@ -156,17 +156,10 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-          End Poverty in California(EPIC) is a very mission driven non-profit
-          organization established to address poverty in California. While their
-          agenda and mission statement certainly are crucial ethical causes,
-          there is strong evidence that suggests their current UX design and
-          subsequent social media layout withhold them from effectively gaining
-          more donor-related support.
+         {`Can the Ego be Explained?<br></br>It seems impossible to describe "the self" in one sentence. Unexplained uncertainty has also affected the field of AI, and the concept of eXplainable AI has emerged to solve this problem. This shows the human will to pursue more reliability by explaining the reasons and processes that AI uses to produce results.`}
         </p>
         <p>
-          To help solve this dilemma of lack of donor outreach from the
-          perspective of their UX design, I suggest more effective, evocative,
-          and relevant UX ideas, which can be applied for this websites.
+        {`Then, is everything that can be explained reliable?<br></br>met. chose a most difficult topic of the 'self' as our object explanation and tried to see if it could be better understood through dialogue with AI. e also want to experience the coincidence and conflict that occurs between the 'self' described by AI and the 'self' described by members of audience.`}
         </p>
       </div>
       {nowWidth > 800 ? (
@@ -181,22 +174,22 @@ export default function ProjectOne() {
           </thead>
           <tbody>
             <tr>
-              <td>{`Independent\n proejct`}</td>
-              <td>4 weeks</td>
-              <td>Figma</td>
-              <td>User research</td>
+              <td>{`Team proejct`}</td>
+              <td>16 weeks</td>
+              <td>Javascript</td>
+              <td>Data Modeling</td>
             </tr>
             <tr>
               <td></td>
               <td></td>
-              <td>Framer</td>
-              <td>End to end Design</td>
+              <td>Projection Mapping</td>
+              <td>Interaction Design</td>
             </tr>
             <tr>
               <td></td>
               <td></td>
-              <td>Adobe Photoshop</td>
-              <td>Usability Test</td>
+              <td>Touch Designer</td>
+              <td>Exhibit Design</td>
             </tr>
           </tbody>
         </table>
@@ -211,8 +204,8 @@ export default function ProjectOne() {
             </thead>
             <tbody>
               <tr>
-                <td>Independent proejct</td>
-                <td>4 weeks</td>
+                <td>Tean proejct</td>
+                <td>16 weeks</td>
               </tr>
             </tbody>
           </table>
@@ -225,16 +218,16 @@ export default function ProjectOne() {
             </thead>
             <tbody>
               <tr>
-                <td>Figma</td>
-                <td>User research</td>
+                <td>Javascript</td>
+                <td>Data Modeling</td>
               </tr>
               <tr>
-                <td>Framer</td>
-                <td>End to end Design</td>
+                <td>Projection Mapping</td>
+                <td>Interaction Design</td>
               </tr>
               <tr>
-                <td>Adobe Photoshop</td>
-                <td>Usability Test</td>
+                <td>Touch Designer</td>
+                <td>Exhibit Design</td>
               </tr>
             </tbody>
           </table>
@@ -242,21 +235,21 @@ export default function ProjectOne() {
       )}
       <div style={{ width: "100%" }}>
         <Sub
-          name={"PROBLEM"}
-          content={`While EPIC's agenda and mission statement are crucial ethical causes, there is strong evidence that suggests their current UX design and layout of websites withhold them from effectively gaining more donor-related support.`}
+          name={`"Who are met.?"`}
+          content={`met. is an art collective. Our collaborative practice seeks to navigate the confluence of art, science, technology, and the philosophy. Through art, the interdisciplinary group of specialists, including a data scientist, programmer, designer, engineer and film-maker, aims to explore the relationship between the self and the world, and new forms of technology.`}
           background={"black"}
         />
         <Sub
-          name={"SOLUTION"}
-          content={`On charity websites, it is necessary to meticulously consider the factors that become ‘triggers’. The combination of these elements is the beginning of the ‘Persuasive design’ and leads to the Charity websites to succeed. To help solve this dilemma of lack of donor outreach from the perspective of their UX design, I will suggest how successful fundraising today depends on effective, evocative, and relevant UX ideas.`}
-          background={"#CFCBC4"}
+          name={`"Why we met?"`}
+          content={`Artificial intelligence is being introduced in many specialized fields such as finance, medical care, and education, but it seems that artificial intelligence has not yet reached our inner minds and understandings of our self-image. Can AI explain the human ego? With this question in mind, my team, met., planned an interactive media artwork.`}
+          background={"#365F7D"}
         />
       </div>
       <div className={style.designProcess}>
         <div className={style.designIntro}>
-          <h2>DESIGN PROCESS</h2>
+          <h2>WORK PROCESS</h2>
           <span>
-            {`I follow the design process which ranges from identifying the problem that the design or product will solve, all the way to research, planning, prototyping, test and iteration.`}
+            {`We follow the steps below, from identifying problems to designing individual audience experiences.`}
           </span>
           <div className={style.processesCon}>
             <div className={style.processes}>
@@ -274,19 +267,13 @@ export default function ProjectOne() {
           <h2>RESEARCH</h2>
           <div className={style.main}>
             <span>01 Research</span>
-            <h3 className={style.first}>{`Poverty Issue in California`}</h3>
+            <h3 className={style.first}>{`Background of the Exhibition`}</h3>
             <p className={style.p}>
-              California’s poverty rate remains the highest in the United
-              States. Roughly 5 million Californians live below the poverty
-              level, which represents 13.15% of the state’s total population.
-              However, more than a quarter of Californians are still living in
-              or near poverty. According to the California Poverty Measure
-              (CPM), 28.7% of residents were poor or near poor as of the fall of
-              2021.
+            {`As our society has become more complicated, we have begun to deal with personal information and assets based on customer trust in the fields of finance, insurance, and medical care. Beyond simply classifying images or predicting numbers, AI is now being created for "making clear judgments". As a result, there is a need to develop AI and algorithms to ensure fairness, reliability, and accuracy.`}
             </p>
             <div className={style.image2}>
-              <img src="/images/page-header.jpeg" alt="01" />
-              <img src="/images/research2.png" alt="01" />
+              <img src="/images/teammet.jpg" alt="01" />
+              <img src="/images/poster_rgb.png" alt="01" />
             </div>
             <div
               style={{
@@ -302,292 +289,182 @@ export default function ProjectOne() {
                 textAlign: "center",
               }}
             >
-              HOW MIGHT WE MAKE A VISITOR DONATE TO A CHARITY WEBSITE?
+              Can the Ego be Explained?
             </div>
           </div>
         </div>
         <div className={style.chepter}>
           <h2>02</h2>
-          <h2>EMPATHIZE</h2>
+          <h2>EXPLORE</h2>
           <div className={style.main}>
-            <span>02 Empathize</span>
-            <h3 className={style.first}>{`Problem Statement`}</h3>
+            <span>02 Explore XAI</span>
+            <h3 className={style.first}>{`XAI:WHAT IS IT?`}</h3>
             <p className={style.p}>
-              I found the EPIC website while researching the poverty issue in
-              California. The current website design is creative, but it lacks
-              persuasive elements.
+            {`Explainable AI (XAI) or Interpretable AI, is artificial intelligence (AI) whose decisions and predictions can be understood by humans. It contrasts with the "black box" concept in machine learning where even its designers cannot explain why an AI arrived at a specific decision.`}
             </p>
-            <div className={style.longContainer}>
-              <img src={"/images/long.png"} alt="" />
-              <div className={style.content}>
-                <img src={"/images/EPICDef.png"} alt="" />
-                <div className={style.desc}>
-                  <h3>Unclear Layout</h3>
-                  <p>
-                    A cluttered layout, hidden navigation menu, lack of color
-                    contrast, non-responsive design, and inconsistent typefaces
-                    are a few hallmarks of bad website design, but the main
-                    issue with sites that feature poor design is a lack of
-                    user-centricity.
-                  </p>
-                </div>
-                <div className={style.desc}>
-                  <h3>Lack of Impactfulness</h3>
-                  <p>
-                    The EPIC shows this important information at the bottom of
-                    the homepage on their website, and then makes people who
-                    came to the website (or support the organization) tend to
-                    have strong motivation later.
-                  </p>
-                </div>
-                <div className={style.desc}>
-                  <h3>Disturbing UI factors</h3>
-                  <p>
-                    With the combination of use of various colors and
-                    inappropriate fonts, the website evokes a feeling of
-                    playfulness rather than sincerity. People’s initial
-                    impressions tend to be influenced by images compared to text
-                    because color affects viewers physiologically and
-                    psychologically.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <h3 style={{ marginTop: "50px" }}>{`Interview`}</h3>
+            <img
+              className={style.image}
+              src="/images/metimg1.png"
+              alt="01"
+            />
+            <h3>{`HOW DOES XAI WORK?`}</h3>
             <p className={style.p}>
-              {`I interviewed six people who have experience working at non-profit
-              organizations. What's interesting is that despite all the
-              different experiences of the six interviewees, they all expressed
-              concerns over the absence of UX on the website of a non-profit
-              organization.`}
+            {`It can be useful to subdivide XAI into these three categories:<br>
+              </br>
+              a. Explainable data<br></br>
+              b. Explainable predictions<br></br>
+              c. Explainable algorithms<br></br>
+            
+              These principles help define the output expected from XAI. Explainable AI (XAI) is operated as follows:`}
             </p>
-            <img className={style.image} src="/images/interview.png" alt="01" />
+            <img
+              className={style.image}
+              src="/images/DXAI.png"
+              alt="01"
+            />
           </div>
         </div>
         <div className={style.chepter}>
+        <div ref={goodsTabs[2].element} />
           <h2>03</h2>
-          <h2>DEFINE</h2>
+          <h2>DATA MODELING</h2>
           <div className={style.main}>
-            <span>03 Define</span>
-            <h3 className={style.first}>{`Font and Color`}</h3>
+            <span>03 Data Modeling</span>
+            <h3 className={style.first}>{`Build blocks of natural language; Intent and entities`}</h3>
             <p className={style.p}>
-              To take advantage of the above-mentioned problems, I set the
-              following style guide. I chose low-saturation colors as their main
-              colors, leaving the strong blue and orange colors of the EPIC logo
-              they might want to maintain.
+            {`The AI implemented in this exhibition asks questions for the audience to introduce themselves, collects the audience's answers, and extracts and interprets keywords. After that, the AI infers the audience's collective ego by reconstructing sentences based on the interpreted content. <br></br>
+            <br></br>
+            To build this AI, as a data architect and IxD designer, I was the first runner in this marathon of a project.<br></br>
+            <br></br>
+            I constructed three-stage system of questions that our AI could use to understand people. The first stage is demographic questions such as “gender,” and “age.” The second is sociological questions about friendship and hatred in this world. It is more radical than the first stage. The third stage involves more confidential questions. Our AI asks audience what secrets they cherish and they trust AI. The answers to these questions are incorporated into our own rule-based matrix, and a line of sentences expressing each person’s self-image is derived.`}
             </p>
             <img
               className={style.image}
-              src="/images/font-color.png"
+              src="/images/met7.png"
               alt="01"
             />
-            <h3>{`Grid System`}</h3>
+            <h3>{`GPT-3 for the Subtle Art`}</h3><br></br>
+            <img
+              className={style.image}
+              src="/images/metimg3.png"
+              alt="01"
+            />
             <p className={style.p}>
-              I set the responsive layout grid system made up of three elements:
-              columns, gutters, and margins.
+            {`At the heart of this project, we use the “GPT-3” language model to extend this simple line of extracted sentences. Generative Pre-trained Transformer 3 (GPT-3; stylized GPT·3) is an autoregressive language model that uses deep learning to produce human-like text. Given an initial text as a prompt, it will produce text that continues the prompt. We aimed to give our audience members “reasonable” answers by using 172.5 billion parameters. <br></br> 
+              <br>
+              </br>To minimize  the toxicity of this GPT-3, our team trained a lot of versions of source sentences in the open API playground, our team was able to get the best answers and create explainable data.`}
             </p>
             <img
               className={style.image}
-              src="/images/grid-system.png"
+              src="/images/gpt3.gif"
               alt="01"
             />
           </div>
         </div>
         <div className={style.chepter}>
+        <div ref={goodsTabs[3].element} />
           <h2>04</h2>
-          <h2>IDEATE</h2>
+          <h2>DESIGN</h2>
           <div className={style.main}>
-            <span>04 Ideate</span>
-            <h3 className={style.first}>{`Persuasive Design Factors`}</h3>
+            <span>04 Design</span>
+            <h3 className={style.first}>{`Design Factors`}</h3>
             <p className={style.p}>
-              I focused on unpacking the few recognized factors for high
-              fundraising performance that depend on effective, evocative, and
-              relevant UX ideas.
+              Design part has three main features revolving around Visual Design, Sound Design, and Space Design.
             </p>
             <div className={style.ideate}>
               <div className={style.row}>
-                <img src={"images/ideate1.gif"} alt="" />
+                <img src={"images/met10.png"} alt="" />
                 <div className={style.desc}>
-                  <span>LAYOUT</span>
-                  <h3>Clear Layout</h3>
+                  <span>STEP1</span>
+                  <h3>Visual Design</h3>
                   <p>
-                    The main content area must serve as a powerful billboard:
-                    eye-catching, evocative, and relatable to the user. In
-                    addition to, by deploying important key statistics following
-                    the Main content area, the organization’s purpose can be
-                    conveyed concisely and powerfully.
+                  {`The circular symbol shape was envisioned to express the audience's self-image. As the answer intensifies, the color surrounding the circle becomes darker.`}
                   </p>
-                  <img src={"images/desc1.png"} alt="" />
+                  <img src={""} alt="" />
                 </div>
               </div>
               <div className={style.row}>
                 <div className={style.desc}>
-                  <span>Charity Box</span>
-                  <h3>Easy access to Charity Box</h3>
+                  <span>STEP2</span>
+                  <h3>Sound Design</h3>
                   <p>
-                    EPIC currently has no online fundraising box. Making
-                    connections with supporters is integral to effectively
-                    managing the nonprofit’s fundraising strategy. Thus, I
-                    created an online fundraising box for securing funds.
+                    The sound is designed to feel heavy and intense, developing with the size or color of the circular symbol. This creates a more atmospheric and professional exposition.<br></br><span onClick={() => router.push('https://soundcloud.com/jseok9712/sd001-free?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing')} style={{ cursor: "pointer", color: "#777777", fontSize: "16px" }}>
+                    * Click on this to explore the more detailed sound.<link rel="stylesheet" href="https://soundcloud.com/jseok9712/sd001-free?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" /> 
+                   </span>
                   </p>
-                  <img src={"images/desc2.png"} alt="" />
                 </div>
-                <img src={"images/ideate2.png"} alt="" />
+                <img src={"images/SOUND.gif"} alt="" />
               </div>
               <div className={style.row}>
-                <img src={"images/ideate3.gif"} alt="" />
+                <img src={"images/spacedesign.png"} alt="" />
                 <div className={style.desc}>
-                  <span>Font and Color</span>
-                  <h3>Emotion-evoking UIt</h3>
+                  <span>STEP3</span>
+                  <h3>Space Design</h3>
                   <p>
-                    To encourage people to be empathetic and supportive, I chose
-                    soothing colors such as grayish-blue for EPIC. Also, to
-                    deliver the message in a more serious, appropriate tone, I
-                    utilized different fonts from before.
+                    To create an intimate and communicative atmosphere, we hosted the event in a small underground gallery space in Sinchon, Seoul. In a narrow space of only 250 square feet, the AI and the audience were present, trying to create a feeling of mutual communication.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div ref={goodsTabs[2].element} />
+        
         <div className={style.chepter}>
+        <div ref={goodsTabs[4].element} />
           <h2>05</h2>
           <h2>PROTOTYPE</h2>
           <div className={style.main}>
             <span>05 Prototype</span>
-            <h3 className={style.first}>Overall Views</h3>
+            <h3 className={style.first}>Interactive Media</h3>
             <p className={style.p}>
-              I set up four breakpoints for the responsive web and completed the
-              design. At a given breakpoint range, the layout adjusts to suit
-              the screen size and orientation. It provides an optimal viewing
-              experience for the user, no matter what device they are using.
+              This is part of our exhibition. The audience inputs answers, and AI is collecting and analyzing the answers.
             </p>
-            <img className={style.image} src="/images/whole.png" alt="01" />
+            <img className={style.image} src="/images/exhuman.gif" alt="01" />
 
-            <h3 style={{ marginTop: "50px" }}>{`Final Design`}</h3>
+            <h3 style={{ marginTop: "50px" }}>{`Interactive Effects`}</h3>
             <p className={style.p}>
-              For the Final Design, I revised the design and created digital
-              high-fidelity wireframes.Refer to figma file for more detailed
-              design.
+              A dramatic element was inserted in the middle to break the monotony of the question and answer format. Like an Easter egg, dummy phrases are engraved on the face, and blue screens are sporadically floating to increase tension..
             </p>
-            <img
-              className={style.image}
-              src="/images/Dribbble-shot.png"
-              alt="01"
-            />
+            <div className={style.image2}>
+              <img src="/images/met3.jpeg" alt="01" />
+              <img src="/images/met4.jpeg" alt="01" />
+            </div>
           </div>
           <div className={style.moreDetail}>
             <button
               style={{ cursor: "pointer" }}
               onClick={() =>
                 router.push(
-                  "https://www.figma.com/file/7MctMRFAuTpGvk5zgjJGXH/Untitled?node-id=0%3A1&t=SBlZv966k1o1DlTr-1"
+                  "https://www.teammet.imweb.me"
                 )
               }
             >
-              More Detailed Design
+              More Detailed Information
             </button>
           </div>
         </div>
-        <div ref={goodsTabs[3].element} className={style.chepter}>
+        <div className={style.chepter}>
           <h2>06</h2>
-          <h2>TEST</h2>
+          <h2>EXHIBITION</h2>
           <div className={style.main}>
-            <span>06 Test</span>
-            <h3 className={style.first}>{`Usability Testing`}</h3>
+            <span>06 Exhibition</span>
+            <h3 className={style.first}>{`We invite you to "eXplainable Human"`}</h3><br></br>
             <img
               className={style.image}
-              src="/images/usability-testing.gif"
+              src="/images/met6.jpeg"
               alt="01"
             />
             <p className={style.p}>
-              With the first prototype in place, I wanted to get it in front of
-              a group of target users in order to weed out the biggest usability
-              issues before moving forward. I conducted moderated usability
-              tests with five participants and they proved really successful in
-              flagging critical usability issues.
-            </p>
-            <p className={style.p}>
-              My redesigned website received a high score of 92 points in
-              Usability testing.
-            </p>
-            <div className={style.row}>
-              <img src="/images/circle1.png" alt="01" />
-              <img src="/images/circle2.png" alt="01" />
-              <img src="/images/circle3.png" alt="01" />
-            </div>
-            <h3 style={{ marginTop: "50px" }}>{`After Usability Test`}</h3>
-            <img
-              className={style.image}
-              src="/images/Usability-testing.png"
-              alt="01"
-            />
-            <p className={style.p}>
-              I organized the testing results in a rainbow spreadsheet and rated
-              the errors in order to prioritize the changes that needed to be
-              made.
-            </p>
-            <p className={style.p}>
-              The results of the user testing showed that users found the new
-              version of the website to be more efficient, more learnable, and
-              more memorable than the previous version of the site. Users were
-              able to access the information they wanted more easily and they
-              spent more time on the site.
-            </p>
-            <div className={style.image2}>
-              <img src="/images/ut1.png" alt="01" />
-              <img src="/images/ut2.png" alt="01" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div ref={goodsTabs[4].element} className={style.feature}>
-        <div className={style.title}>
-          <h2>MAIN FEATURES</h2>
-          <span>
-            {`The website's three main features revolve around the main page, condensed information, and the subsequent donation page.`}
-          </span>
-        </div>
-        <div className={style.item}>
-          <img
-            className={style.itemImg}
-            src={"/images/redesign1.png"}
-            alt="사진"
-          />
-          <div className={style.desc}>
-            <h3>MAIN VISUAL (LANDING PAGE)</h3>
-            <p>{`The main page is in the most powerful zone, determining the identity of the website. According to statistics, almost 80% of website visitors leave without even reading the first page. I would modify the layout of the first page on EPIC's website to be more engaging and effective in order to keep visitors on the site.`}</p>
-          </div>
-        </div>
-        <div className={style.item}>
-          <div className={style.desc}>
-            <h3>key Poverty statistics</h3>
-            <p>{`Numbers have significant impacts. Rather than saying how serious the poverty problem is, if we summarize it in numbers, it will remain in visitors memory much longer. By deploying important key statistics following the Main content area, the organization's purpose can be conveyed concisely and powerfully.`}</p>
-            <h3>Epic’s focus areas</h3>
-            <p>{`Beyond the realm of just statistics, I found that the scattered information was another arduous feature. So, I collected and categorized the facts to increase user convenience and readability by allowing users to see EPIC’s main focus areas at a glance.`}</p>
-          </div>
-          {nowWidth > 800 ? (
-            <img
-              className={style.itemImg}
-              src={"/images/sol2.png"}
-              alt="사진"
-            />
-          ) : (
-            <img className={style.itemImg} src={"/images/m1.png"} alt="사진" />
-          )}
-        </div>
-        <div className={style.item}>
-          <img className={style.itemImg} src={"/images/f8.png"} alt="사진" />
-          <div className={style.desc}>
-            <h3>DONATION PAGE(SUB PAGE)</h3>
-            <p>{`I built these donation-related pages for online connection between charities and donors. Securing funds is a great help both in terms of UX and business strategy. Charity box would be helpful for a stronger bond and motivation for those who support EPIC. In preparation for this, I propose the following design related to donate-support.`}</p>
+                    We held an exhibition for a total of three days from 4th to 6th of November.<br></br><span onClick={() => router.push('https://vimeo.com/manage/videos/774940869')} style={{ cursor: "pointer", color: "#777777", fontSize: "20px" }}>
+                    * Click here to watch our documenting video.<link rel="stylesheet" href="https://vimeo.com/manage/videos/774940869" /> 
+                   </span>
+                  </p>
           </div>
         </div>
       </div>
       <div className={style.learn}>
         <div ref={goodsTabs[5].element} className={style.title}>
-          <h2>TAKEAWAYS</h2>
+          <h2>REFLECTION</h2>
           <span>These are lessons I learned from this project</span>
         </div>
         <div className={style.contents}>
@@ -595,26 +472,27 @@ export default function ProjectOne() {
             {nowWidth > 800 && (
               <img
                 className={style.image}
-                src="/images/graph.png"
+                src="/images/egoposter.jpeg"
                 alt="learned"
               />
             )}
             <div className={style.desc}>
-              <h3>Persuasive Design</h3>
-              <p>{`This was a great opportunity to utilize the UX ideas related to persuasive design and its factors. As a skilled social activist and a product designer with social responsibility,I learned how to create a user's experience  beyond the User Interface and use it strategically through this entire redesign process.`}</p>
+              <h3>Explainability of human</h3>
+              <p>{`In other words, can AI explain us?
+               This was the only purpose of our exhibition. The audience received an answer as if they were listening to a perfect explanation for themselves at a fortune-telling shop, or with a slight unpleasant feeling of uncanniness. It's fascinating to see the different ways that people view themselves.`}</p>
             </div>
           </div>
           <div className={style.content}>
             {nowWidth > 800 && (
               <img
                 className={style.image}
-                src="/images/takeaways2.png"
+                src="/images/met7.jpeg"
                 alt="learned"
               />
             )}
             <div className={style.desc}>
-              <h3>Clinical nature of public UX and its potential</h3>
-              <p>{`I move forward to implement the UX improvement task for the service in public sectors that require various donor-related support as well as charity websites. In particular, I planned and operated almost 8,000 performing arts production information at work. This project served to considering the UX virtues that non-profit institutions can use.`}</p>
+              <h3>The Shadow of AI Lurks in the Uncanny Valley</h3>
+              <p>{`Our AI model and GPT3 created self-images that the audience could print out and receive as a receipt. The mass-produced "ego" became something like a commodity, pulled out of a factory line reminiscent of Henry Ford's conveyor belts. The audience was able to feel the power of the Artificial Intelligence, and the eerie feeling of being reduced to a mere product.`}</p>
             </div>
           </div>
         </div>
