@@ -157,7 +157,7 @@ export default function ProjectOne() {
           <>
             {nowWidth > 800 ? (
               <img
-                src={"/images/cintest1800.jpg"}
+                src={"/images/cintest1.jpg"}
                 alt="project4-main"
                 className={style.introImage}
               />
@@ -398,7 +398,7 @@ export default function ProjectOne() {
                   )
                 }
               >
-                Check the result out
+                Check the results
               </button>
             </div>
           </div>
@@ -446,8 +446,8 @@ export default function ProjectOne() {
               />
             )}
             <div className={style.desc}>
-              <h3>People who ahre the same name</h3>
-              <p>{`As in the case of musical actor "Kim Joon-soo" and Korean traditional musician "Kim Joon-soo," separation is necessary in the preprocessing process in consideration of the same name. In addition, names that frequently appear in item sets such as "Kim Min-ji" and "Kim Hyun-joo" are likely to be the same name, so they should also be separated based on performance information.`}</p>
+              <h3>People who share the same name</h3>
+              <p>{`Data duplication is the problem. As in the case of musical actor "Kim Joon-soo" and Korean traditional musician "Kim Joon-soo," name separation for people who shared the same name in the preprocessing process. In addition, names that frequently appear in item sets such as "Kim Min-ji" and "Kim Hyun-joo" are likely to be the same name, so they should also be separated based on performance information.`}</p>
             </div>
           </div>
           <div className={style.content}>
