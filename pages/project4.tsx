@@ -176,7 +176,8 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-        In October 2022, I participated in the Korea Performing Arts Box Office Information System (KOPIS) Big Data Analysis Contest. My analysis topic was based on "The Strength of Weak Ties," a sociological theory proposed by Mark Granovetter in 1973. This theory suggests that weak ties (loose connections) play a significant role in the spread of information because they provide a bridge between isolated groups.<p></p>To conduct my analysis, I used the Social Network Analysis (SNA) method to examine the relationship network of performing artists. SNA is a technique that investigates social structures through the use of networks and graph theory. My analysis aimed to understand the importance of weak ties in the performing arts industry and identify their potential impact on the spread of information. <p></p>
+        {`In October 2022, I participated in the Korea Performing Arts Box Office Information System (KOPIS) Big Data Analysis Contest. My analysis topic was based on "The Strength of Weak Ties," a sociological theory proposed by Mark Granovetter in 1973. This theory suggests that weak ties (loose connections) play a significant role in the spread of information because they provide a bridge between isolated groups.`}<p></p>
+         {`To conduct my analysis, I used the Social Network Analysis (SNA) method to examine the relationship network of performing artists. SNA is a technique that investigates social structures through the use of networks and graph theory. My analysis aimed to understand the importance of weak ties in the performing arts industry and identify their potential impact on the spread of information.`}<p></p>
         </p>
       </div>
       {nowWidth > 800 ? (
@@ -423,7 +424,7 @@ export default function ProjectOne() {
             </p>
             <h3>{`Promoting Convenience for Stakeholders`}</h3>
             <p className={style.p}>
-              {`When creating a work, producers or planners consider various factors when making casting decisions. At this time, personal relationship networks provide basic information about each person and their relationships with their connections. Therefore, for more experimental works, it is possible to cast actors whose areas of activity do not overlap at all, or to cast actors who have significant joint work experience by emphasizing the harmony between their characters. `}
+              {`Third, When creating a work, producers or planners consider various factors when making casting decisions. At this time, personal relationship networks provide basic information about each person and their relationships with their connections. Therefore, for more experimental works, it is possible to cast actors whose areas of activity do not overlap at all, or to cast actors who have significant joint work experience by emphasizing the harmony between their characters. `}
             </p>
             <p className={style.p}>
              {`Finally, the data from my project will be very useful to national agencies or various administrative agencies. For example, the Korean government's Integrated Government Subsidy Management System, 'E-NARA DOUM', can only track legally registered relatives, and other administrative systems, such as 'NCAS (National Culture and Arts Support System)', do not provide any information about these networks. It would be significant to provide a trial report on informal networks of relationships between people.`}

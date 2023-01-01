@@ -23,7 +23,7 @@ export default function About() {
           <div className={style.aboutImg} />
         </div>
         <p {...animatedItem4} className={style.intro}>
-         Hi, there! <p></p> Meet Hyeji Han, Product Designer & Media Artist from Seoul
+         Meet Hyeji Han, Product Designer & Media Artist from Seoul
         </p>
         <p {...animatedItem5} className={style.content}>
           As a skilled product designer and social activist with almost 5 years of experience in the public sector, I am deeply passionate about creating positive social impact. Growing up on the beautiful island of Borneo, I developed a love for nature and a bubbly, fun-loving personality!{" "}
