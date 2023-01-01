@@ -353,6 +353,8 @@ export default function ProjectOne() {
                 </div>
               </div>
             </div>
+            <br></br>
+            <br></br>
             <h3 style={{ marginTop: "50px" }}>{`Interview`}</h3>
             <p className={style.p}>
               {`I interviewed six people who have experience working at non-profit
@@ -408,6 +410,7 @@ export default function ProjectOne() {
               <div className={style.row}>
                 <img src={"images/ideate1.gif"} alt="" />
                 <div className={style.desc}>
+                  <br></br>
                   <span>LAYOUT</span>
                   <h3>Clear Layout</h3>
                   <p>
@@ -438,7 +441,7 @@ export default function ProjectOne() {
                 <img src={"images/ideate3.gif"} alt="" />
                 <div className={style.desc}>
                   <span>Font and Color</span>
-                  <h3>Emotion-evoking UIt</h3>
+                  <h3>Emotion-evoking UI</h3>
                   <p>
                     To encourage people to be empathetic and supportive, I chose
                     soothing colors such as grayish-blue for EPIC. Also, to
@@ -495,7 +498,7 @@ export default function ProjectOne() {
           <h2>TEST</h2>
           <div className={style.main}>
             <span>06 Test</span>
-            <h3 className={style.first}>{`Usability Testing`}</h3>
+            <h3 className={style.first}>{`Usability Testing`}</h3><br></br>
             <img
               className={style.image}
               src="/images/usability-testing.gif"
@@ -517,7 +520,7 @@ export default function ProjectOne() {
               <img src="/images/circle2.png" alt="01" />
               <img src="/images/circle3.png" alt="01" />
             </div>
-            <h3 style={{ marginTop: "50px" }}>{`After Usability Test`}</h3>
+            <h3 style={{ marginTop: "50px" }}>{`After Usability Test`}</h3><br></br>
             <img
               className={style.image}
               src="/images/Usability-testing.png"
@@ -560,6 +563,7 @@ export default function ProjectOne() {
             <p>{`The main page is in the most powerful zone, determining the identity of the website. According to statistics, almost 80% of website visitors leave without even reading the first page. I would modify the layout of the first page on EPIC's website to be more engaging and effective in order to keep visitors on the site.`}</p>
           </div>
         </div>
+        <br></br>
         <div className={style.item}>
           <div className={style.desc}>
             <h3>key Poverty statistics</h3>
@@ -577,6 +581,7 @@ export default function ProjectOne() {
             <img className={style.itemImg} src={"/images/m1.png"} alt="사진" />
           )}
         </div>
+        <br></br>
         <div className={style.item}>
           <img className={style.itemImg} src={"/images/f8.png"} alt="사진" />
           <div className={style.desc}>
@@ -614,7 +619,7 @@ export default function ProjectOne() {
             )}
             <div className={style.desc}>
               <h3>Clinical nature of public UX and its potential</h3>
-              <p>{`I move forward to implement the UX improvement task for the service in public sectors that require various donor-related support as well as charity websites. In particular, I planned and operated almost 8,000 performing arts production information at work. This project served to considering the UX virtues that non-profit institutions can use.`}</p>
+              <p>{`This project served to considering the UX virtues that non-profit institutions can use. Persuasive design uses an understanding of human’s cognitive ability to impact on human behavior. On charity websites, it is necessary to meticulously consider the factors that become ‘triggers’. The combination of these elements is the beginning of the ‘Persuasive design’ and leads to the Charity websites to succeed.`}</p>
             </div>
           </div>
         </div>

@@ -252,11 +252,7 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-          Eco-Log is the service featuring of recording waste disposal and
-          providing impact data. The service helps users become a more
-          waste-conscious by rewarding their action.The concept behind the
-          platform is an equitable distribution of fresh produce and a postive
-          enviornmental impact.
+          Eco-Log is the service that records waste disposal and provides impact data. The service helps users become more waste-conscious by rewarding their actions. The primary concept behind the service is to encourage a virtuous cycle of a positive environmental impact.
         </p>
       </div>
       {nowWidth > 800 ? (
@@ -346,7 +342,7 @@ export default function ProjectOne() {
         <div className={style.designIntro}>
           <h2>DESIGN PROCESS</h2>
           <span>
-            {`I follow the design process which ranges from identifying the problem that the design or product will solve, all the way to research, planning, prototyping, test and iteration.`}
+            {`I followed the design process ranging from research and design to iteration.`}
           </span>
           <div className={style.processesCon}>
             <div className={style.processes}>
@@ -371,9 +367,7 @@ export default function ProjectOne() {
               only basic or little treatment to minimize its impact.
             </p>
             <p className={style.p}>
-              According to the studies, US citizens and businesses are the
-              largest contributors to the waste problem. The US represents 4% of
-              the global population but generates 12% of global municipal waste.
+              According to a new report from Verisk Maplecroft, a global risk-assessment and consulting firm, US citizens and businesses are the largest contributors to this issue. The US represents 4% of the global population yet generates 12% of global municipal waste.
             </p>
             <div className={style.image2}>
               <img src="/images/one1.png" alt="01" />
@@ -450,9 +444,7 @@ export default function ProjectOne() {
             </div>
             <h3>{`User Journey Map`}</h3>
             <p className={style.p}>
-              {`I created User Journey Map by five Journey Steps.
-
-Users gathered waste, searched Information, disposed of waste, reported Disposal Results, and got compensation through the service.`}
+              {`I created User Journey Map by five Journey Steps. Users gathered waste, searched Information, disposed of waste, reported Disposal Results, and got compensation through the service.`}
             </p>
             <div className={style.image2}>
               <img className={style.image2} src="/images/frame1.png" alt="01" />
@@ -467,8 +459,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             <span>03 Define</span>
             <h3 className={style.first}>{`Affinity Map`}</h3>
             <p className={style.p}>
-              For organizing the ideas from research, I created an affinity map.
-              All interviewers were aware of the seriousness of garbage issues.
+              For organizing the ideas from research, I created an affinity map. All interviewers were aware of the seriousness of garbage issues.
               However, the priorities of what they put forward as problem
               solutions were different. I classified into four
               categories-Awareness, Incentives, Behaviors, and Improvements.
@@ -571,7 +562,10 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
               <img src="/images/r-2.png" alt="01" />
             </div>
             <h3>{`After Usability Test`}</h3>
-            <img className={style.image} src="/images/img.jpg" alt="01" />
+            <div className={style.image2}>
+              <img src="/images/img.jpg" alt="01" />
+              <img src="/images/test123.JPG" alt="01" />
+            </div>
             <p className={style.p}>
               {`Users gave positive feedback on recording information and claiming
               rewards. Due to 'rewards,’ users gave some positive feedback that
@@ -609,15 +603,15 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
           <div className={style.desc}>
             <Image src={sm} alt="icon" width={30} height={30} />
             <h3>Record Tracking</h3>
-            <p>{`Eco-log provides a record tracking function so that users can check all the trash they've thrown away.`}</p>
-            <p>{`Dive deep into data with advanced analysis. Users can get key statistics like CO2 tracking and analysis of your whole discarding progress.`}</p>
+            <p>{`Eco-Log provides a record tracking function for users to check all the trash they've discarded.`}</p>
+            <p>{`Dive deep into data with advanced analysis. Users can get key statistics like CO2 tracking and analysis of their whole discarding progress.`}</p>
           </div>
         </div>
         <div style={{ marginTop: "80px" }} className={style.item}>
           <div className={style.desc}>
             <Image src={record} alt="icon" width={30} height={30} />
             <h3>Identify The Waste</h3>
-            <p>{`We identify your waste quickly and accurately by using AI technology. Users’ uploaded data will be a great nourishment asset for promoting community and state-specific garbage policies.`}</p>
+            <p>{`Eco-Log identifies the type of waste quickly by using AI technology. Users’ uploaded data will be a significant asset for promoting community and state-specific garbage policies.`}</p>
             <span onClick={() => router.push('https://github.com/Hyeji-Han/Waste-Classification/blob/main/waste_Classification.ipynb')} style={{ cursor: "pointer", color: "#555555", fontSize: "16px", fontWeight:"bold" }}>
               *Click here to check my Machine Learning Model for this function.
               <link rel="stylesheet" href="https://github.com/Hyeji-Han/Waste-Classification/blob/main/waste_Classification.ipynb" /> 
@@ -715,7 +709,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             )}
             <div className={style.desc}>
               <h3>Nudge Design</h3>
-              <p>{`The most important thing I learned from the project was to explore what services were needed to change users' behavior. In the whole process, I tried to put 'nudge' strategies everywhere to induce good behavior. Rather than directly telling users not to throw away trash, I learned to indirectly say how much your small steps are saving the planet, through design.`}</p>
+              <p>{`My most valuable lesson from the project was to explore what services were needed to change users' behavior. Throughout, I tried to put 'Nudge' strategies everywhere to induce sustainable behavior. Through design rather than directly telling users not to throw away trash, I learned to indirectly send a message for how much small steps can save the planet.`}</p>
             </div>
           </div>
           <div className={style.content}>
@@ -728,7 +722,7 @@ Users gathered waste, searched Information, disposed of waste, reported Disposal
             )}
             <div className={style.desc}>
               <h3>The Power of Usability Testing</h3>
-              <p>{`Understanding the gap between my assumptions based on qualitative research and how users actually think through the usability testing was very interesting. I received a lot of important feedback from the users which helped me to empathize with them more and getting one step closer to the users pain points.`}</p>
+              <p>{`I found the gap between my assumptions based on qualitative research and how users actually think through usability testing to be quite interesting. I received important feedback from users, which helped me to further empathize with them and understand their major obstacles.`}</p>
             </div>
           </div>
         </div>

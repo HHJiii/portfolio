@@ -156,10 +156,10 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-         {`Can the Ego be Explained? It seems impossible to describe "the self" in one sentence. Unexplained uncertainty has also affected the field of AI, and the concept of eXplainable AI has emerged to solve this problem. This shows the human will to pursue more reliability by explaining the reasons and processes that AI uses to produce results.`}
+         {`Explainable AI (XAI), or Interpretable AI, is AI whose decisions and predictions can be understood by humans. It contrasts with the “black box” concept in machine learning where even designers cannot explain why the AI reached a specific decision.  XAI is being introduced in many specialized fields such as finance, medical care, and education, but research around it has seemingly not touched upon the human mind and understanding of self-image.`}
         </p>
         <p>
-        {`Then, is everything that can be explained reliable? met. chose a most difficult topic of the 'self' as our object explanation and tried to see if it could be better understood through dialogue with AI. e also want to experience the coincidence and conflict that occurs between the 'self' described by AI and the 'self' described by members of audience.`}
+        {`With all things considered, Can AI explain human identity? Describing identity seems impossible to do in a single sentence. With this question in mind, my team, met., planned an interactive media artwork. We chose the most abstract topic of the 'human identity’ as our objective explanation and attempted to examine whether this topic could be better understood through dialogue with AI. We also wanted to observe potential coincidences and conflicts  between the 'identity’ as described by AI and the 'identity' as described by audience members.`}
         </p>
       </div>
       {nowWidth > 800 ? (
@@ -289,7 +289,7 @@ export default function ProjectOne() {
                 textAlign: "center",
               }}
             >
-              Can the Ego be Explained?
+              Can AI explain human identity?
             </div>
           </div>
         </div>
@@ -314,7 +314,7 @@ export default function ProjectOne() {
               a. Explainable data<br></br>
               b. Explainable predictions<br></br>
               c. Explainable algorithms<br></br>
-            
+            <p></p>
               These principles help define the output expected from XAI. Explainable AI (XAI) is operated as follows:
             </p>
             <img
@@ -332,17 +332,22 @@ export default function ProjectOne() {
             <span>03 Data Modeling</span>
             <h3 className={style.first}>{`Build blocks of natural language; Intent and entities`}</h3>
             <p className={style.p}>
-            {`The AI implemented in this exhibition asks questions for the audience to introduce themselves, collects the audience's answers, and extracts and interprets keywords. After that, the AI infers the audience's collective ego by reconstructing sentences based on the interpreted content.`}<br></br>
+            {`The AI implemented in this exhibition asks self-identification questions to the audience, collects their answers, and extracts and interprets keywords. Afterward, the AI infers the audience's identities by reconstructing sentences based on the interpreted content.`}<br></br>
             <br></br>
-            To build this AI, as a data architect and IxD designer, I was the first runner in this marathon of a project.<br></br>
-            <br></br>
-            {`I constructed three-stage system of questions that our AI could use to understand people. The first stage is demographic questions such as “gender,” and “age.” The second is sociological questions about friendship and hatred in this world. It is more radical than the first stage. The third stage involves more confidential questions. Our AI asks audience what secrets they cherish and they trust AI. The answers to these questions are incorporated into our own rule-based matrix, and a line of sentences expressing each person’s self-image is derived.`}
-            </p>
+            
+            {`The following describes the three stages of questions asked to the audience:`}<br></br>
+            {`a. The first stage consists of demographic questions.`}<br></br>
+            {`b. The second stage is sociological questions regarding friendship and hatred in the world.`}<br></br>
+            {`c. The third stage involves more confidential questions. The AI asks the audience of their deep secrets and level of trust in AI.`}
+            <p></p>
+            {`The answers to these questions are incorporated into our own rule-based matrix, and a line of sentences expressing each person’s self-image is derived.`}</p>
+
             <img
               className={style.image}
               src="/images/met7.png"
               alt="01"
             />
+          
             <h3>{`GPT-3 for the Subtle Art`}</h3><br></br>
             <img
               className={style.image}
@@ -350,9 +355,16 @@ export default function ProjectOne() {
               alt="01"
             />
             <p className={style.p}>
-            {`At the heart of this project, we use the “GPT-3” language model to extend this simple line of extracted sentences. Generative Pre-trained Transformer 3 (GPT-3; stylized GPT·3) is an autoregressive language model that uses deep learning to produce human-like text. Given an initial text as a prompt, it will produce text that continues the prompt. We aimed to give our audience members “reasonable” answers by using 172.5 billion parameters.`}
-<br></br>
-            {`To minimize  the toxicity of this GPT-3, our team trained a lot of versions of source sentences in the open API playground, our team was able to get the best answers and create explainable data.`}
+            {`We coded the program to implement adjective extraction for each question and answer. It involves a function that identifies dictionaries and variables to analyze text written in the input window, such as function Lv1_Q1 (input).`}
+            <p></p>
+            {`Using Node.js, we built a web page called OpenAI GPT-3 and Papago API.`}<p></p>
+            <img
+              className={style.image}
+              src="/images/met10.jpg"
+              alt="01"
+            />
+            {`At the heart of this project, we use the “GPT-3” language model to extend this simple line of extracted sentences.Given an initial text as a prompt, it will produce text that continues the prompt.`}<p></p>
+            {`In addition, to minimize  the toxicity of this GPT-3, our team trained a lot of versions of source sentences in the open API playground, our team was able to get the best answers and create explainable data.`}
             </p>
             <img
               className={style.image}
@@ -423,7 +435,7 @@ export default function ProjectOne() {
 
             <h3 style={{ marginTop: "50px" }}>{`Interactive Effects`}</h3>
             <p className={style.p}>
-              A dramatic element was inserted in the middle to break the monotony of the question and answer format. Like an Easter egg, dummy phrases are engraved on the face, and blue screens are sporadically floating to increase tension..
+              A dramatic element was inserted in the middle to break the monotony of the question and answer format. Like an Easter egg, dummy phrases are engraved on the face, and blue screens are sporadically floating to increase tension.
             </p>
             <div className={style.image2}>
               <img src="/images/met3.jpeg" alt="01" />
@@ -449,11 +461,10 @@ export default function ProjectOne() {
           <div className={style.main}>
             <span>06 Exhibition</span>
             <h3 className={style.first}>{`We invite you to "eXplainable Human"`}</h3><br></br>
-            <img
-              className={style.image}
-              src="/images/met6.jpeg"
-              alt="01"
-            />
+            <div className={style.image2}>
+              <img src="/images/met6.jpeg" alt="01" />
+              <img src="/images/met7.jpeg" alt="01" />
+            </div>
             <p className={style.p}>
                     We held an exhibition for a total of three days from 4th to 6th of November.<br></br><span onClick={() => router.push('https://vimeo.com/manage/videos/774940869')} style={{ cursor: "pointer", color: "#777777", fontSize: "20px" }}>
                     * Click here to watch our documenting video.<link rel="stylesheet" href="https://vimeo.com/manage/videos/774940869" /> 
@@ -464,7 +475,7 @@ export default function ProjectOne() {
       </div>
       <div className={style.learn}>
         <div ref={goodsTabs[5].element} className={style.title}>
-          <h2>REFLECTION</h2>
+          <h2>TAKEAWAYS</h2>
           <span>These are lessons I learned from this project</span>
         </div>
         <div className={style.contents}>
@@ -477,22 +488,22 @@ export default function ProjectOne() {
               />
             )}
             <div className={style.desc}>
-              <h3>Explainability of human</h3>
+              <h3>Explainability of humans</h3>
               <p>{`In other words, can AI explain us?
-               This was the only purpose of our exhibition. The audience received an answer as if they were listening to a perfect explanation for themselves at a fortune-telling shop, or with a slight unpleasant feeling of uncanniness. It's fascinating to see the different ways that people view themselves.`}</p>
+                The audience received an answer as if they were listening to a perfectly accurate explanation of their future selves from a psychic, or with slight discomfort. It's fascinating to see the different ways that people view themselves. This interactive dialogue suggests a deeper cognitive study of the way humans perceive themselves. `}</p>
             </div>
           </div>
           <div className={style.content}>
             {nowWidth > 800 && (
               <img
                 className={style.image}
-                src="/images/met7.jpeg"
+                src="/images/met11.JPG"
                 alt="learned"
               />
             )}
             <div className={style.desc}>
               <h3>The Shadow of AI Lurks in the Uncanny Valley</h3>
-              <p>{`Our AI model and GPT3 created self-images that the audience could print out and receive as a receipt. The mass-produced "ego" became something like a commodity, pulled out of a factory line reminiscent of Henry Ford's conveyor belts. The audience was able to feel the power of the Artificial Intelligence, and the eerie feeling of being reduced to a mere product.`}</p>
+              <p>{`Our AI model and GPT3 created self-images that the audience could print out and receive as a receipt. The mass-produced "identity" became something like a commodity, pulled out of a factory line reminiscent of Henry Ford's conveyor belts. The audience was able to feel the power of the Artificial Intelligence, and the eerie feeling of being reduced to a mere product.`}</p>
             </div>
           </div>
         </div>

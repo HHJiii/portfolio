@@ -143,7 +143,9 @@ export default function ProjectOne() {
       <div className={style.intro}>
         <span>Data Analysis Project</span>
         <h1>Social Network Analysis</h1>
-        <h3>BIG DATA ANALYSIS CONTEST organized by Korea Performing Arts Box Office Information System(KOPIS)</h3>
+        <p>
+         {`Applying 'The Strength of Weak Ties' in the Korean Performing Arts Industry`}
+        </p>
         <br></br>
         {nowWidth > 1200 ? (
           <div className={style.mainImage}>
@@ -174,7 +176,7 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-          I conducted an analysis of the relationship network of performing artists through the SNA (Social Network Analysis; the process of investigating social structures through the use of networks and graph theory) method.
+        In October 2022, I participated in the Korea Performing Arts Box Office Information System (KOPIS) Big Data Analysis Contest. My analysis topic was based on "The Strength of Weak Ties," a sociological theory proposed by Mark Granovetter in 1973. This theory suggests that weak ties (loose connections) play a significant role in the spread of information because they provide a bridge between isolated groups.<p></p>To conduct my analysis, I used the Social Network Analysis (SNA) method to examine the relationship network of performing artists. SNA is a technique that investigates social structures through the use of networks and graph theory. My analysis aimed to understand the importance of weak ties in the performing arts industry and identify their potential impact on the spread of information. <p></p>
         </p>
       </div>
       {nowWidth > 800 ? (
@@ -280,8 +282,8 @@ export default function ProjectOne() {
               Social network analysis (SNA) tools are used to analyze patterns of relationships among people in groups. They are useful for examining the social structure and interdependencies (or work patterns) of individuals or organizations.
             </p>
             <div className={style.image2}>
-              <img src="/images/sna.png" alt="01" />
-              <img src="/images/sna2.png" alt="01" />
+              <img src="/images/sna1.png" alt="01" />
+              <img src="/images/sna2.jpeg" alt="01" />
             </div>
             </div>
             </div>
@@ -290,15 +292,15 @@ export default function ProjectOne() {
           <h2>OBJECTIVE</h2>
           <div className={style.main}>
             <span>02 Objective of Analysis</span>
-            <h3 className={style.first}>{`Fandom Culture`}</h3>
+            <h3 className={style.first}>{`Exploring Korean Fandom Culture`}</h3>
             <p className={style.p}>
-             {`The purpose of this project can be explained by using two simple words. The first is 'fandom culture.' This includes those who enjoy performances regularly, driving the sales of the performing arts market, and most importantly prioritize whether their facourite "performance artist" has been on the casting board when they hear that famous works are being released.`}
+             {`The purpose of this project can be explained by using two simple words. The first is 'fandom culture.' This includes individuals who regularly attend performances and drive the sales of the performing arts market. For many fans, the presence of their favorite "performance artist" on the cast list is a deciding factor in whether they will see a particular production.`}
             </p>
             <p className={style.p}>
-             {`Additionally, there is a Korean subculture or community that seeks the acquaintances of the actor or actress of interest. That is, knowing about the relations between certain actors or actresses is attractive to this particular group that enjoys performing arts and culture.`}
+             {`Additionally, there is a Korean subculture or community that is interested in the relationships between actors and actresses. Knowing about the connections between these individuals is attractive to this group, which enjoys performing arts and culture.`}
             </p>
             <p className={style.p}>
-             {`I am convinced that there would be demand to analyze this human network. Below is the website of DCInside Gallry, called Reddit of Korea. It has a similar concept to subreddits(called galleries) for various topic.`}
+             {`I believe there is a demand for analyzing these human networks. For example, the website DCInside Gallery, also known as the "Reddit of Korea," has a concept similar to Reddit's subreddits (called "galleries") for various topics.`}
             </p>
             <img className={style.image} src="/images/dc.gif" alt="01" />
             <h3>{`COVID-19`}</h3>
@@ -408,20 +410,23 @@ export default function ProjectOne() {
           <h2>BENEFIT</h2>
           <div className={style.main}>
             <span>06 Benefits of Analysis</span>
-            <h3 className={style.first}>{`Promote Information Accessibility`}</h3>
+            <h3 className={style.first}>{`Promoting Information Literacy`}</h3>
             <img className={style.image} src="/images/contest.jpg" alt="01" />
             <p className={style.p}>
-             {`First, access to information increases due to the advantage of a network that is easy for anyone to comprehend. Much data makes the mistake of using kargon without considering the 'viewer.' However, my project has the advantage of maximizing information accessibility in terms of visualizing human-to-human relationships as clear elements.`}
+             {`Firstly, my project benefits from being easily understandable due to the clear visualization of human-to-human relationships. This ensures that the information is easily accessible, unlike data that often uses jargon without considering the audience.`}
             </p>
             <p className={style.p}>
-             {`Second, my project can provide a research basis for potential viewing factors further research on various purchasing factors. In the meantime, if cost utility has been the main factor in analyzing the industry, this is likely the first time to proceed with human-to-human relationships.`}
-            </p>
-            <h3>{`Promote convenience for various stakeholders`}</h3>
-            <p className={style.p}>
-              {`Third, when producing a work, the producer/planner considers many factors when making casting decisions. At this time, personal relationship networks contain basic information for/on/about each person and relationship information with her or his connections. Thus, for a more experimental work, it is possible to cast two actors whose scope of activity does not overlap at all, or cast actors with significant joint work experience by emphasizing  the. harmony between characters.`}
+             {`Secondly, my project can be used as a basis for research on viewing and purchasing factors in the performing arts industry, and may be the first to analyze human-to-human relationships in terms of cost utility.`}
             </p>
             <p className={style.p}>
-             {`Finally, the data from my project will be very helpful to national agencies or various administrative agencies. In the case of 'E-NARA DOUM', the Integrated Government Subsidy Management System by the Korean government could only track legally registered relatives, and other administrative systems, 'NCAS(National Culture and Arts Support System)' do not provide any information about this network. It will be significant to report an informal network of relationships between people on a trial basis.`}
+             {`Overall, my project offers unique insights by considering both accessibility and the impact of human relationships in the industry.`}
+            </p>
+            <h3>{`Promoting Convenience for Stakeholders`}</h3>
+            <p className={style.p}>
+              {`When creating a work, producers or planners consider various factors when making casting decisions. At this time, personal relationship networks provide basic information about each person and their relationships with their connections. Therefore, for more experimental works, it is possible to cast actors whose areas of activity do not overlap at all, or to cast actors who have significant joint work experience by emphasizing the harmony between their characters. `}
+            </p>
+            <p className={style.p}>
+             {`Finally, the data from my project will be very useful to national agencies or various administrative agencies. For example, the Korean government's Integrated Government Subsidy Management System, 'E-NARA DOUM', can only track legally registered relatives, and other administrative systems, such as 'NCAS (National Culture and Arts Support System)', do not provide any information about these networks. It would be significant to provide a trial report on informal networks of relationships between people.`}
             </p>
             <div className={style.image2}>
               <img src="/images/enara.png" alt="01" />
@@ -446,8 +451,8 @@ export default function ProjectOne() {
               />
             )}
             <div className={style.desc}>
-              <h3>People who share the same name</h3>
-              <p>{`Data duplication is the problem. As in the case of musical actor "Kim Joon-soo" and Korean traditional musician "Kim Joon-soo," name separation for people who shared the same name in the preprocessing process. In addition, names that frequently appear in item sets such as "Kim Min-ji" and "Kim Hyun-joo" are likely to be the same name, so they should also be separated based on performance information.`}</p>
+              <h3>Dealing with People who share the same name</h3>
+              <p>{`Data duplication is the problem. In the preprocessing stage, it is important to distinguish between individuals who share the same name, such as musical actor "Kim Joon-soo" and Korean traditional musician "Kim Joon-soo." Similarly, names that frequently appear in item sets, such as "Kim Min-ji" and "Kim Hyun-joo," are likely to be the same person, so it is necessary to differentiate them based on performance information. Avoiding data duplication is key to ensuring accurate results.`}</p>
             </div>
           </div>
           <div className={style.content}>
@@ -459,8 +464,8 @@ export default function ProjectOne() {
               />
             )}
             <div className={style.desc}>
-              <h3>Exclusion of online performances</h3>
-              <p>{`Currently, the original data is limited to physical performances held in actual performances. However, after the pandemic, the proportion of virtual performances increased, and it was not analyzed that the cast and production crew gathered to produce non-face-to-face performances such as live broadcasting and recording performances. If the data are analyzed in consideration of non-face-to-face performances, there is a strong possibility that another type of result will come out.`}</p>
+              <h3>Ignoring the Online World</h3>
+              <p>{`The original data currently only includes physical performances that take place in person. However, with the increase in virtual performances during the pandemic, it is important to consider the impact of non-face-to-face performances such as live broadcasts and recorded performances on the cast and production crew. If we analyze data that includes these types of performances, it is likely that we will see different results.`}</p>
             </div>
           </div>
         </div>

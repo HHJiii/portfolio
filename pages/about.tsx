@@ -23,29 +23,22 @@ export default function About() {
           <div className={style.aboutImg} />
         </div>
         <p {...animatedItem4} className={style.intro}>
-          My name is Hyeji Han, I’m a product designer & media artist from
-          Seoul.
+         Hi, there! <p></p> Meet Hyeji Han, Product Designer & Media Artist from Seoul
         </p>
         <p {...animatedItem5} className={style.content}>
-          I am a product designer with almost 5 years experience in public
-          sector. As a skilled social activist, I have a clear point of interest
-          within the social impact sector that has not been actively questioned.{" "}
+          As a skilled product designer and social activist with almost 5 years of experience in the public sector, I am deeply passionate about creating positive social impact. Growing up on the beautiful island of Borneo, I developed a love for nature and a bubbly, fun-loving personality!{" "}
         </p>
         <p {...animatedItem6} className={style.content}>
-          I was born and spent my childhood on the beautiful island of Borneo, it is an entrancing place filled with beautiful dense rainforest. I grew up as a nature lover surrounded by such beautiful nature. I am very bubbly, funny, and full of laughter. 
+          After earning my degree in business administration, I have worked at the Korean National Agency — Arts Council Korea — where I focused on communications, social advocacy, fundraising and donor research. I have consulted on numerous projects related to culture and the arts, and have helped countless struggling artists along the way.
         </p>
         <p {...animatedItem7} className={style.content}>
-          After graduating from university with a degree in business administration, I began to delve into the complex social issues affecting local communities. Throughout the past 5 years, I have worked for a National Agency, Arts Council Korea, with a focus in communications, social advocacy, and fundraising/donor research. I consulted on many projects related to culture and arts and helped struggling artists.
+         My primary area of interest is finding solutions to social issues such as unfairness, poverty, and discrimination. I believe that everyone, regardless of their abilities or challenges, should be able to fully enjoy life and participate in the arts without any barriers or discrimination.
         </p>
         <p {...animatedItem8} className={style.content}>
-          The field I am interested in is solving social problems including
-          unfairness, poverty, and discrimination. I would like to design the
-          world so that, regardless of their disability or difficulty, people
-          can fully enjoy their life and arts without any discrimination or
-          barriers.
+        That is why I am committed to designing a world that is inclusive and equitable for all.
         </p>
         <br></br>
-        <div onClick={() => router.push('https://drive.google.com/file/d/1Nb3iaRs3FrqIf7BJS6sPDbAFjkDslgxa/view')} {...animatedItem9} className={style.resome}>
+        <div onClick={() => router.push('https://drive.google.com/file/d/1MZtD2RQ88z8BMXOZCE0lzp90BpRAFcWp/view?usp=sharing')} {...animatedItem9} className={style.resome}>
           Resume
         </div>
 
