@@ -32,7 +32,7 @@ export default function About() {
          My journey began with a degree in business administration, and my interest deepened during my time at the Korean National Agency where I immersed myself in the art of social advocacy, fundraising, and accessibility.
         </p>
         <p {...animatedItem7} className={style.content}>
-         I'm deeply passionate about boosting accessibility with data visualization, crafting responsible AI models, and revolutionizing interaction and inclusivity in virtual reality.
+         I am deeply passionate about boosting accessibility with data visualization, crafting responsible AI models, and revolutionizing interaction and inclusivity in virtual reality.
         </p>
         <p {...animatedItem8} className={style.content}>
          My goal is simple: to design a world where everyone feels welcome and empowered, just like you reading this now. Join me on this journey to turn imagination into reality.
@@ -48,7 +48,7 @@ export default function About() {
           </div>
           <div {...animatedItem2} className={style.awardsContent}>
             <div className={style.row}>
-              <span>paigehan@uw.edu</span>
+              <span>{'paigehan@uw.edu'}</span>
               <span>E-Mail</span>
             </div>
             <div className={style.row}>

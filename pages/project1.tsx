@@ -382,10 +382,6 @@ export default function ProjectOne() {
             <span>02 Empathize</span>
             <h3 className={style.first}>{`Survey`}</h3>
             <p className={style.p}>
-              I create the questionnaire including 13 types of questions, and
-              got 30 replies.
-            </p>
-            <p className={style.p}>
               More than 80% of respondents were aware of the direness of the garbage issue in the communitu, but there was a slight difference in the specific disposal methods and the level of social impact expected.
             </p>
             <p className={style.p}>
