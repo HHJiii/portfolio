@@ -45,7 +45,7 @@ export default function Footer() {
             />
           ))}
         </div>
-        <span>@ Hyeji Han 2022</span>
+        <span>@ Created by Paige Han 2023</span>
       </div>
     </footer>
   );

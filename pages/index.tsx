@@ -24,9 +24,9 @@ export default function Home() {
         <div className={style.section1}>
           <div className={style.section1Wapper}>
             <h1 {...animatedItem1} className={style.intro}>
-              {`My name is Hyeji Han, I’m a `}
-              <span>product designer & media </span>
-              {`artist from Seoul.`}
+              {`My name is Paige Han, I’m a UX`}
+              <span> Designer & front-end developer </span>
+              {`from Seattle.`}
             </h1>
             <div className={style.description}>
               <span {...animatedItem2}>
@@ -66,13 +66,13 @@ export default function Home() {
           />
           <LinkBox
             icon="/images/Article@2x.png"
-            title="Nudge Trilogy : Dark, White.."
+            title="Nudge Trilogy : Dark, White..."
             text="Published article on Medium"
             link="https://medium.com/design-bootcamp/nudge-trilogy-dark-white-and-no-nudge-zone-ae028f48a4e3"
           />
           <LinkBox
             icon="/images/Article@2x.png"
-            title="Galápagos Syndrome of.."
+            title="Galápagos Syndrome of..."
             text="Published article on Medium"
             link="https://medium.com/design-bootcamp/the-gal%C3%A1pagos-syndrome-of-technology-in-south-korea-2f3a4d7250a"
           />
@@ -83,10 +83,10 @@ export default function Home() {
             link="https://medium.com/@hyejihan/explainable-human-can-the-ego-be-explained-f4ee3308bf89"
           />
           <LinkBox
-            icon="/images/Phosphor@2x.png"
-            title="Waste Classification"
+            icon="/images/Article@2x.png"
+            title="Beyond the Human-Centered..."
             text="ML models by Kaggle dataset"
-            link="https://github.com/Hyeji-Han/Waste-Classification/blob/main/waste_Classification.ipynb"
+            link="https://medium.com/design-bootcamp/beyond-the-human-centered-design-9da5fb33058f"
           />
           <LinkBox
             icon="/images/Phosphor@2x.png"
@@ -95,16 +95,16 @@ export default function Home() {
             link="https://www.isabellearvers.com/2019/05/games-as-lights-and-colors-on-canvas-workshop-acc-gwangju-isea-2019/"
           />
           <LinkBox
-            icon="/images/Video@2x.png"
-            title="Certificate of Family Relations"
-            text="Short Film"
-            link="https://vimeo.com/320956895"
+            icon="/images/Phosphor@2x.png"
+            title="Waste Classification"
+            text="ML models by Kaggle dataset"
+            link="https://github.com/Hyeji-Han/Waste-Classification/blob/main/waste_Classification.ipynb"
           />
-          <LinkBox
-            icon="/images/capstone@2x.png"
-            title="Capstone Design Project"
-            text={`Data Mining  & Visualization`}
-            link="https://github.com/Hyeji-Han/Capstone-Design-Project"
+            <LinkBox
+            icon="/images/Phosphor@2x.png"
+            title="SleepNova, Smart sleep mask"
+            text="Prototype presentation"
+            link="https://drive.google.com/file/d/17qHkwLj5f9DSWTXc0sOvLygxX4bCVvVh/view?usp=sharing"
           />
         </div>
       </div>

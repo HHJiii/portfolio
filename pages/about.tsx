@@ -23,23 +23,23 @@ export default function About() {
           <div className={style.aboutImg} />
         </div>
         <p {...animatedItem4} className={style.intro}>
-         Meet Hyeji Han, Product Designer & Media Artist from Seoul
+         Hi, there. I'm Paige Han, an adventurous UX explorer.
         </p>
         <p {...animatedItem5} className={style.content}>
-          As a skilled product designer and social activist with almost 5 years of experience in the public sector, I am deeply passionate about creating positive social impact. Growing up on the beautiful island of Borneo, I developed a love for nature and a bubbly, fun-loving personality!{" "}
+         I am a creative problem-solver to enhance the world through design.
         </p>
         <p {...animatedItem6} className={style.content}>
-          After earning my degree in business administration, I have worked at the Korean National Agency — Arts Council Korea — where I focused on communications, social advocacy, fundraising and donor research. I have consulted on numerous projects related to culture and the arts, and have helped countless struggling artists along the way.
+         My journey began with a degree in business administration, and my interest deepened during my time at the Korean National Agency where I immersed myself in the art of social advocacy, fundraising, and accessibility.
         </p>
         <p {...animatedItem7} className={style.content}>
-         My primary area of interest is finding solutions to social issues such as unfairness, poverty, and discrimination. I believe that everyone, regardless of their abilities or challenges, should be able to fully enjoy life and participate in the arts without any barriers or discrimination.
+         I'm deeply passionate about boosting accessibility with data visualization, crafting responsible AI models, and revolutionizing interaction and inclusivity in virtual reality.
         </p>
         <p {...animatedItem8} className={style.content}>
-        That is why I am committed to designing a world that is inclusive and equitable for all.
+         My goal is simple: to design a world where everyone feels welcome and empowered, just like you reading this now. Join me on this journey to turn imagination into reality.
         </p>
         <br></br>
-        <div onClick={() => router.push('https://drive.google.com/file/d/1MZtD2RQ88z8BMXOZCE0lzp90BpRAFcWp/view?usp=sharing')} {...animatedItem9} className={style.resome}>
-          Resume
+        <div onClick={() => window.open('https://drive.google.com/file/d/1oph_wcmLjYb5ORPnNnYuNOCviz88ylIj/view?usp=sharing', '_blank')} {...animatedItem9} className={style.resome}>
+        Resume
         </div>
 
         <div className={style.awards}>
@@ -48,15 +48,15 @@ export default function About() {
           </div>
           <div {...animatedItem2} className={style.awardsContent}>
             <div className={style.row}>
-              <span>hyejihan92@gmail.com</span>
+              <span>paigehan@uw.edu</span>
               <span>E-Mail</span>
             </div>
             <div className={style.row}>
-              <span>{`@8gust11th`}</span>
+              <span>{`@afterhann`}</span>
               <span>Instagram</span>
             </div>
             <div className={style.row}>
-              <span>{`+82 1049130207`}</span>
+              <span>{`(206)513-1145`}</span>
               <span>Mobile</span>
             </div>
             <div className={style.row}>

@@ -252,7 +252,7 @@ export default function ProjectOne() {
       <div ref={goodsTabs[0].element} className={style.overview}>
         <span>Overview</span>
         <p>
-          Eco-Log is the service that records waste disposal and provides impact data. The service helps users become more waste-conscious by rewarding their actions. The primary concept behind the service is to encourage a virtuous cycle of a positive environmental impact.
+         Eco-Log is an app that helps users change their habits by keeping track of how they dispose of waste and showing them the impact of their actions. It rewards users for making eco-friendly choices, aiming to create a positive cycle of environmental change. 
         </p>
       </div>
       {nowWidth > 800 ? (
@@ -267,22 +267,22 @@ export default function ProjectOne() {
           </thead>
           <tbody>
             <tr>
-              <td>Independent proejct</td>
-              <td>12 weeks</td>
+              <td>Passion proejct</td>
+              <td>12 weeks </td>
               <td>Figma</td>
-              <td>User research</td>
+              <td>UX Research</td>
             </tr>
             <tr>
               <td></td>
-              <td></td>
+              <td>(AUG 2022 - NOV 2022)</td>
               <td>Framer</td>
-              <td>End to end Design</td>
+              <td>UX Design</td>
             </tr>
             <tr>
               <td></td>
               <td></td>
               <td>Miro</td>
-              <td>Usability Test</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -297,7 +297,7 @@ export default function ProjectOne() {
             </thead>
             <tbody>
               <tr>
-                <td>{`Independent\n proejct`}</td>
+                <td>{`Passion\n proejct`}</td>
                 <td>12 weeks</td>
               </tr>
             </tbody>
@@ -334,7 +334,7 @@ export default function ProjectOne() {
         />
         <Sub
           name={"SOLUTION"}
-          content={`Eco-Log starts with the user's lower-effort user actions. It encourages people discard their waste in an appropriate way and reduce the amount. It also motivated users achieve their goals by allowing them to gather digital rewards, which can be traded in the app for discount codes.`}
+          content={`Eco-Log begins by motivating users to take small, easy steps towards responsible waste disposal and reduction. It incentivizes people to dispose of waste properly and reduce their waste generation. Users can earn digital rewards that can be used to get discount codes, helping them reach their goals.`}
           background={"#85c66e"}
         />
       </div>
@@ -342,7 +342,7 @@ export default function ProjectOne() {
         <div className={style.designIntro}>
           <h2>DESIGN PROCESS</h2>
           <span>
-            {`I followed the design process ranging from research and design to iteration.`}
+            {``}
           </span>
           <div className={style.processesCon}>
             <div className={style.processes}>
@@ -399,10 +399,7 @@ export default function ProjectOne() {
             <img className={style.image} src="/images/main2.png" alt="01" />
             <h3>{`Interview`}</h3>
             <p className={style.p}>
-              To correlate the above two factors, I conducted interviews with
-              six people living in the U.S. All interviewees are concerned that
-              there will be side effects if we start to regulate the garbage
-              problem.
+              I conducted interviews with six people living in the U.S. All interviewees are concerned that there will be side effects if we start to regulate the garbage problem.
             </p>
             <p className={style.p}>
               {`However, there is a general consensus among them about the need
@@ -425,10 +422,7 @@ export default function ProjectOne() {
             )}
             <h3>{`User Persona`}</h3>
             <p className={style.p}>
-              {`I created two types of personas. One is in her 30s and another is in her 20s, and both are living in the United States.`}
-            </p>
-            <p className={style.p}>
-              {`Their knowledge of the environment degredation is relatively different, but it is clear that they take the garbage issue seriously and want services related to awareness improvement.`}
+              {``}
             </p>
             <div className={style.image2}>
               <img
@@ -444,7 +438,7 @@ export default function ProjectOne() {
             </div>
             <h3>{`User Journey Map`}</h3>
             <p className={style.p}>
-              {`I created User Journey Map by five Journey Steps. Users gathered waste, searched Information, disposed of waste, reported Disposal Results, and got compensation through the service.`}
+              {`In User Journey Map by five Steps, Users gathered waste, searched Information, disposed of waste, reported Disposal Results, and got compensation through the service.`}
             </p>
             <div className={style.image2}>
               <img className={style.image2} src="/images/frame1.png" alt="01" />
@@ -486,9 +480,7 @@ export default function ProjectOne() {
             <span>04 Ideate</span>
             <h3 className={style.first}>{`Card Sorting`}</h3>
             <p className={style.p}>
-              To come up with a wide range of ideas, I engaged in an informed
-              brainstorming session and creativity/feasibility chart keeping our
-              pain points in mind. Below is a card sorting.
+              To come up with a wide range of ideas, I had an organized brainstorming session and created a chart that considered both creativity and feasibility while addressing our challenges.
             </p>
             <img
               className={style.image}
@@ -497,8 +489,7 @@ export default function ProjectOne() {
             />
             <h3>{`Information Architecture`}</h3>
             <p className={style.p}>
-              Based on the card sorting, I created Information Architecture for
-              the holistic sketch.
+              I created Information Architecture for the holistic sketch.
             </p>
             <img className={style.image} src="/images/info.jpg" alt="01" />
             <div className={style.main}></div>
@@ -570,13 +561,13 @@ export default function ProjectOne() {
               {`Users gave positive feedback on recording information and claiming
               rewards. Due to 'rewards,’ users gave some positive feedback that
               they felt motivated. Also, they said they enjoyed the interaction
-              between littering and getting rewards from Eco-Log. (Task 4)`}
+              between littering and getting rewards from Eco-Log.`}
             </p>
             <p className={style.p}>
               On the other hand, I found some features that were most
               uncomfortable and even unlikely to use them well. It seems
               necessary to improve other functions such as finding the nearest
-              recycling center or checking the vendor’s schedules. (Task 2)
+              recycling center or checking the vendor’s schedules.
             </p>
             <div className={style.image2}>
               <img src="/images/test1.png" alt="01" />
