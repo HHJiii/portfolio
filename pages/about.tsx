@@ -23,7 +23,7 @@ export default function About() {
           <div className={style.aboutImg} />
         </div>
         <p {...animatedItem4} className={style.intro}>
-         Hi, there! I'm Paige Han, an adventurous UX explorer.
+        Hi, there! I&apos;m Paige Han, an adventurous UX explorer.
         </p>
         <p {...animatedItem5} className={style.content}>
          I am a creative problem-solver to enhance the world through design.
