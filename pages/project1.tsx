@@ -383,13 +383,10 @@ export default function ProjectOne() {
             <h3 className={style.first}>{`Survey`}</h3>
             <p className={style.p}>
               I create the questionnaire including 13 types of questions, and
-              got 30 replies from the all over the United States.
+              got 30 replies.
             </p>
             <p className={style.p}>
-              According to the survey results, more than 80% of respondents were
-              aware of the direness of the garbage issue in the communitu, but
-              there was a slight difference in the specific disposal methods and
-              the level of social impact expected.
+              More than 80% of respondents were aware of the direness of the garbage issue in the communitu, but there was a slight difference in the specific disposal methods and the level of social impact expected.
             </p>
             <p className={style.p}>
               It depends on the type of residence and the state they are living
