@@ -13,9 +13,9 @@ export default function Home() {
   const router = useRouter();
 
   const contacts = [
-    { label: "LinkedIn", value: " https://www.linkedin.com/in/hyeji-han" },
-    { label: "Github", value: "https://github.com/Hyeji-Han" },
-    { label: "Medium", value: "https://medium.com/@hyejihan" },
+    { label: "LinkedIn", value: "https://www.linkedin.com/in/hyeji-han", target: "_blank" },
+    { label: "Github", value: "https://github.com/Hyeji-Han", target: "_blank" },
+    { label: "Medium", value: "https://medium.com/@hyejihan", target: "_blank" },
   ];
 
   return (
@@ -24,14 +24,14 @@ export default function Home() {
         <div className={style.section1}>
           <div className={style.section1Wapper}>
             <h1 {...animatedItem1} className={style.intro}>
-              {`My name is Paige Han, I’m a UX`}
-              <span> Designer & front-end developer </span>
+              {`My name is Paige Han, a Product`}
+              <span> Researcher & Designer </span>
               {`from Seattle.`}
             </h1>
             <div className={style.description}>
               <span {...animatedItem2}>
-                Designer who values many multi-faceted factors of design —
-                technology, entrepreneurship, and social good.
+                who values many multi-faceted factors of the product —
+                technology, accessibility, and business strategy.
               </span>
               <div {...animatedItem3} className={style.contacts}>
                 {contacts.map((cotact, i) => (

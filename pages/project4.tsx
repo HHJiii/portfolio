@@ -192,14 +192,14 @@ export default function ProjectOne() {
           </thead>
           <tbody>
             <tr>
-              <td>Independent proejct</td>
-              <td>4 weeks</td>
-              <td>Excel VBA</td>
+              <td>Professional Project</td>
+              <td>8 weeks</td>
+              <td>Excel, VBA</td>
               <td>Data Mining</td>
             </tr>
             <tr>
               <td></td>
-              <td></td>
+              <td>(08/22 - 10/22)</td>
               <td>Python</td>
               <td>Data Modeling/EDA</td>
             </tr>
@@ -222,8 +222,8 @@ export default function ProjectOne() {
             </thead>
             <tbody>
               <tr>
-                <td>{`Independent\n proejct`}</td>
-                <td>4 weeks</td>
+                <td>{`Professional\n Proejct`}</td>
+                <td>8 weeks</td>
               </tr>
             </tbody>
           </table>
@@ -236,7 +236,7 @@ export default function ProjectOne() {
             </thead>
             <tbody>
               <tr>
-                <td>Excel VBA</td>
+                <td>Excel, VBA</td>
                 <td>Data Mining</td>
               </tr>
               <tr>

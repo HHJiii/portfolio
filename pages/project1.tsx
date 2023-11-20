@@ -274,7 +274,7 @@ export default function ProjectOne() {
             </tr>
             <tr>
               <td></td>
-              <td>(AUG 2022 - NOV 2022)</td>
+              <td>(08/2022 - 11/2022)</td>
               <td>Framer</td>
               <td>UX Design</td>
             </tr>

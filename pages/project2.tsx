@@ -181,13 +181,13 @@ export default function ProjectOne() {
           </thead>
           <tbody>
             <tr>
-              <td>{`Independent\n proejct`}</td>
+              <td>{`Passion\n proejct`}</td>
               <td>4 weeks</td>
               <td>Figma</td>
               <td>User research</td>
             </tr>
             <tr>
-              <td></td>
+              <td>(03/2022 - 04/2022)</td>
               <td></td>
               <td>Framer</td>
               <td>End to end Design</td>
