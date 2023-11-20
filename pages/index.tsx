@@ -13,9 +13,9 @@ export default function Home() {
   const router = useRouter();
 
   const contacts = [
-    { label: "LinkedIn", value: "https://www.linkedin.com/in/hyeji-han", target: "_blank" },
-    { label: "Github", value: "https://github.com/Hyeji-Han", target: "_blank" },
-    { label: "Medium", value: "https://medium.com/@hyejihan", target: "_blank" },
+    { label: "LinkedIn", value: "https://www.linkedin.com/in/hyeji-han", rel: "noopener noreferrer" },
+    { label: "Github", value: "https://github.com/Hyeji-Han", rel: "noopener noreferrer" },
+    { label: "Medium", value: "https://medium.com/@hyejihan", rel: "noopener noreferrer" },
   ];
 
   return (
@@ -24,8 +24,8 @@ export default function Home() {
         <div className={style.section1}>
           <div className={style.section1Wapper}>
             <h1 {...animatedItem1} className={style.intro}>
-              {`My name is Paige Han, a Product`}
-              <span> Researcher & Designer </span>
+              {`My name is Paige Han, I'm a`}
+              <span> Product Researcher & Designer </span>
               {`from Seattle.`}
             </h1>
             <div className={style.description}>
@@ -64,6 +64,7 @@ export default function Home() {
          text="Published article on Medium"
          link="https://medium.com/design-bootcamp/persuasive-design-what-makes-a-visitor-donate-to-charity-websites-5e8047bb4e14"
          target="_blank"
+         rel="noopener noreferrer"
 />
         <LinkBox
         icon="/images/Article@2x.png"
@@ -71,12 +72,14 @@ export default function Home() {
         text="Published article on Medium"
         link="https://medium.com/design-bootcamp/nudge-trilogy-dark-white-and-no-nudge-zone-ae028f48a4e3"
         target="_blank"
+        rel="noopener noreferrer"
 />
         <LinkBox
         icon="/images/Article@2x.png"
         title="Galápagos Syndrome of..."
         text="Published article on Medium"
         link="https://medium.com/design-bootcamp/the-gal%C3%A1pagos-syndrome-of-technology-in-south-korea-2f3a4d7250a" target="_blank"
+        rel="noopener noreferrer"
 />
         <LinkBox
         icon="/images/Article@2x.png"
@@ -84,13 +87,15 @@ export default function Home() {
         text="Published article on Medium"
         link="https://medium.com/@hyejihan/explainable-human-can-the-ego-be-explained-f4ee3308bf89"
         target="_blank"
+        rel="noopener noreferrer"
 />
         <LinkBox
         icon="/images/Article@2x.png"
         title="Beyond the Human-Centered..."
-        text="ML models by Kaggle dataset"
+        text="Published article on Medium"
         link="https://medium.com/design-bootcamp/beyond-the-human-centered-design-9da5fb33058f"
         target="_blank"
+        rel="noopener noreferrer"
         />
         <LinkBox
           icon="/images/Phosphor@2x.png"
@@ -98,6 +103,7 @@ export default function Home() {
           text="Game Art Workshop"
           link="https://www.isabellearvers.com/2019/05/games-as-lights-and-colors-on-canvas-workshop-acc-gwangju-isea-2019/"
           target="_blank"
+          rel="noopener noreferrer"
         />
         <LinkBox
           icon="/images/Phosphor@2x.png"
@@ -105,6 +111,7 @@ export default function Home() {
           text="ML models by Kaggle dataset"
           link="https://github.com/Hyeji-Han/Waste-Classification/blob/main/waste_Classification.ipynb"
           target="_blank"
+          rel="noopener noreferrer"
         />
         <LinkBox
           icon="/images/Phosphor@2x.png"
@@ -112,6 +119,7 @@ export default function Home() {
           text="Prototype presentation"
           link="https://drive.google.com/file/d/17qHkwLj5f9DSWTXc0sOvLygxX4bCVvVh/view?usp=sharing"
           target="_blank"
+          rel="noopener noreferrer"
         />
         </div>
       </div>

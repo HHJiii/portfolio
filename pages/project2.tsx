@@ -187,15 +187,15 @@ export default function ProjectOne() {
               <td>User research</td>
             </tr>
             <tr>
-              <td>(03/2022 - 04/2022)</td>
               <td></td>
-              <td>Framer</td>
+              <td>(03/2022 - 04/2022)</td>
+              <td>Adobe Photoshop</td>
               <td>End to end Design</td>
             </tr>
             <tr>
               <td></td>
               <td></td>
-              <td>Adobe Photoshop</td>
+              <td>Miro</td>
               <td>Usability Test</td>
             </tr>
           </tbody>
@@ -211,7 +211,7 @@ export default function ProjectOne() {
             </thead>
             <tbody>
               <tr>
-                <td>Independent proejct</td>
+                <td>Passion proejct</td>
                 <td>4 weeks</td>
               </tr>
             </tbody>

@@ -23,7 +23,7 @@ export default function About() {
           <div className={style.aboutImg} />
         </div>
         <p {...animatedItem4} className={style.intro}>
-          Hi there! I&apos;m Paige Han, a product advocate striving to make the world better.
+          <h1>Hi there! I&apos;m Paige Han, a product advocate striving to make the world better.</h1>
           </p>
             <p {...animatedItem5} className={style.content}>
             My journey began with a degree in business administration, and my interest deepened during my time at the Korean National Agency, where I immersed myself in the art of social advocacy, fundraising, and accessibility for service design.

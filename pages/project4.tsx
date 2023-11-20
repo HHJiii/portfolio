@@ -199,7 +199,7 @@ export default function ProjectOne() {
             </tr>
             <tr>
               <td></td>
-              <td>(08/22 - 10/22)</td>
+              <td>(08/2022 - 10/2022)</td>
               <td>Python</td>
               <td>Data Modeling/EDA</td>
             </tr>
