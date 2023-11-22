@@ -1,21 +1,28 @@
-import style from "../styles/Home.module.scss";
-import { useScrollFadeIn } from "../hooks/usescroll";
-import Card from "components/card/Card";
-import LinkBox from "components/link-box/LinkBox";
-import json from "../data.json";
-import { useRouter } from "next/router";
+import React, { useState } from 'react';
+import style from '../styles/Home.module.scss';
+import Card from 'components/card/Card';
+import LinkBox from 'components/link-box/LinkBox';
+import json from '../data.json';
+import { useRouter } from 'next/router';
+import { useScrollFadeIn } from '../hooks/usescroll'; 
 
 export default function Home() {
-  const animatedItem1 = useScrollFadeIn("0", "50");
-  const animatedItem2 = useScrollFadeIn("0.05", "50");
-  const animatedItem3 = useScrollFadeIn("0.1", "50");
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
+  const animatedItem1 = useScrollFadeIn('0', '50');
+  const animatedItem2 = useScrollFadeIn('0.05', '50');
+  const animatedItem3 = useScrollFadeIn('0.1', '50');
 
   const router = useRouter();
 
   const contacts = [
-    { label: "LinkedIn", value: "https://www.linkedin.com/in/hyeji-han", rel: "noopener noreferrer" },
-    { label: "Github", value: "https://github.com/Hyeji-Han", rel: "noopener noreferrer" },
-    { label: "Medium", value: "https://medium.com/@hyejihan", rel: "noopener noreferrer" },
+    { label: 'LinkedIn', value: 'https://www.linkedin.com/in/hyeji-han', rel: 'noopener noreferrer' },
+    { label: 'Github', value: 'https://github.com/Hyeji-Han', rel: 'noopener noreferrer' },
+    { label: 'Medium', value: 'https://medium.com/@hyejihan', rel: 'noopener noreferrer' },
   ];
 
   return (
@@ -24,9 +31,14 @@ export default function Home() {
         <div className={style.section1}>
           <div className={style.section1Wapper}>
             <h1 {...animatedItem1} className={style.intro}>
-              {`My name is Paige Han, I'm a`}
-              <span> Product Researcher & Designer </span>
-              {`from Seattle.`}
+              {`My name is Paige Han, a`}
+              <span
+                className={`${style.designation} ${isClicked ? style.clicked : ''}`}
+                onClick={handleClick}
+              >
+                {isClicked ? ' Product Researcher' : ' Product Designer'}
+              </span>
+              {` from Seattle.`}
             </h1>
             <div className={style.description}>
               <span {...animatedItem2}>
@@ -34,12 +46,12 @@ export default function Home() {
                 technology, accessibility, and business strategy.
               </span>
               <div {...animatedItem3} className={style.contacts}>
-                {contacts.map((cotact, i) => (
+                {contacts.map((contact, i) => (
                   <button
                     key={`contact: ${i}`}
-                    onClick={() => router.push(cotact.value)}
+                    onClick={() => router.push(contact.value)}
                   >
-                    {cotact.label}
+                    {contact.label}
                   </button>
                 ))}
               </div>
